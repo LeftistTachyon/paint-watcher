@@ -1,4 +1,5 @@
 import { SendableChannels, TextBasedChannel } from "discord.js";
+import { Shout } from "./type";
 
 type ChatLog = {
   type: "chat";
@@ -84,6 +85,25 @@ export function addShoutLog(groupID: number, channel: SendableChannels) {
 
   cache.push({ type: "shout", channel, groupID, cached: [] });
   return true;
+}
+
+/**
+ * Updates the given cached log in place
+ * @param log the shout log to update in place
+ * @param shouts the most recent fetch of shouts
+ * @returns new shouts from the given list
+ */
+export function updateShoutCache(log: ShoutLog, shouts: Shout[]) {
+  if (log.cached.length) {
+    let start = shouts.length - 1;
+    while (log.cached[log.cached.length - 1] < shouts[start].id) start--;
+
+    log.cached = shouts.map((shout) => shout.id);
+    return shouts.slice(start + 1);
+  } else {
+    log.cached = shouts.map((shout) => shout.id);
+    return shouts;
+  }
 }
 
 /**

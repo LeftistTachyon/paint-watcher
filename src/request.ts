@@ -43,8 +43,7 @@ export async function getChatroomMsgs(chatroom: string) {
     }
   );
 
-  const output = (await resp.json()) as ChatMessage[];
-  return output.reverse();
+  return (await resp.json()) as ChatMessage[];
 }
 
 /**
@@ -69,6 +68,17 @@ export async function getGroupShouts(groupID: number) {
 }
 
 /**
+ * Fix any weird image urls
+ * @param imageURL the image URL to fix
+ * @returns a non-relative image link to the chatrooms
+ */
+function correctImage(imageURL: string) {
+  return imageURL.startsWith("http")
+    ? imageURL
+    : "https://3dspaint.com/chatroom/" + imageURL;
+}
+
+/**
  * Creates an embed for the given chat message
  * @param msg the chat message to create an embed for
  * @returns an embed for the given chat message
@@ -77,18 +87,25 @@ export function generateChatEmbed(msg: ChatMessage) {
   const parsed = parseMsgString(msg.text, msg.username ? "" : "-# ");
 
   let firstEmbed = new EmbedBuilder()
-    .setAuthor({
-      name: msg.username,
-    })
     .setColor(`#${convertChatColor(msg.color)}`)
     .setDescription(parsed.text);
+  if (msg.username)
+    firstEmbed = firstEmbed.setAuthor({
+      name: msg.username,
+    });
 
   if (parsed.images.length >= 1) {
-    firstEmbed = firstEmbed.setImage(parsed.images[0]);
+    firstEmbed = firstEmbed
+      .setURL("https://3dspaint.com/menu_chatrooms.php")
+      .setImage(correctImage(parsed.images[0]));
 
     const allEmbeds = parsed.images
       .slice(1)
-      .map((image) => new EmbedBuilder().setImage(image));
+      .map((image) =>
+        new EmbedBuilder()
+          .setURL("https://3dspaint.com/menu_chatrooms.php")
+          .setImage(correctImage(image))
+      );
     allEmbeds.unshift(firstEmbed);
     return allEmbeds;
   } else return [firstEmbed];
@@ -126,11 +143,17 @@ export function generateShoutboxEmbed(shout: Shout) {
     .setTimestamp(shout.date);
 
   if (parsed.images.length >= 1) {
-    firstEmbed = firstEmbed.setImage(parsed.images[0]);
+    firstEmbed = firstEmbed
+      .setURL(`https://3dspaint.com/member/?id=${shout.member}`)
+      .setImage(parsed.images[0]);
 
     const allEmbeds = parsed.images
       .slice(1)
-      .map((image) => new EmbedBuilder().setImage(image));
+      .map((image) =>
+        new EmbedBuilder()
+          .setURL(`https://3dspaint.com/member/?id=${shout.member}`)
+          .setImage(image)
+      );
     allEmbeds.unshift(firstEmbed);
     return allEmbeds;
   } else return [firstEmbed];

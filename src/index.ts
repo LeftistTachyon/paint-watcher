@@ -6,7 +6,7 @@ import init, {
   getChatroomMsgs,
   getGroupShouts,
 } from "./request";
-import { getCache } from "./cache";
+import { getCache, updateShoutCache } from "./cache";
 
 // the Discord client
 const client: Client = new Client({
@@ -35,15 +35,19 @@ export async function kill() {
 async function log() {
   for (const log of getCache()) {
     if (log.type === "chat") {
+      console.log(`Logging ${log.chatroom}...`);
       const chats = await getChatroomMsgs(log.chatroom);
       for (const chat of chats) {
         await log.channel.send({ embeds: generateChatEmbed(chat) });
       }
+      console.log("done.");
     } else {
+      console.log(`Logging group #${log.groupID}...`);
       const shouts = await getGroupShouts(log.groupID);
-      for (const shout of shouts) {
+      for (const shout of updateShoutCache(log, shouts)) {
         await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
       }
+      console.log("done.");
     }
   }
 }
