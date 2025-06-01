@@ -1,11 +1,67 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
+import commands from "./commands";
 
+// the Discord client
 const client: Client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages],
 });
 
-client.once(Events.ClientReady, (readyClient) => {
-  console.log(`Ready! Logged in as ${readyClient.user.tag}`);
-});
+/**
+ * Kills the bot.
+ */
+export async function kill() {
+  console.log("Stopping...");
 
-client.login(process.env.TOKEN);
+  console.log("Logging off client...");
+  client.destroy();
+
+  console.log("Processes stopped.");
+
+  process.exit(0);
+}
+
+async function run() {
+  // Interaction handling
+  client.on(Events.InteractionCreate, async (interaction) => {
+    if (interaction.isChatInputCommand()) {
+      // slash commands
+      const command = commands.get(interaction.commandName);
+
+      if (!command) {
+        console.error(
+          `No command matching ${interaction.commandName} was found.`
+        );
+        return;
+      }
+
+      try {
+        await command.execute(interaction);
+      } catch (error) {
+        console.error("error:", error);
+        if (!interaction.replied) {
+          if (interaction.deferred) {
+            // console.log("error detected, attempting edit...");
+            await interaction.editReply(
+              "There was an error while executing this command!"
+            );
+          } else {
+            // console.log("error detected, attempting reply...");
+            await interaction.reply({
+              content: "There was an error while executing this command!",
+              ephemeral: true,
+            });
+          }
+        }
+      }
+    }
+  });
+
+  // Startup finish message
+  client.once(Events.ClientReady, (readyClient) => {
+    console.log(`Ready! Logged in as ${readyClient.user.tag}`);
+  });
+
+  client.login(process.env.DISCORD_TOKEN);
+}
+
+run().catch(console.dir);
