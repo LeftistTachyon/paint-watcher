@@ -1,24 +1,20 @@
 import { MessageFlags, SlashCommandBuilder } from "discord.js";
-import { addChatLog, addShoutLog } from "../cache";
 import { DiscordCommand } from "../type";
+import { removeChatLog, removeShoutLog } from "../cache";
 
-const log: DiscordCommand = {
+const unlog: DiscordCommand = {
   data: new SlashCommandBuilder()
-    .setName("log")
-    .setDescription(
-      "Logs important information from Paint into a Discord channel or thread"
-    )
+    .setName("unlog")
+    .setDescription("Stops logging operation in this channel")
     .addSubcommand((builder) =>
       builder
         .setName("group")
-        .setDescription(
-          "Logs a group's shoutbox messages into a Discord channel or thread"
-        )
+        .setDescription("Stops logging of a group's shouts in this channel")
         .addIntegerOption((option) =>
           option
             .setName("group-id")
             .setDescription(
-              "The last number in the URL of the group to log shouts from"
+              "The last number in the URL of the group to unlog shouts from"
             )
             .setRequired(true)
         )
@@ -26,13 +22,11 @@ const log: DiscordCommand = {
     .addSubcommand((builder) =>
       builder
         .setName("chatroom")
-        .setDescription(
-          "Logs a chatroom's messages into a Discord channel or thread"
-        )
+        .setDescription("Stops logging of a chatroom's chats in this channel")
         .addStringOption((option) =>
           option
             .setName("chatroom")
-            .setDescription("The name of the chatroom to log")
+            .setDescription("The name of the chatroom to unlog")
             .addChoices([
               {
                 name: "Luigi",
@@ -93,9 +87,9 @@ const log: DiscordCommand = {
         );
 
         await interaction.reply(
-          addShoutLog(groupID, interaction.channel)
-            ? `Now logging group #${groupID} in this channel.`
-            : `Unable to log group #${groupID} in this channel. (Is it already being logged?)`
+          removeShoutLog(groupID, interaction.channel)
+            ? `No longer logging group #${groupID} in this channel.`
+            : `Unable to unlog group #${groupID} in this channel. (Is it not logged?)`
         );
       } else await interaction.reply("This is not a valid channel.");
     } else if (subcommand === "chatroom") {
@@ -103,9 +97,9 @@ const log: DiscordCommand = {
         const chatroom = interaction.options.getString("chatroom", true);
 
         await interaction.reply(
-          addChatLog(chatroom, interaction.channel)
-            ? `Now logging chatroom ${chatroom} in this channel.`
-            : `Unable to log chatroom ${chatroom} in this channel. (Is it already being logged?)`
+          removeChatLog(chatroom, interaction.channel)
+            ? `No longer logging chatroom ${chatroom} in this channel.`
+            : `Unable to unlog chatroom ${chatroom} in this channel. (Is it not logged?)`
         );
       } else await interaction.reply("This is not a valid channel.");
     } else {
@@ -117,4 +111,4 @@ const log: DiscordCommand = {
   },
 };
 
-export default log;
+export default unlog;

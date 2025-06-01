@@ -1,6 +1,5 @@
-import { commandList } from "./commands";
 import { REST, Routes } from "discord.js";
-import { kill } from ".";
+import { commandList } from "./commands";
 
 // deploy le commmands
 // please don't hurt me, I couldn't think of a better way
@@ -36,7 +35,7 @@ if (Boolean(process.argv[4])) {
     } catch (error) {
       console.dir(error);
     } finally {
-      kill();
+      // kill();
     }
   })();
 } else {
@@ -76,7 +75,7 @@ if (Boolean(process.argv[4])) {
     } catch (error) {
       console.dir(error);
     } finally {
-      kill();
+      // kill();
     }
   })();
 }
