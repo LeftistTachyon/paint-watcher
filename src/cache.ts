@@ -1,17 +1,5 @@
 import { SendableChannels, TextBasedChannel } from "discord.js";
-import { Shout } from "./type";
-
-type ChatLog = {
-  type: "chat";
-  channel: SendableChannels;
-  chatroom: string;
-};
-type ShoutLog = {
-  type: "shout";
-  channel: SendableChannels;
-  groupID: number;
-  cached: number[];
-};
+import type { ChatLog, Shout, ShoutLog } from "./type";
 
 const cache: (ChatLog | ShoutLog)[] = [];
 

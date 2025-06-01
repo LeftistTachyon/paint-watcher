@@ -2,6 +2,7 @@ import type {
   AutocompleteInteraction,
   CacheType,
   ChatInputCommandInteraction,
+  SendableChannels,
   SlashCommandBuilder,
   SlashCommandSubcommandsOnlyBuilder,
 } from "discord.js";
@@ -46,4 +47,18 @@ export type Shout = {
   avatar: string;
   date: number;
   text: string;
+};
+
+// ! ==================== LOG TYPES ===================== !
+
+export type ChatLog = {
+  type: "chat";
+  channel: SendableChannels;
+  chatroom: string;
+};
+export type ShoutLog = {
+  type: "shout";
+  channel: SendableChannels;
+  groupID: number;
+  cached: number[];
 };

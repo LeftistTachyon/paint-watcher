@@ -1,6 +1,7 @@
 import { MessageFlags, SlashCommandBuilder } from "discord.js";
 import { addChatLog, addShoutLog } from "../cache";
 import { DiscordCommand } from "../type";
+import { allChatrooms } from ".";
 
 const log: DiscordCommand = {
   data: new SlashCommandBuilder()
@@ -33,52 +34,7 @@ const log: DiscordCommand = {
           option
             .setName("chatroom")
             .setDescription("The name of the chatroom to log")
-            .addChoices([
-              {
-                name: "Luigi",
-                value: "Luigi",
-              },
-              {
-                name: "Mario",
-                value: "Mario",
-              },
-              {
-                name: "Peach",
-                value: "Peach",
-              },
-              {
-                name: "Yoshi",
-                value: "Yoshi",
-              },
-              {
-                name: "Event",
-                value: "Event",
-              },
-              {
-                name: "Game",
-                value: "Game",
-              },
-              {
-                name: "TMJ",
-                value: "TMJ",
-              },
-              {
-                name: "Brenda",
-                value: "Brenda",
-              },
-              {
-                name: "Hockfin",
-                value: "Hockfin",
-              },
-              {
-                name: "Jasper",
-                value: "Jasper",
-              },
-              {
-                name: "Minco",
-                value: "Minco",
-              },
-            ])
+            .addChoices(allChatrooms)
             .setRequired(true)
         )
     ),
