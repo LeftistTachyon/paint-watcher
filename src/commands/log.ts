@@ -63,6 +63,10 @@ export const allChatrooms = [
     name: "Spanish",
     value: "Spanish",
   },
+  {
+    name: "Debug",
+    value: "Debug",
+  },
 ];
 
 const log: DiscordCommand = {
