@@ -22,62 +22,38 @@ const toParse = `I am. <img src="/chatroom/smilies/alien1.gif" />
 [style]TEXT[/style] 
 <span style="text-decoration:underline">TEXT</span>`;
 
-const parsed = parse(toParse);
+// const parsed = parse(toParse);
 
+// let text = "";
 // walk(parsed, {
 //   enter(node) {
 //     if (node.type === "Text") {
-//       console.log(node.value);
+//       text += node.value.replace(/\s+/, " ");
 //     } else if (node.type === "Tag") {
-//       console.log(`[${node.name}]`);
-//       if (node.name !== "a")
-//         for (const attribute of node.attributes) {
-//           console.log("-", attribute.name.value, attribute.value?.value);
-//         }
+//       switch (node.name) {
+//         case "a":
+//           text += "[";
+//           break;
+//         case "img":
+//           console.log(text);
+//           text = "";
+
+//           let src = node.attributes.find(
+//             (attribute) => attribute.name.value === "src"
+//           )?.value?.value;
+//           if (src?.startsWith("/")) src = "https://3dspaint.com" + src;
+//           console.log("IMAGE", src);
+//           break;
+//       }
 //     }
 //   },
-
 //   leave(node) {
-//     if (node.type === "Tag") {
-//       console.log(`[/${node.name}]`);
-//       if (node.name === "a")
-//         for (const attribute of node.attributes) {
-//           console.log("-", attribute.name.value, attribute.value?.value);
-//         }
+//     if (node.type === "Tag" && node.name === "a") {
+//       let href = node.attributes.find(
+//         (attribute) => attribute.name.value === "href"
+//       )?.value?.value;
+//       if (href?.startsWith("/")) href = "https://3dspaint.com" + href;
+//       text += `](${href})`;
 //     }
 //   },
 // });
-
-let text = "";
-walk(parsed, {
-  enter(node) {
-    if (node.type === "Text") {
-      text += node.value.replace(/\s+/, " ");
-    } else if (node.type === "Tag") {
-      switch (node.name) {
-        case "a":
-          text += "[";
-          break;
-        case "img":
-          console.log(text);
-          text = "";
-
-          let src = node.attributes.find(
-            (attribute) => attribute.name.value === "src"
-          )?.value?.value;
-          if (src?.startsWith("/")) src = "https://3dspaint.com" + src;
-          console.log("IMAGE", src);
-          break;
-      }
-    }
-  },
-  leave(node) {
-    if (node.type === "Tag" && node.name === "a") {
-      let href = node.attributes.find(
-        (attribute) => attribute.name.value === "href"
-      )?.value?.value;
-      if (href?.startsWith("/")) href = "https://3dspaint.com" + href;
-      text += `](${href})`;
-    }
-  },
-});

@@ -1,5 +1,6 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
 import commands from "./commands";
+import init from "./request";
 
 // the Discord client
 const client: Client = new Client({
@@ -19,6 +20,9 @@ export async function kill() {
 }
 
 async function run() {
+  // initialize session
+  await init();
+
   // Interaction handling
   client.on(Events.InteractionCreate, async (interaction) => {
     if (interaction.isChatInputCommand()) {

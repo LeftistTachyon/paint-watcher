@@ -1,8 +1,10 @@
+import { MessageFlags, SlashCommandBuilder } from "discord.js";
 import {
-  InteractionContextType,
-  MessageFlags,
-  SlashCommandBuilder,
-} from "discord.js";
+  generateChatEmbed,
+  generateShoutboxEmbed,
+  getChatroomMsgs,
+  getGroupShouts,
+} from "../request";
 import { DiscordCommand } from "../type";
 
 const logGroup: DiscordCommand = {
@@ -92,11 +94,21 @@ const logGroup: DiscordCommand = {
     if (subcommand === "group") {
       const groupID = Number(interaction.options.getInteger("group-id", true));
       await interaction.reply(`Now tracking group #${groupID} in this channel`);
+
+      const shouts = await getGroupShouts(groupID);
+      for (const shout of shouts) {
+        await interaction.followUp({ embeds: generateShoutboxEmbed(shout) });
+      }
     } else if (subcommand === "chatroom") {
       const chatroom = interaction.options.getString("chatroom", true);
       await interaction.reply(
         `Now tracking chatroom ${chatroom} in this channel`
       );
+
+      const chats = await getChatroomMsgs(chatroom);
+      for (const chat of chats) {
+        await interaction.followUp({ embeds: generateChatEmbed(chat) });
+      }
     } else {
       await interaction.reply({
         content: "How did you even call a subcommand that doesn't exist!?",
