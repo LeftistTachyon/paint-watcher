@@ -1,7 +1,7 @@
 import { MessageFlags, SlashCommandBuilder } from "discord.js";
 import { DiscordCommand } from "../type";
 import { removeChatLog, removeShoutLog } from "../cache";
-import { allChatrooms } from ".";
+import { allChatrooms } from "./log";
 
 const unlog: DiscordCommand = {
   data: new SlashCommandBuilder()

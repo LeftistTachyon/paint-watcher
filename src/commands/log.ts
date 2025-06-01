@@ -1,7 +1,69 @@
 import { MessageFlags, SlashCommandBuilder } from "discord.js";
 import { addChatLog, addShoutLog } from "../cache";
 import { DiscordCommand } from "../type";
-import { allChatrooms } from ".";
+
+export const allChatrooms = [
+  {
+    name: "Luigi",
+    value: "Luigi",
+  },
+  {
+    name: "Mario",
+    value: "Mario",
+  },
+  {
+    name: "Peach",
+    value: "Peach",
+  },
+  {
+    name: "Yoshi",
+    value: "Yoshi",
+  },
+  {
+    name: "Event",
+    value: "Event",
+  },
+  {
+    name: "Game",
+    value: "Game",
+  },
+  {
+    name: "TMJ",
+    value: "TMJ",
+  },
+  {
+    name: "Brenda",
+    value: "Brenda",
+  },
+  {
+    name: "Hockfin",
+    value: "Hockfin",
+  },
+  {
+    name: "Jasper",
+    value: "Jasper",
+  },
+  {
+    name: "Minco",
+    value: "Minco",
+  },
+  {
+    name: "French",
+    value: "French",
+  },
+  {
+    name: "German",
+    value: "German",
+  },
+  {
+    name: "Portuguese",
+    value: "Portuguese",
+  },
+  {
+    name: "Spanish",
+    value: "Spanish",
+  },
+];
 
 const log: DiscordCommand = {
   data: new SlashCommandBuilder()
