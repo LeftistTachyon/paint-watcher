@@ -1,22 +1,51 @@
 import { Client, Events, GatewayIntentBits } from "discord.js";
 import commands from "./commands";
-import init from "./request";
+import init, {
+  generateChatEmbed,
+  generateShoutboxEmbed,
+  getChatroomMsgs,
+  getGroupShouts,
+} from "./request";
+import { getCache } from "./cache";
 
 // the Discord client
 const client: Client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.DirectMessages],
 });
 
+let interval: NodeJS.Timeout | undefined;
+
 /**
  * Kills the bot.
  */
 export async function kill() {
+  console.log("Stopping logging...");
+  clearInterval(interval);
+
   console.log("Logging off client...");
   client.destroy();
 
   console.log("Processes stopped.");
-
   process.exit(0);
+}
+
+/**
+ * Log all messages once
+ */
+async function log() {
+  for (const log of getCache()) {
+    if (log.type === "chat") {
+      const chats = await getChatroomMsgs(log.chatroom);
+      for (const chat of chats) {
+        await log.channel.send({ embeds: generateChatEmbed(chat) });
+      }
+    } else {
+      const shouts = await getGroupShouts(log.groupID);
+      for (const shout of shouts) {
+        await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
+      }
+    }
+  }
 }
 
 async function run() {
@@ -64,6 +93,8 @@ async function run() {
   });
 
   client.login(process.env.DISCORD_TOKEN);
+
+  interval = setInterval(log, 10_000);
 }
 
 run().catch(console.dir);

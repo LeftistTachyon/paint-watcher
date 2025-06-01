@@ -1,13 +1,13 @@
-import { TextBasedChannel } from "discord.js";
+import { SendableChannels, TextBasedChannel } from "discord.js";
 
 type ChatLog = {
   type: "chat";
-  channel: TextBasedChannel;
+  channel: SendableChannels;
   chatroom: string;
 };
 type ShoutLog = {
   type: "shout";
-  channel: TextBasedChannel;
+  channel: SendableChannels;
   groupID: number;
   cached: number[];
 };
@@ -28,7 +28,7 @@ export function getCache() {
  * @param channel the channel to send logging messages to
  * @returns whether the operation was successful
  */
-export function addChatLog(chatroom: string, channel: TextBasedChannel) {
+export function addChatLog(chatroom: string, channel: SendableChannels) {
   if (
     cache.findIndex(
       (log) =>
@@ -70,7 +70,7 @@ export function removeChatLog(chatroom: string, channel: TextBasedChannel) {
  * @param channel the channel to send logging messages to
  * @returns whether the operation was successful
  */
-export function addShoutLog(groupID: number, channel: TextBasedChannel) {
+export function addShoutLog(groupID: number, channel: SendableChannels) {
   if (
     cache.findIndex(
       (log) =>

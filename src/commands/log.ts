@@ -6,6 +6,7 @@ import {
   getGroupShouts,
 } from "../request";
 import { DiscordCommand } from "../type";
+import { addChatLog, addShoutLog } from "../cache";
 
 const logGroup: DiscordCommand = {
   data: new SlashCommandBuilder()
@@ -92,7 +93,7 @@ const logGroup: DiscordCommand = {
     const subcommand = interaction.options.getSubcommand();
 
     if (subcommand === "group") {
-      if (interaction.channel) {
+      if (interaction.channel?.isSendable()) {
         const groupID = Number(
           interaction.options.getInteger("group-id", true)
         );
@@ -100,22 +101,26 @@ const logGroup: DiscordCommand = {
           `Now tracking group #${groupID} in this channel`
         );
 
-        const shouts = await getGroupShouts(groupID);
-        for (const shout of shouts) {
-          await interaction.followUp({ embeds: generateShoutboxEmbed(shout) });
-        }
+        // const shouts = await getGroupShouts(groupID);
+        // for (const shout of shouts) {
+        //   await interaction.followUp({ embeds: generateShoutboxEmbed(shout) });
+        // }
+
+        addShoutLog(groupID, interaction.channel);
       } else await interaction.reply("This is not a valid channel.");
     } else if (subcommand === "chatroom") {
-      if (interaction.channel) {
+      if (interaction.channel?.isSendable()) {
         const chatroom = interaction.options.getString("chatroom", true);
         await interaction.reply(
           `Now tracking chatroom ${chatroom} in this channel`
         );
 
-        const chats = await getChatroomMsgs(chatroom);
-        for (const chat of chats) {
-          await interaction.followUp({ embeds: generateChatEmbed(chat) });
-        }
+        // const chats = await getChatroomMsgs(chatroom);
+        // for (const chat of chats) {
+        //   await interaction.followUp({ embeds: generateChatEmbed(chat) });
+        // }
+
+        addChatLog(chatroom, interaction.channel);
       } else await interaction.reply("This is not a valid channel.");
     } else {
       await interaction.reply({
