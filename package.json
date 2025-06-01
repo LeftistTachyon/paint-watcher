@@ -4,9 +4,9 @@
   "description": "A 3DSPaint monitoring bot for Discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Test successful\"",
     "build": "tsc",
     "start": "ts-node -r dotenv/config src/index.ts",
+    "test": "ts-node -r dotenv/config test/index.ts",
     "deploy": "ts-node -r dotenv/config src/deploy-commands.ts false",
     "deploy:global": "ts-node -r dotenv/config src/deploy-commands.ts true"
   },
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "discord.js": "^14.19.3",
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "html5parser": "^2.0.2"
   }
 }

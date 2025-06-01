@@ -10,8 +10,6 @@ const client: Client = new Client({
  * Kills the bot.
  */
 export async function kill() {
-  console.log("Stopping...");
-
   console.log("Logging off client...");
   client.destroy();
 
