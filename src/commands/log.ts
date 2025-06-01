@@ -92,23 +92,31 @@ const logGroup: DiscordCommand = {
     const subcommand = interaction.options.getSubcommand();
 
     if (subcommand === "group") {
-      const groupID = Number(interaction.options.getInteger("group-id", true));
-      await interaction.reply(`Now tracking group #${groupID} in this channel`);
+      if (interaction.channel) {
+        const groupID = Number(
+          interaction.options.getInteger("group-id", true)
+        );
+        await interaction.reply(
+          `Now tracking group #${groupID} in this channel`
+        );
 
-      const shouts = await getGroupShouts(groupID);
-      for (const shout of shouts) {
-        await interaction.followUp({ embeds: generateShoutboxEmbed(shout) });
-      }
+        const shouts = await getGroupShouts(groupID);
+        for (const shout of shouts) {
+          await interaction.followUp({ embeds: generateShoutboxEmbed(shout) });
+        }
+      } else await interaction.reply("This is not a valid channel.");
     } else if (subcommand === "chatroom") {
-      const chatroom = interaction.options.getString("chatroom", true);
-      await interaction.reply(
-        `Now tracking chatroom ${chatroom} in this channel`
-      );
+      if (interaction.channel) {
+        const chatroom = interaction.options.getString("chatroom", true);
+        await interaction.reply(
+          `Now tracking chatroom ${chatroom} in this channel`
+        );
 
-      const chats = await getChatroomMsgs(chatroom);
-      for (const chat of chats) {
-        await interaction.followUp({ embeds: generateChatEmbed(chat) });
-      }
+        const chats = await getChatroomMsgs(chatroom);
+        for (const chat of chats) {
+          await interaction.followUp({ embeds: generateChatEmbed(chat) });
+        }
+      } else await interaction.reply("This is not a valid channel.");
     } else {
       await interaction.reply({
         content: "How did you even call a subcommand that doesn't exist!?",
