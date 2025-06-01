@@ -19,13 +19,15 @@ let interval: NodeJS.Timeout | undefined;
  * Kills the bot.
  */
 export async function kill() {
-  console.log("Stopping logging...");
+  process.stdout.write("Stopping logging... ");
   clearInterval(interval);
+  process.stdout.write("done.\n");
 
-  console.log("Logging off client...");
+  process.stdout.write("Logging off client... ");
   client.destroy();
+  process.stdout.write("done.\n");
 
-  console.log("Processes stopped.");
+  process.stdout.write("Processes stopped.\n");
   process.exit(0);
 }
 
@@ -35,19 +37,19 @@ export async function kill() {
 async function log() {
   for (const log of getCache()) {
     if (log.type === "chat") {
-      console.log(`Logging ${log.chatroom}...`);
+      process.stdout.write(`Logging ${log.chatroom}... `);
       const chats = await getChatroomMsgs(log.chatroom);
       for (const chat of chats) {
         await log.channel.send({ embeds: generateChatEmbed(chat) });
       }
-      console.log("done.");
+      process.stdout.write("done.\n");
     } else {
-      console.log(`Logging group #${log.groupID}...`);
+      process.stdout.write(`Logging group #${log.groupID}... `);
       const shouts = await getGroupShouts(log.groupID);
       for (const shout of updateShoutCache(log, shouts)) {
         await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
       }
-      console.log("done.");
+      process.stdout.write("done.\n");
     }
   }
 }
@@ -75,12 +77,12 @@ async function run() {
         console.error("error:", error);
         if (!interaction.replied) {
           if (interaction.deferred) {
-            // console.log("error detected, attempting edit...");
+            // process.stdout.write("error detected, attempting edit...\n");
             await interaction.editReply(
               "There was an error while executing this command!"
             );
           } else {
-            // console.log("error detected, attempting reply...");
+            // process.stdout.write("error detected, attempting reply...\n");
             await interaction.reply({
               content: "There was an error while executing this command!",
               ephemeral: true,
@@ -93,7 +95,7 @@ async function run() {
 
   // Startup finish message
   client.once(Events.ClientReady, (readyClient) => {
-    console.log(`Ready! Logged in as ${readyClient.user.tag}`);
+    process.stdout.write(`Ready! Logged in as ${readyClient.user.tag}\n`);
   });
 
   client.login(process.env.DISCORD_TOKEN);
@@ -101,4 +103,4 @@ async function run() {
   interval = setInterval(log, 10_000);
 }
 
-run().catch(console.dir);
+run().catch(process.stderr.write);

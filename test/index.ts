@@ -35,14 +35,14 @@ const toParse = `I am. <img src="/chatroom/smilies/alien1.gif" />
 //           text += "[";
 //           break;
 //         case "img":
-//           console.log(text);
+//           process.stdout.write(text);
 //           text = "";
 
 //           let src = node.attributes.find(
 //             (attribute) => attribute.name.value === "src"
 //           )?.value?.value;
 //           if (src?.startsWith("/")) src = "https://3dspaint.com" + src;
-//           console.log("IMAGE", src);
+//           process.stdout.write("IMAGE", src);
 //           break;
 //       }
 //     }

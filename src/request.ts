@@ -12,7 +12,7 @@ export default async function init() {
   formdata.append("username", process.env.PAINT_USERNAME || "missing-username");
   formdata.append("password", process.env.PAINT_PSWD || "missing-pswd");
   formdata.append("remember", "false");
-  // console.log(formdata);
+  // process.stdout.write(formdata);
 
   const resp = await fetch("https://3dspaint.com/", {
     method: "POST",
@@ -21,7 +21,7 @@ export default async function init() {
   });
 
   const cookies = resp.headers.get("set-cookie");
-  // console.log(cookies);
+  // process.stdout.write(cookies);
   headers = new Headers();
   headers.append("Cookie", String(cookies));
 }

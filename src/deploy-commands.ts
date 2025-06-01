@@ -19,8 +19,8 @@ if (Boolean(process.argv[4])) {
       process.env.DISCORD_TOKEN
     );
     try {
-      console.log(
-        `Started refreshing ${commands.length} application (/) commands.`
+      process.stdout.write(
+        `Started refreshing ${commands.length} application (/) commands.\n`
       );
 
       const data = await rest.put(
@@ -28,10 +28,10 @@ if (Boolean(process.argv[4])) {
         { body: commands }
       );
 
-      console.log(
+      process.stdout.write(
         `Successfully reloaded ${
           (data as { length: number }).length
-        } application (/) commands.`
+        } application (/) commands.\n`
       );
     } catch (error) {
       console.dir(error);
@@ -56,8 +56,8 @@ if (Boolean(process.argv[4])) {
       process.env.DISCORD_TOKEN
     );
     try {
-      console.log(
-        `Started refreshing ${commands.length} application (/) commands.`
+      process.stdout.write(
+        `Started refreshing ${commands.length} application (/) commands.\n`
       );
 
       const data = await rest.put(
@@ -68,10 +68,10 @@ if (Boolean(process.argv[4])) {
         { body: commands }
       );
 
-      console.log(
+      process.stdout.write(
         `Successfully reloaded ${
           (data as { length: number }).length
-        } application (/) commands.`
+        } application (/) commands.\n`
       );
     } catch (error) {
       console.dir(error);

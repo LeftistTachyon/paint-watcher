@@ -98,7 +98,7 @@ const logGroup: DiscordCommand = {
           interaction.options.getInteger("group-id", true)
         );
         await interaction.reply(
-          `Now tracking group #${groupID} in this channel`
+          `Now tracking group #${groupID} in this channel.`
         );
 
         // const shouts = await getGroupShouts(groupID);
@@ -112,7 +112,7 @@ const logGroup: DiscordCommand = {
       if (interaction.channel?.isSendable()) {
         const chatroom = interaction.options.getString("chatroom", true);
         await interaction.reply(
-          `Now tracking chatroom ${chatroom} in this channel`
+          `Now tracking chatroom ${chatroom} in this channel.`
         );
 
         // const chats = await getChatroomMsgs(chatroom);
