@@ -5,13 +5,14 @@ import type {
   CacheType,
   ChatInputCommandInteraction,
   SlashCommandBuilder,
+  SlashCommandSubcommandsOnlyBuilder,
 } from "discord.js";
 
 /**
  * Something that represents a slash command
  */
 export type DiscordCommand = {
-  data: SlashCommandBuilder;
+  data: SlashCommandBuilder | SlashCommandSubcommandsOnlyBuilder;
   execute: (
     interaction: ChatInputCommandInteraction<CacheType>
   ) => Promise<void>;
