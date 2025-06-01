@@ -1,7 +1,7 @@
 import { Collection } from "discord.js";
 import { DiscordCommand } from "../type";
 import ping from "./ping";
-import logGroup from "./logGroup";
+import logGroup from "./log";
 
 // ! Add any new commands into this list!
 export const commandList: DiscordCommand[] = [ping, logGroup];
