@@ -1,4 +1,32 @@
 {
+  "name": "paint-watcher",
+  "version": "1.0.0",
+  "description": "A 3DSPaint monitoring bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test successful\"",
+    "build": "tsc",
+    "start": "ts-node -r dotenv/config src/index.ts",
+    "deploy": "ts-node -r dotenv/config src/deploy-commands.ts false",
+    "deploy:global": "ts-node -r dotenv/config src/deploy-commands.ts true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeftistTachyon/paint-watcher.git"
+  },
+  "keywords": [
+    "moderation",
+    "3DSPaint",
+    "logging",
+    "discord",
+    "bot"
+  ],
+  "author": "LeftistTachyon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeftistTachyon/paint-watcher/issues"
+  },
+  "homepage": "https://github.com/LeftistTachyon/paint-watcher#readme",
   "devDependencies": {
     "typescript": "^5.8.3"
   }
