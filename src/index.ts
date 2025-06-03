@@ -41,7 +41,7 @@ async function log() {
   for (const log of getCache()) {
     try {
       if (log.type === "chat") {
-        process.stdout.write(`Logging ${log.chatroom}.. `);
+        process.stdout.write(`Logging ${log.chatroom}..`);
         const chats = await backOff(async () => {
           process.stdout.write(".");
           return getChatroomMsgs(log.chatroom);
@@ -51,7 +51,7 @@ async function log() {
         }
         process.stdout.write("done.\n");
       } else {
-        process.stdout.write(`Logging group #${log.groupID}... `);
+        process.stdout.write(`Logging group #${log.groupID}..`);
         const shouts = await backOff(async () => {
           process.stdout.write(".");
           return getGroupShouts(log.groupID);
