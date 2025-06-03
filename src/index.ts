@@ -41,21 +41,21 @@ async function log() {
   for (const log of getCache()) {
     try {
       if (log.type === "chat") {
-        process.stdout.write(`Logging ${log.chatroom}... `);
-        const chats = await backOff(
-          async () => await getChatroomMsgs(log.chatroom),
-          backoffOptions
-        );
+        process.stdout.write(`Logging ${log.chatroom}.. `);
+        const chats = await backOff(async () => {
+          process.stdout.write(".");
+          return getChatroomMsgs(log.chatroom);
+        }, backoffOptions);
         for (const chat of chats) {
           await log.channel.send({ embeds: generateChatEmbed(chat) });
         }
         process.stdout.write("done.\n");
       } else {
         process.stdout.write(`Logging group #${log.groupID}... `);
-        const shouts = await backOff(
-          async () => getGroupShouts(log.groupID),
-          backoffOptions
-        );
+        const shouts = await backOff(async () => {
+          process.stdout.write(".");
+          return getGroupShouts(log.groupID);
+        }, backoffOptions);
         for (const shout of updateShoutCache(log, shouts)) {
           await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
         }
