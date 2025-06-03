@@ -210,7 +210,11 @@ function parseMsgString(msgString: string, initialString: string = "") {
   walk(parsed, {
     enter(node) {
       if (node.type === "Text") {
-        text += node.value.replace(/\s+/, " ").replace("&#039;", "'");
+        text += node.value
+          .replace(/\s+/, " ")
+          .replace("&#039;", "'")
+          .replace("&lt;", "<")
+          .replace("&gt;", ">");
       } else if (node.type === "Tag") {
         switch (node.name) {
           case "a":
