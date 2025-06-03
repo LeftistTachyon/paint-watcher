@@ -125,7 +125,7 @@ async function run() {
 
   async function logWithDelay() {
     await log();
-    interval = setTimeout(log, 10_000);
+    interval = setTimeout(logWithDelay, 10_000);
   }
 
   logWithDelay();
