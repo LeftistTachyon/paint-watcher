@@ -36,20 +36,36 @@ export async function kill() {
  */
 async function log() {
   for (const log of getCache()) {
-    if (log.type === "chat") {
-      process.stdout.write(`Logging ${log.chatroom}... `);
-      const chats = await getChatroomMsgs(log.chatroom);
-      for (const chat of chats) {
-        await log.channel.send({ embeds: generateChatEmbed(chat) });
+    try {
+      if (log.type === "chat") {
+        process.stdout.write(`Logging ${log.chatroom}... `);
+        const chats = await getChatroomMsgs(log.chatroom);
+        for (const chat of chats) {
+          await log.channel.send({ embeds: generateChatEmbed(chat) });
+        }
+        process.stdout.write("done.\n");
+      } else {
+        process.stdout.write(`Logging group #${log.groupID}... `);
+        const shouts = await getGroupShouts(log.groupID);
+        for (const shout of updateShoutCache(log, shouts)) {
+          await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
+        }
+        process.stdout.write("done.\n");
       }
-      process.stdout.write("done.\n");
-    } else {
-      process.stdout.write(`Logging group #${log.groupID}... `);
-      const shouts = await getGroupShouts(log.groupID);
-      for (const shout of updateShoutCache(log, shouts)) {
-        await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
-      }
-      process.stdout.write("done.\n");
+      throw new Error();
+    } catch (error) {
+      const e = error as Partial<Error>;
+
+      process.stderr.write("An error was encountered!\n");
+      process.stderr.write(String(e.message));
+
+      await log.channel
+        .send(`An error has occurred! Please tell <@518196574052941857>.
+Logs:
+\`\`\`
+${e?.message}
+${e?.stack}
+\`\`\``);
     }
   }
 }
