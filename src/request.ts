@@ -88,7 +88,7 @@ export function generateChatEmbed(msg: ChatMessage) {
 
   let firstEmbed = new EmbedBuilder()
     .setColor(`#${convertChatColor(msg.color)}`)
-    .setDescription(parsed.text);
+    .setDescription(parsed.text || "`<no messsage body>`");
   if (msg.username)
     firstEmbed = firstEmbed.setAuthor({
       name: msg.username,
@@ -139,7 +139,7 @@ export function generateShoutboxEmbed(shout: Shout) {
       url: `https://3dspaint.com/member/?id=${shout.member}`,
       iconURL: `https://3dspaint.com${shout.avatar}`,
     })
-    .setDescription(parsed.text)
+    .setDescription(parsed.text || "`<no messsage body>`")
     .setTimestamp(shout.date);
 
   if (parsed.images.length >= 1) {
