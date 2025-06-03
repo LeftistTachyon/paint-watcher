@@ -52,7 +52,6 @@ async function log() {
         }
         process.stdout.write("done.\n");
       }
-      throw new Error();
     } catch (error) {
       const e = error as Partial<Error>;
 
