@@ -7,6 +7,7 @@ import init, {
   getGroupShouts,
 } from "./request";
 import { getCache, updateShoutCache } from "./cache";
+import { backOff, type BackoffOptions } from "exponential-backoff";
 
 // the Discord client
 const client: Client = new Client({
@@ -15,12 +16,14 @@ const client: Client = new Client({
 
 let interval: NodeJS.Timeout | undefined;
 
+const backoffOptions: BackoffOptions = {};
+
 /**
  * Kills the bot.
  */
 export async function kill() {
   process.stdout.write("Stopping logging... ");
-  clearInterval(interval);
+  clearTimeout(interval);
   process.stdout.write("done.\n");
 
   process.stdout.write("Logging off client... ");
@@ -39,14 +42,20 @@ async function log() {
     try {
       if (log.type === "chat") {
         process.stdout.write(`Logging ${log.chatroom}... `);
-        const chats = await getChatroomMsgs(log.chatroom);
+        const chats = await backOff(
+          async () => await getChatroomMsgs(log.chatroom),
+          backoffOptions
+        );
         for (const chat of chats) {
           await log.channel.send({ embeds: generateChatEmbed(chat) });
         }
         process.stdout.write("done.\n");
       } else {
         process.stdout.write(`Logging group #${log.groupID}... `);
-        const shouts = await getGroupShouts(log.groupID);
+        const shouts = await backOff(
+          async () => getGroupShouts(log.groupID),
+          backoffOptions
+        );
         for (const shout of updateShoutCache(log, shouts)) {
           await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
         }
@@ -62,7 +71,6 @@ async function log() {
         .send(`An error has occurred! Please tell <@518196574052941857>.
 Logs:
 \`\`\`
-${e?.message}
 ${e?.stack}
 \`\`\``);
     }
@@ -115,7 +123,12 @@ async function run() {
 
   client.login(process.env.DISCORD_TOKEN);
 
-  interval = setInterval(log, 10_000);
+  async function logWithDelay() {
+    await log();
+    interval = setTimeout(log, 10_000);
+  }
+
+  logWithDelay();
 }
 
 run().catch(process.stderr.write);
