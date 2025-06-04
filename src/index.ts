@@ -125,10 +125,11 @@ async function run() {
 
   async function logWithDelay() {
     await log();
-    interval = setTimeout(logWithDelay, 10_000);
+    interval?.refresh();
   }
 
-  logWithDelay();
+  interval = setTimeout(logWithDelay, 10_000);
+  interval.unref();
 }
 
 run().catch(process.stderr.write);
