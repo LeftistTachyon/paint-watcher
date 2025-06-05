@@ -1,6 +1,7 @@
 import { EmbedBuilder } from "discord.js";
 import { parse, walk } from "html5parser";
 import type { ChatMessage, Shout } from "./type";
+import { decode } from "he";
 
 let headers: Headers | undefined;
 
@@ -210,11 +211,7 @@ function parseMsgString(msgString: string, initialString: string = "") {
   walk(parsed, {
     enter(node) {
       if (node.type === "Text") {
-        text += node.value
-          .replace(/\s+/, " ")
-          .replace("&#039;", "'")
-          .replace("&lt;", "<")
-          .replace("&gt;", ">");
+        text += decode(node.value.replace(/\s+/, " "));
       } else if (node.type === "Tag") {
         switch (node.name) {
           case "a":

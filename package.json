@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "ts-node -r dotenv/config src/index.ts",
-    "test": "ts-node -r dotenv/config test/index.ts",
+    "test": "ts-node -r dotenv/config test/decode.ts",
     "deploy": "ts-node -r dotenv/config src/deploy-commands.ts false",
     "deploy:global": "ts-node -r dotenv/config src/deploy-commands.ts true"
   },
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/LeftistTachyon/paint-watcher#readme",
   "devDependencies": {
+    "@types/he": "^1.2.3",
     "@types/node": "^22.15.29",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
@@ -36,6 +37,7 @@
     "discord.js": "^14.19.3",
     "dotenv": "^16.5.0",
     "exponential-backoff": "^3.1.2",
+    "he": "^1.2.0",
     "html5parser": "^2.0.2"
   }
 }
