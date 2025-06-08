@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "ts-node -r dotenv/config src/index.ts",
-    "test": "ts-node -r dotenv/config test/decode.ts",
+    "test": "ts-node -r dotenv/config test/index.ts",
     "deploy": "ts-node -r dotenv/config src/deploy-commands.ts false",
     "deploy:global": "ts-node -r dotenv/config src/deploy-commands.ts true",
     "recent-groups": "ts-node -r dotenv/config scripts/recent_groups.ts"

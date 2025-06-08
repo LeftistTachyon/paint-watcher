@@ -72,6 +72,39 @@ export async function getGroupShouts(groupID: number) {
 }
 
 /**
+ * Fetches the name of the group
+ * @param groupID the ID of the group to fetch the name for
+ * @returns the name of the given group
+ */
+export async function getGroupName(groupID: number) {
+  const resp = await fetch(`https://3dspaint.com/group/?id=${groupID}`, {
+    method: "GET",
+    headers,
+    redirect: "follow",
+  });
+
+  // if the group no longer exists, do not attempt to convert the shouts
+  if (resp.redirected) return "";
+
+  const text = await resp.text();
+  let groupName = "";
+  walk(parse(text), {
+    enter(node, parent) {
+      if (
+        node.type === "Text" &&
+        parent?.type === "Tag" &&
+        parent.name === "h1" &&
+        !groupName
+      ) {
+        groupName = node.value;
+      }
+    },
+  });
+
+  return groupName;
+}
+
+/**
  * Fix any weird image urls
  * @param imageURL the image URL to fix
  * @returns a non-relative image link to the chatrooms
