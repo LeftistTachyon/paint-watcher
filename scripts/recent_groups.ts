@@ -2,7 +2,13 @@ import { writeFile } from "fs/promises";
 import { getGroupShouts } from "../src/request";
 import { tqdm } from "node-console-progress-bar-tqdm";
 
-type GroupData = { groupID: number; date: number; dateString: string };
+type GroupData = {
+  groupID: number;
+  lastDate: number;
+  lastDateString: string;
+  avgDate: number;
+  avgDateString: string;
+};
 
 const arrayRange = (start: number, stop: number, step: number) =>
   Array.from(
@@ -32,28 +38,31 @@ const arrayRange = (start: number, stop: number, step: number) =>
     const test = await getGroupShouts(groupID);
     if (!test.length) continue;
 
-    const lastDate = test[test.length - 1].date;
+    const lastDate = test[test.length - 1].date,
+      avgDate =
+        test.map((shout) => shout.date).reduce((prev, curr) => prev + curr) /
+        test.length;
     // console.log(new Date(last.date).toLocaleString());
 
     groupList.push({
       groupID,
-      date: lastDate,
-      dateString: new Date(lastDate).toLocaleString(),
+      lastDate,
+      lastDateString: new Date(lastDate).toLocaleString(),
+      avgDate,
+      avgDateString: new Date(avgDate).toLocaleString(),
     });
   }
 
-  groupList.sort((a, b) => b.date - a.date);
+  groupList.sort((a, b) => b.avgDate - a.avgDate);
   console.log(
-    groupList
-      .slice(0, 10)
-      .map((group) =>
-        Object.assign(
-          {
-            url: `https://3dspaint.com/group/shoutbox.php?id=${group.groupID}`,
-          },
-          group
-        )
+    groupList.slice(0, 20).map((group) =>
+      Object.assign(
+        {
+          url: `https://3dspaint.com/group/shoutbox.php?id=${group.groupID}`,
+        },
+        group
       )
+    )
   );
 
   console.log("writing to file...");
