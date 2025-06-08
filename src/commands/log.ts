@@ -1,6 +1,14 @@
-import { MessageFlags, SlashCommandBuilder } from "discord.js";
+import {
+  MessageFlags,
+  NewsChannel,
+  SlashCommandBuilder,
+  TextChannel,
+  ThreadManager,
+  ThreadOnlyChannel,
+} from "discord.js";
 import { addChatLog, addShoutLog } from "../cache";
 import { DiscordCommand } from "../type";
+import { getGroupName } from "../request";
 
 export const allChatrooms = [
   {
@@ -69,6 +77,11 @@ export const allChatrooms = [
   },
 ];
 
+export const threadChoices = [
+  { name: "Stay in channel", value: "stay" },
+  { name: "Start new thread", value: "thread" },
+];
+
 const log: DiscordCommand = {
   data: new SlashCommandBuilder()
     .setName("log")
@@ -89,6 +102,13 @@ const log: DiscordCommand = {
             )
             .setRequired(true)
         )
+        .addStringOption((option) =>
+          option
+            .setName("thread")
+            .setDescription("Choose if a new thread should be started")
+            .setChoices(threadChoices)
+            .setRequired(false)
+        )
     )
     .addSubcommand((builder) =>
       builder
@@ -103,33 +123,102 @@ const log: DiscordCommand = {
             .addChoices(allChatrooms)
             .setRequired(true)
         )
+        .addStringOption((option) =>
+          option
+            .setName("thread")
+            .setDescription("Choose if a new thread should be started")
+            .setChoices(threadChoices)
+            .setRequired(false)
+        )
     ),
 
   async execute(interaction) {
     const subcommand = interaction.options.getSubcommand();
+    const newThread = interaction.options.getString("thread", false) ?? "stay";
 
     if (subcommand === "group") {
-      if (interaction.channel?.isSendable()) {
-        const groupID = Number(
-          interaction.options.getInteger("group-id", true)
-        );
+      const groupID = Number(interaction.options.getInteger("group-id", true));
+      const groupName = await getGroupName(groupID);
 
-        await interaction.reply(
-          addShoutLog(groupID, interaction.channel.id)
-            ? `Now logging group #${groupID} in this channel.`
-            : `Unable to log group #${groupID} in this channel. (Is it already being logged?)`
-        );
-      } else await interaction.reply("This is not a valid channel.");
+      if (newThread === "stay") {
+        if (interaction.channel?.isSendable()) {
+          await interaction.reply({
+            content: addShoutLog(groupID, interaction.channel.id)
+              ? `Now logging group ${groupName} (#${groupID}) in this channel.`
+              : `Unable to log group ${groupName} (#${groupID}) in this channel. (Is it already being logged?)`,
+            flags: MessageFlags.Ephemeral,
+          });
+        } else {
+          await interaction.reply({
+            content: "This is not a valid channel.",
+            flags: MessageFlags.Ephemeral,
+          });
+        }
+      } else if (!(interaction.channel as any)?.threads) {
+        const threadableChannel = interaction.channel as
+          | TextChannel
+          | ThreadOnlyChannel
+          | NewsChannel;
+        const thread = await threadableChannel.threads.create({
+          name: groupName,
+          message: {
+            content: `## Logs for ${groupName} (group #${groupID})`,
+          },
+        });
+
+        await interaction.reply({
+          content: addShoutLog(groupID, thread.id)
+            ? `Now logging group ${groupName} (#${groupID}) in <#${thread.id}>.`
+            : `Unable to log group ${groupName} (#${groupID}) in <#${thread.id}>. (Is it already being logged?)`,
+          flags: MessageFlags.Ephemeral,
+        });
+      } else {
+        await interaction.reply({
+          content: "You cannot create a thread in this channel!",
+          flags: MessageFlags.Ephemeral,
+        });
+      }
     } else if (subcommand === "chatroom") {
-      if (interaction.channel?.isSendable()) {
-        const chatroom = interaction.options.getString("chatroom", true);
+      const chatroom = interaction.options.getString("chatroom", true);
 
-        await interaction.reply(
-          addChatLog(chatroom, interaction.channel.id)
-            ? `Now logging chatroom ${chatroom} in this channel.`
-            : `Unable to log chatroom ${chatroom} in this channel. (Is it already being logged?)`
-        );
-      } else await interaction.reply("This is not a valid channel.");
+      if (newThread === "stay") {
+        if (interaction.channel?.isSendable()) {
+          await interaction.reply({
+            content: addChatLog(chatroom, interaction.channel.id)
+              ? `Now logging chatroom ${chatroom} in this channel.`
+              : `Unable to log chatroom ${chatroom} in this channel. (Is it already being logged?)`,
+            flags: MessageFlags.Ephemeral,
+          });
+        } else {
+          await interaction.reply({
+            content: "This is not a valid channel.",
+            flags: MessageFlags.Ephemeral,
+          });
+        }
+      } else if (!(interaction.channel as any)?.threads) {
+        const threadableChannel = interaction.channel as
+          | TextChannel
+          | ThreadOnlyChannel
+          | NewsChannel;
+        const thread = await threadableChannel.threads.create({
+          name: chatroom,
+          message: {
+            content: `## Logs for ${chatroom}`,
+          },
+        });
+
+        await interaction.reply({
+          content: addChatLog(chatroom, thread.id)
+            ? `Now logging chatroom ${chatroom} in <#${thread.id}>.`
+            : `Unable to log chatroom ${chatroom} in <#${thread.id}>. (Is it already being logged?)`,
+          flags: MessageFlags.Ephemeral,
+        });
+      } else {
+        await interaction.reply({
+          content: "You cannot create a thread in this channel!",
+          flags: MessageFlags.Ephemeral,
+        });
+      }
     } else {
       await interaction.reply({
         content: "How did you even call a subcommand that doesn't exist!?",

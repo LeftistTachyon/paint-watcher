@@ -4,6 +4,7 @@ import init, {
   generateChatEmbed,
   generateShoutboxEmbed,
   getChatroomMsgs,
+  getGroupName,
   getGroupShouts,
 } from "./request";
 import {
@@ -154,8 +155,24 @@ async function run() {
   });
 
   // Startup finish message
-  client.once(Events.ClientReady, (readyClient) => {
+  client.once(Events.ClientReady, async (readyClient) => {
     process.stdout.write(`Ready! Logged in as ${readyClient.user.tag}\n`);
+
+    if (process.env.OWNER_ID) {
+      const owner = await readyClient.users.fetch(process.env.OWNER_ID);
+
+      let cacheString = "";
+      for (const log of getCache()) {
+        cacheString += `<#${log.channelID}> → `;
+        cacheString +=
+          log.type === "chat"
+            ? log.chatroom
+            : `${await getGroupName(log.groupID)} (group #${log.groupID})`;
+        cacheString += "\n";
+      }
+
+      await owner.send("Bot started! Cache:\n" + cacheString);
+    }
   });
 
   client.login(process.env.DISCORD_TOKEN);
