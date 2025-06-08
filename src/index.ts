@@ -6,7 +6,14 @@ import init, {
   getChatroomMsgs,
   getGroupShouts,
 } from "./request";
-import { getCache, updateShoutCache } from "./cache";
+import {
+  getCache,
+  loadCache,
+  removeChatLog,
+  removeShoutLog,
+  saveCache,
+  updateShoutCache,
+} from "./cache";
 import { backOff, type BackoffOptions } from "exponential-backoff";
 
 // the Discord client
@@ -40,14 +47,28 @@ export async function kill() {
 async function log() {
   for (const log of getCache()) {
     try {
+      const channel = await client.channels.fetch(log.channelID);
+
       if (log.type === "chat") {
         process.stdout.write(`Logging ${log.chatroom}..`);
         const chats = await backOff(async () => {
           process.stdout.write(".");
           return getChatroomMsgs(log.chatroom);
         }, backoffOptions);
-        for (const chat of chats) {
-          await log.channel.send({ embeds: generateChatEmbed(chat) });
+
+        if (channel?.isSendable()) {
+          for (const chat of chats) {
+            await channel.send({ embeds: generateChatEmbed(chat) });
+          }
+        } else {
+          console.warn(
+            `CHANNEL ${log.channelID} IS NO LONGER ACCESSIBLE;\nREMOVING LOG FOR CHATROOM ${log.chatroom}`
+          );
+          if (removeChatLog(log.chatroom, log.channelID)) {
+            console.warn("Removal successful");
+          } else {
+            console.warn("Removal unsuccessful");
+          }
         }
         process.stdout.write("done.\n");
       } else {
@@ -56,8 +77,20 @@ async function log() {
           process.stdout.write(".");
           return getGroupShouts(log.groupID);
         }, backoffOptions);
-        for (const shout of updateShoutCache(log, shouts)) {
-          await log.channel.send({ embeds: generateShoutboxEmbed(shout) });
+
+        if (channel?.isSendable()) {
+          for (const shout of updateShoutCache(log, shouts)) {
+            await channel.send({ embeds: generateShoutboxEmbed(shout) });
+          }
+        } else {
+          console.warn(
+            `CHANNEL ${log.channelID} IS NO LONGER ACCESSIBLE;\nREMOVING LOG FOR GROUP ${log.groupID}`
+          );
+          if (removeShoutLog(log.groupID, log.channelID)) {
+            console.warn("Removal successful");
+          } else {
+            console.warn("Removal unsuccessful");
+          }
         }
         process.stdout.write("done.\n");
       }
@@ -65,21 +98,25 @@ async function log() {
       const e = error as Partial<Error>;
 
       process.stderr.write("An error was encountered!\n");
-      process.stderr.write(String(e.message));
+      process.stderr.write(String(e.stack));
 
-      await log.channel
-        .send(`An error has occurred! Please tell <@518196574052941857>.
+      const channel = await client.channels.fetch(log.channelID);
+      if (channel?.isSendable())
+        await channel.send(`An error has occurred! Please tell <@518196574052941857>.
 Logs:
 \`\`\`
 ${e?.stack}
 \`\`\``);
     }
   }
+
+  await saveCache();
 }
 
 async function run() {
-  // initialize session
+  // initialize session & cache
   await init();
+  await loadCache();
 
   // Interaction handling
   client.on(Events.InteractionCreate, async (interaction) => {

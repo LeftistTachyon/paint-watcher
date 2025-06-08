@@ -43,7 +43,7 @@ const unlog: DiscordCommand = {
         );
 
         await interaction.reply(
-          removeShoutLog(groupID, interaction.channel)
+          removeShoutLog(groupID, interaction.channel.id)
             ? `No longer logging group #${groupID} in this channel.`
             : `Unable to unlog group #${groupID} in this channel. (Is it not logged?)`
         );
@@ -53,7 +53,7 @@ const unlog: DiscordCommand = {
         const chatroom = interaction.options.getString("chatroom", true);
 
         await interaction.reply(
-          removeChatLog(chatroom, interaction.channel)
+          removeChatLog(chatroom, interaction.channel.id)
             ? `No longer logging chatroom ${chatroom} in this channel.`
             : `Unable to unlog chatroom ${chatroom} in this channel. (Is it not logged?)`
         );

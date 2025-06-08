@@ -1,6 +1,6 @@
-import { getGroupName } from "../src/request";
+import { loadCache } from "../src/cache";
 
 (async () => {
-  const groupName = await getGroupName(12182);
-  console.log(groupName);
+  const output = await loadCache();
+  console.log(output);
 })();

@@ -115,7 +115,7 @@ const log: DiscordCommand = {
         );
 
         await interaction.reply(
-          addShoutLog(groupID, interaction.channel)
+          addShoutLog(groupID, interaction.channel.id)
             ? `Now logging group #${groupID} in this channel.`
             : `Unable to log group #${groupID} in this channel. (Is it already being logged?)`
         );
@@ -125,7 +125,7 @@ const log: DiscordCommand = {
         const chatroom = interaction.options.getString("chatroom", true);
 
         await interaction.reply(
-          addChatLog(chatroom, interaction.channel)
+          addChatLog(chatroom, interaction.channel.id)
             ? `Now logging chatroom ${chatroom} in this channel.`
             : `Unable to log chatroom ${chatroom} in this channel. (Is it already being logged?)`
         );

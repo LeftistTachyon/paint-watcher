@@ -2,9 +2,9 @@ import type {
   AutocompleteInteraction,
   CacheType,
   ChatInputCommandInteraction,
-  SendableChannels,
   SlashCommandBuilder,
   SlashCommandSubcommandsOnlyBuilder,
+  Snowflake,
 } from "discord.js";
 
 // ! ================== DISCORD TYPES =================== !
@@ -53,12 +53,12 @@ export type Shout = {
 
 export type ChatLog = {
   type: "chat";
-  channel: SendableChannels;
+  channelID: Snowflake;
   chatroom: string;
 };
 export type ShoutLog = {
   type: "shout";
-  channel: SendableChannels;
+  channelID: Snowflake;
   groupID: number;
   cached: number[];
 };
