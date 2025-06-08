@@ -40,3 +40,5 @@ dist/**/*
 # ignore yarn.lock
 yarn.lock
 
+# ignore generated data
+data/saves

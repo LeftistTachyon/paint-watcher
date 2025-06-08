@@ -64,6 +64,9 @@ export async function getGroupShouts(groupID: number) {
     }
   );
 
+  // if the group no longer exists, do not attempt to convert the shouts
+  if (resp.redirected) return [];
+
   const output = (await resp.json()) as Shout[];
   return output.reverse();
 }
