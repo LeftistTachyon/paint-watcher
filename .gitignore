@@ -42,3 +42,4 @@ yarn.lock
 
 # ignore generated data
 data/saves
+**/*cache.json

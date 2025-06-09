@@ -166,7 +166,7 @@ async function run() {
         cacheString += `<#${log.channelID}> → `;
         cacheString +=
           log.type === "chat"
-            ? log.chatroom
+            ? "Chatroom " + log.chatroom
             : `${await getGroupName(log.groupID)} (group #${log.groupID})`;
         cacheString += "\n";
       }
