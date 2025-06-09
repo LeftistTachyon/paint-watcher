@@ -3,12 +3,11 @@ import {
   NewsChannel,
   SlashCommandBuilder,
   TextChannel,
-  ThreadManager,
   ThreadOnlyChannel,
 } from "discord.js";
 import { addChatLog, addShoutLog } from "../cache";
-import { DiscordCommand } from "../type";
 import { getGroupName } from "../request";
+import type { DiscordCommand } from "../type";
 
 export const allChatrooms = [
   {
@@ -154,7 +153,7 @@ const log: DiscordCommand = {
             flags: MessageFlags.Ephemeral,
           });
         }
-      } else if (!(interaction.channel as any)?.threads) {
+      } else if ((interaction.channel as any)?.threads) {
         const threadableChannel = interaction.channel as
           | TextChannel
           | ThreadOnlyChannel
@@ -195,7 +194,7 @@ const log: DiscordCommand = {
             flags: MessageFlags.Ephemeral,
           });
         }
-      } else if (!(interaction.channel as any)?.threads) {
+      } else if ((interaction.channel as any)?.threads) {
         const threadableChannel = interaction.channel as
           | TextChannel
           | ThreadOnlyChannel
