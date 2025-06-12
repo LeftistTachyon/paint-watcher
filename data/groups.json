@@ -1,24 +1,45 @@
 [
   {
     "groupID": 13441,
-    "lastDate": 1749432881000,
-    "lastDateString": "6/8/2025, 8:34:41 PM",
-    "avgDate": 1749428694500,
-    "avgDateString": "6/8/2025, 7:24:54 PM"
+    "lastDate": 1749711168000,
+    "lastDateString": "6/12/2025, 1:52:48 AM",
+    "avgDate": 1749690790050,
+    "avgDateString": "6/11/2025, 8:13:10 PM"
   },
   {
-    "groupID": 13662,
-    "lastDate": 1749431918000,
-    "lastDateString": "6/8/2025, 8:18:38 PM",
-    "avgDate": 1749402892250,
-    "avgDateString": "6/8/2025, 12:14:52 PM"
+    "groupID": 13665,
+    "lastDate": 1749503613000,
+    "lastDateString": "6/9/2025, 4:13:33 PM",
+    "avgDate": 1749503570000,
+    "avgDateString": "6/9/2025, 4:12:50 PM"
   },
   {
     "groupID": 13654,
-    "lastDate": 1749344995000,
-    "lastDateString": "6/7/2025, 8:09:55 PM",
-    "avgDate": 1749297426500,
-    "avgDateString": "6/7/2025, 6:57:06 AM"
+    "lastDate": 1749714557000,
+    "lastDateString": "6/12/2025, 2:49:17 AM",
+    "avgDate": 1749500778600,
+    "avgDateString": "6/9/2025, 3:26:18 PM"
+  },
+  {
+    "groupID": 13662,
+    "lastDate": 1749628222000,
+    "lastDateString": "6/11/2025, 2:50:22 AM",
+    "avgDate": 1749493133350,
+    "avgDateString": "6/9/2025, 1:18:53 PM"
+  },
+  {
+    "groupID": 13664,
+    "lastDate": 1749434593000,
+    "lastDateString": "6/8/2025, 9:03:13 PM",
+    "avgDate": 1749434593000,
+    "avgDateString": "6/8/2025, 9:03:13 PM"
+  },
+  {
+    "groupID": 13295,
+    "lastDate": 1749681044000,
+    "lastDateString": "6/11/2025, 5:30:44 PM",
+    "avgDate": 1749312885150,
+    "avgDateString": "6/7/2025, 11:14:45 AM"
   },
   {
     "groupID": 12401,
@@ -133,6 +154,13 @@
     "avgDateString": "5/30/2025, 4:52:31 AM"
   },
   {
+    "groupID": 13339,
+    "lastDate": 1749703847000,
+    "lastDateString": "6/11/2025, 11:50:47 PM",
+    "avgDate": 1748597302000,
+    "avgDateString": "5/30/2025, 4:28:22 AM"
+  },
+  {
     "groupID": 13106,
     "lastDate": 1748631071000,
     "lastDateString": "5/30/2025, 1:51:11 PM",
@@ -217,13 +245,6 @@
     "avgDateString": "5/22/2025, 4:25:00 PM"
   },
   {
-    "groupID": 13339,
-    "lastDate": 1749042356000,
-    "lastDateString": "6/4/2025, 8:05:56 AM",
-    "avgDate": 1747912965050,
-    "avgDateString": "5/22/2025, 6:22:45 AM"
-  },
-  {
     "groupID": 12805,
     "lastDate": 1747924878000,
     "lastDateString": "5/22/2025, 9:41:18 AM",
@@ -250,6 +271,13 @@
     "lastDateString": "5/29/2025, 3:48:31 AM",
     "avgDate": 1747769959400,
     "avgDateString": "5/20/2025, 2:39:19 PM"
+  },
+  {
+    "groupID": 13306,
+    "lastDate": 1748632892000,
+    "lastDateString": "5/30/2025, 2:21:32 PM",
+    "avgDate": 1747759363588.2354,
+    "avgDateString": "5/20/2025, 11:42:43 AM"
   },
   {
     "groupID": 13334,
@@ -280,13 +308,6 @@
     "avgDateString": "5/19/2025, 10:33:45 PM"
   },
   {
-    "groupID": 13306,
-    "lastDate": 1748632892000,
-    "lastDateString": "5/30/2025, 2:21:32 PM",
-    "avgDate": 1747711029444.4443,
-    "avgDateString": "5/19/2025, 10:17:09 PM"
-  },
-  {
     "groupID": 13375,
     "lastDate": 1747747312000,
     "lastDateString": "5/20/2025, 8:21:52 AM",
@@ -299,13 +320,6 @@
     "lastDateString": "5/20/2025, 6:17:27 PM",
     "avgDate": 1747708859600,
     "avgDateString": "5/19/2025, 9:40:59 PM"
-  },
-  {
-    "groupID": 13295,
-    "lastDate": 1749423036000,
-    "lastDateString": "6/8/2025, 5:50:36 PM",
-    "avgDate": 1747649211150,
-    "avgDateString": "5/19/2025, 5:06:51 AM"
   },
   {
     "groupID": 13366,
@@ -350,6 +364,13 @@
     "avgDateString": "5/15/2025, 4:52:53 AM"
   },
   {
+    "groupID": 13391,
+    "lastDate": 1749042468000,
+    "lastDateString": "6/4/2025, 8:07:48 AM",
+    "avgDate": 1747221513777.7778,
+    "avgDateString": "5/14/2025, 6:18:33 AM"
+  },
+  {
     "groupID": 13284,
     "lastDate": 1749127998000,
     "lastDateString": "6/5/2025, 7:53:18 AM",
@@ -371,13 +392,6 @@
     "avgDateString": "5/13/2025, 6:05:39 AM"
   },
   {
-    "groupID": 13391,
-    "lastDate": 1749042468000,
-    "lastDateString": "6/4/2025, 8:07:48 AM",
-    "avgDate": 1747098022625,
-    "avgDateString": "5/12/2025, 8:00:22 PM"
-  },
-  {
     "groupID": 13079,
     "lastDate": 1747188302000,
     "lastDateString": "5/13/2025, 9:05:02 PM",
@@ -395,22 +409,15 @@
     "groupID": 13302,
     "lastDate": 1747091293000,
     "lastDateString": "5/12/2025, 6:08:13 PM",
-    "avgDate": 1746928788650,
-    "avgDateString": "5/10/2025, 8:59:48 PM"
-  },
-  {
-    "groupID": 13651,
-    "lastDate": 1747367180000,
-    "lastDateString": "5/15/2025, 10:46:20 PM",
-    "avgDate": 1746883789950,
-    "avgDateString": "5/10/2025, 8:29:49 AM"
+    "avgDate": 1746927946850,
+    "avgDateString": "5/10/2025, 8:45:46 PM"
   },
   {
     "groupID": 13180,
-    "lastDate": 1746877877000,
-    "lastDateString": "5/10/2025, 6:51:17 AM",
-    "avgDate": 1746877835500,
-    "avgDateString": "5/10/2025, 6:50:35 AM"
+    "lastDate": 1746877842000,
+    "lastDateString": "5/10/2025, 6:50:42 AM",
+    "avgDate": 1746877834500,
+    "avgDateString": "5/10/2025, 6:50:34 AM"
   },
   {
     "groupID": 12911,
@@ -423,8 +430,8 @@
     "groupID": 13426,
     "lastDate": 1746715754000,
     "lastDateString": "5/8/2025, 9:49:14 AM",
-    "avgDate": 1746715323500,
-    "avgDateString": "5/8/2025, 9:42:03 AM"
+    "avgDate": 1746715332000,
+    "avgDateString": "5/8/2025, 9:42:12 AM"
   },
   {
     "groupID": 12606,
@@ -449,10 +456,10 @@
   },
   {
     "groupID": 13649,
-    "lastDate": 1746703857000,
-    "lastDateString": "5/8/2025, 6:30:57 AM",
-    "avgDate": 1746703734333.3333,
-    "avgDateString": "5/8/2025, 6:28:54 AM"
+    "lastDate": 1746703502000,
+    "lastDateString": "5/8/2025, 6:25:02 AM",
+    "avgDate": 1746703502000,
+    "avgDateString": "5/8/2025, 6:25:02 AM"
   },
   {
     "groupID": 13183,
@@ -525,13 +532,6 @@
     "avgDateString": "4/21/2025, 4:49:23 AM"
   },
   {
-    "groupID": 13639,
-    "lastDate": 1746794497000,
-    "lastDateString": "5/9/2025, 7:41:37 AM",
-    "avgDate": 1745221049000,
-    "avgDateString": "4/21/2025, 2:37:29 AM"
-  },
-  {
     "groupID": 13624,
     "lastDate": 1749151887000,
     "lastDateString": "6/5/2025, 2:31:27 PM",
@@ -588,18 +588,25 @@
     "avgDateString": "4/7/2025, 6:38:25 PM"
   },
   {
-    "groupID": 13043,
-    "lastDate": 1744037932000,
-    "lastDateString": "4/7/2025, 9:58:52 AM",
-    "avgDate": 1744036634000,
-    "avgDateString": "4/7/2025, 9:37:14 AM"
-  },
-  {
     "groupID": 13640,
     "lastDate": 1744158472000,
     "lastDateString": "4/8/2025, 7:27:52 PM",
     "avgDate": 1743993017500,
     "avgDateString": "4/6/2025, 9:30:17 PM"
+  },
+  {
+    "groupID": 13460,
+    "lastDate": 1745876362000,
+    "lastDateString": "4/28/2025, 4:39:22 PM",
+    "avgDate": 1743891674500,
+    "avgDateString": "4/5/2025, 5:21:14 PM"
+  },
+  {
+    "groupID": 13639,
+    "lastDate": 1743647601000,
+    "lastDateString": "4/2/2025, 9:33:21 PM",
+    "avgDate": 1743647601000,
+    "avgDateString": "4/2/2025, 9:33:21 PM"
   },
   {
     "groupID": 13632,
@@ -651,13 +658,6 @@
     "avgDateString": "3/24/2025, 8:21:41 PM"
   },
   {
-    "groupID": 13460,
-    "lastDate": 1745876362000,
-    "lastDateString": "4/28/2025, 4:39:22 PM",
-    "avgDate": 1742742865250,
-    "avgDateString": "3/23/2025, 10:14:25 AM"
-  },
-  {
     "groupID": 12339,
     "lastDate": 1743384096000,
     "lastDateString": "3/30/2025, 8:21:36 PM",
@@ -684,26 +684,5 @@
     "lastDateString": "3/12/2025, 7:23:48 AM",
     "avgDate": 1741775891375,
     "avgDateString": "3/12/2025, 5:38:11 AM"
-  },
-  {
-    "groupID": 13619,
-    "lastDate": 1741626367000,
-    "lastDateString": "3/10/2025, 12:06:07 PM",
-    "avgDate": 1741626367000,
-    "avgDateString": "3/10/2025, 12:06:07 PM"
-  },
-  {
-    "groupID": 13548,
-    "lastDate": 1741601917000,
-    "lastDateString": "3/10/2025, 5:18:37 AM",
-    "avgDate": 1741596255600,
-    "avgDateString": "3/10/2025, 3:44:15 AM"
-  },
-  {
-    "groupID": 13603,
-    "lastDate": 1741453816000,
-    "lastDateString": "3/8/2025, 11:10:16 AM",
-    "avgDate": 1741453816000,
-    "avgDateString": "3/8/2025, 11:10:16 AM"
   }
 ]
