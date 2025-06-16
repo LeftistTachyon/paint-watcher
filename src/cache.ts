@@ -85,6 +85,8 @@ export function addShoutLog(groupID: number, channelID: Snowflake) {
  */
 export function updateShoutCache(log: ShoutLog, shouts: Shout[]) {
   if (log.cached.length) {
+    if (!shouts.length) return [];
+
     let start = shouts.length - 1;
     while (log.cached[log.cached.length - 1] < shouts[start].id) start--;
 
