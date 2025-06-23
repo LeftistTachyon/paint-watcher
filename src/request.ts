@@ -121,7 +121,11 @@ function correctImage(imageURL: string) {
  * @returns an embed for the given chat message
  */
 export function generateChatEmbed(msg: ChatMessage) {
-  const parsed = parseMsgString(msg.text, msg.username ? "" : "-# ");
+  const parsed = parseMsgString(
+    msg.text,
+    msg.username ? "" : "_",
+    msg.username ? "" : "_"
+  );
 
   let firstEmbed = new EmbedBuilder()
     .setColor(`#${convertChatColor(msg.color)}`)
@@ -237,9 +241,14 @@ const emotes: Record<string, string> = {
  * Converts an HTML string into an usable format
  * @param msgString the HTML string to parse
  * @param initialString the string to prepend to the text
+ * @param finalString the string to append to the text
  * @returns plaintext and image data contained in the given HTML string
  */
-function parseMsgString(msgString: string, initialString: string = "") {
+function parseMsgString(
+  msgString: string,
+  initialString: string = "",
+  finalString: string = ""
+) {
   const parsed = parse(msgString);
 
   let text = initialString;
@@ -285,6 +294,8 @@ function parseMsgString(msgString: string, initialString: string = "") {
       }
     },
   });
+
+  text += finalString;
 
   return { text, images };
 }
