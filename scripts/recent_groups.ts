@@ -20,7 +20,7 @@ const arrayRange = (start: number, stop: number, step: number) =>
   console.log("starting scan...");
 
   const groupList: GroupData[] = [];
-  for (const groupID of tqdm(arrayRange(13666, 12182, -1), {
+  for (const groupID of tqdm(arrayRange(13684, 12182, -1), {
     description: "Scanning groups",
     unit: ["group", "groups"],
     progressColor: "red",

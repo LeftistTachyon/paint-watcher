@@ -84,11 +84,14 @@ export function addShoutLog(groupID: number, channelID: Snowflake) {
  * @returns new shouts from the given list
  */
 export function updateShoutCache(log: ShoutLog, shouts: Shout[]) {
+  // console.log("Updating", log.cached, "with", shouts);
+
   if (log.cached.length) {
     if (!shouts.length) return [];
 
     let start = shouts.length - 1;
-    while (log.cached[log.cached.length - 1] < shouts[start].id) start--;
+    while (start > 0 && log.cached[log.cached.length - 1] < shouts[start].id)
+      start--;
 
     log.cached = shouts.map((shout) => shout.id);
     return shouts.slice(start + 1);
