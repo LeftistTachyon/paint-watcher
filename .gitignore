@@ -43,3 +43,4 @@ yarn.lock
 # ignore generated data
 data/saves
 **/*cache.json
+pm2-start.sh
