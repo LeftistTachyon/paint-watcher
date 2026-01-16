@@ -1,5 +1,5 @@
 import { EmbedBuilder } from "discord.js";
-import { parse, walk } from "html5parser";
+import { ITag, IText, parse, SyntaxKind, walk } from "html5parser";
 import type { ChatMessage, Shout } from "./type";
 import { decode } from "he";
 
@@ -89,14 +89,11 @@ export async function getGroupName(groupID: number) {
   const text = await resp.text();
   let groupName = "";
   walk(parse(text), {
-    enter(node, parent) {
-      if (
-        node.type === "Text" &&
-        parent?.type === "Tag" &&
-        parent.name === "h1" &&
-        !groupName
-      ) {
-        groupName = node.value;
+    enter(node) {
+      if (node.type === SyntaxKind.Tag && node.name === "h1" && !groupName) {
+        let leaf = node.body?.[0];
+        while (leaf?.type === SyntaxKind.Tag) leaf = leaf.body?.[0];
+        if (leaf) groupName = leaf.value;
       }
     },
   });
@@ -255,9 +252,9 @@ function parseMsgString(
   const images: string[] = [];
   walk(parsed, {
     enter(node) {
-      if (node.type === "Text") {
+      if (node.type === SyntaxKind.Text) {
         text += decode(node.value.replace(/\s+/, " "));
-      } else if (node.type === "Tag") {
+      } else if (node.type === SyntaxKind.Tag) {
         switch (node.name) {
           case "a":
             text += "[";
@@ -283,7 +280,7 @@ function parseMsgString(
     },
 
     leave(node) {
-      if (node.type === "Tag" && node.name === "a") {
+      if (node.type === SyntaxKind.Tag && node.name === "a") {
         if (text.endsWith("[")) text += "LINK";
 
         let href = node.attributes.find(
