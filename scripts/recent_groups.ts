@@ -1,9 +1,10 @@
 import { writeFile } from "fs/promises";
-import { getGroupShouts } from "../src/request";
+import { getGroupName, getGroupShouts } from "../src/request";
 import { tqdm } from "node-console-progress-bar-tqdm";
 
 type GroupData = {
   groupID: number;
+  groupName: string;
   lastDate: number;
   lastDateString: string;
   avgDate: number;
@@ -46,6 +47,7 @@ const arrayRange = (start: number, stop: number, step: number) =>
 
     groupList.push({
       groupID,
+      groupName: await getGroupName(groupID),
       lastDate,
       lastDateString: new Date(lastDate).toLocaleString(),
       avgDate,
