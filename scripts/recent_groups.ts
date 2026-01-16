@@ -1,6 +1,7 @@
-import { writeFile } from "fs/promises";
+import { mkdir, writeFile } from "fs/promises";
 import { getGroupName, getGroupShouts } from "../src/request";
 import { tqdm } from "node-console-progress-bar-tqdm";
+import { existsSync } from "fs";
 
 type GroupData = {
   groupID: number;
@@ -19,9 +20,10 @@ const arrayRange = (start: number, stop: number, step: number) =>
 
 (async () => {
   console.log("starting scan...");
+  if (!existsSync("data/saves")) await mkdir("data/saves");
 
   const groupList: GroupData[] = [];
-  for (const groupID of tqdm(arrayRange(13684, 12182, -1), {
+  for (const groupID of tqdm(arrayRange(13812, 12182, -1), {
     description: "Scanning groups",
     unit: ["group", "groups"],
     progressColor: "red",

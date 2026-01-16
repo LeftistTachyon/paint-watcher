@@ -1,7 +1,7 @@
 import { EmbedBuilder } from "discord.js";
-import { ITag, IText, parse, SyntaxKind, walk } from "html5parser";
-import type { ChatMessage, Shout } from "./type";
 import { decode } from "he";
+import { parse, SyntaxKind, walk } from "html5parser";
+import type { ChatMessage, Shout } from "./type";
 
 let headers: Headers | undefined;
 

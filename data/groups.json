@@ -1,702 +1,882 @@
 [
   {
-    "groupID": 13203,
-    "lastDate": 1752682946000,
-    "lastDateString": "7/16/2025, 11:22:26 AM",
-    "avgDate": 1752677298350,
-    "avgDateString": "7/16/2025, 9:48:18 AM"
-  },
-  {
-    "groupID": 13191,
-    "lastDate": 1752682979000,
-    "lastDateString": "7/16/2025, 11:22:59 AM",
-    "avgDate": 1752675109100,
-    "avgDateString": "7/16/2025, 9:11:49 AM"
-  },
-  {
     "groupID": 13441,
-    "lastDate": 1752678794000,
-    "lastDateString": "7/16/2025, 10:13:14 AM",
-    "avgDate": 1752670777000,
-    "avgDateString": "7/16/2025, 7:59:37 AM"
-  },
-  {
-    "groupID": 12182,
-    "lastDate": 1752670479000,
-    "lastDateString": "7/16/2025, 7:54:39 AM",
-    "avgDate": 1752655897500,
-    "avgDateString": "7/16/2025, 3:51:37 AM"
-  },
-  {
-    "groupID": 13667,
-    "lastDate": 1752642604000,
-    "lastDateString": "7/16/2025, 12:10:04 AM",
-    "avgDate": 1752623676800,
-    "avgDateString": "7/15/2025, 6:54:36 PM"
-  },
-  {
-    "groupID": 13341,
-    "lastDate": 1752585097000,
-    "lastDateString": "7/15/2025, 8:11:37 AM",
-    "avgDate": 1752585097000,
-    "avgDateString": "7/15/2025, 8:11:37 AM"
-  },
-  {
-    "groupID": 12648,
-    "lastDate": 1752613146000,
-    "lastDateString": "7/15/2025, 3:59:06 PM",
-    "avgDate": 1752556026083.3333,
-    "avgDateString": "7/15/2025, 12:07:06 AM"
-  },
-  {
-    "groupID": 13340,
-    "lastDate": 1752353345000,
-    "lastDateString": "7/12/2025, 3:49:05 PM",
-    "avgDate": 1752336742500,
-    "avgDateString": "7/12/2025, 11:12:22 AM"
-  },
-  {
-    "groupID": 13683,
-    "lastDate": 1752351944000,
-    "lastDateString": "7/12/2025, 3:25:44 PM",
-    "avgDate": 1752289290571.4285,
-    "avgDateString": "7/11/2025, 10:01:30 PM"
-  },
-  {
-    "groupID": 12339,
-    "lastDate": 1752268625000,
-    "lastDateString": "7/11/2025, 4:17:05 PM",
-    "avgDate": 1752251284214.2856,
-    "avgDateString": "7/11/2025, 11:28:04 AM"
-  },
-  {
-    "groupID": 13201,
-    "lastDate": 1752379674000,
-    "lastDateString": "7/12/2025, 11:07:54 PM",
-    "avgDate": 1752159729200,
-    "avgDateString": "7/10/2025, 10:02:09 AM"
+    "groupName": "*-CelestialGalaxies-*",
+    "lastDate": 1768557258000,
+    "lastDateString": "1/16/2026, 3:54:18 AM",
+    "avgDate": 1768556900000,
+    "avgDateString": "1/16/2026, 3:48:20 AM"
   },
   {
     "groupID": 13079,
-    "lastDate": 1752548842000,
-    "lastDateString": "7/14/2025, 10:07:22 PM",
-    "avgDate": 1752156952900,
-    "avgDateString": "7/10/2025, 9:15:52 AM"
+    "groupName": "[VNTH] * ~ MARCH!ERIDAN&#039;S CARACAL PALACE ~ *",
+    "lastDate": 1768556208000,
+    "lastDateString": "1/16/2026, 3:36:48 AM",
+    "avgDate": 1768555911650,
+    "avgDateString": "1/16/2026, 3:31:51 AM"
   },
   {
-    "groupID": 13445,
-    "lastDate": 1752244651000,
-    "lastDateString": "7/11/2025, 9:37:31 AM",
-    "avgDate": 1752156744142.8572,
-    "avgDateString": "7/10/2025, 9:12:24 AM"
+    "groupID": 13191,
+    "groupName": "[VNTH] 3DSiPaint",
+    "lastDate": 1768555784000,
+    "lastDateString": "1/16/2026, 3:29:44 AM",
+    "avgDate": 1768555656100,
+    "avgDateString": "1/16/2026, 3:27:36 AM"
   },
   {
-    "groupID": 13677,
-    "lastDate": 1752590909000,
-    "lastDateString": "7/15/2025, 9:48:29 AM",
-    "avgDate": 1752078219950,
-    "avgDateString": "7/9/2025, 11:23:39 AM"
+    "groupID": 13754,
+    "groupName": "[KDA]",
+    "lastDate": 1768543303000,
+    "lastDateString": "1/16/2026, 12:01:43 AM",
+    "avgDate": 1768511930700,
+    "avgDateString": "1/15/2026, 3:18:50 PM"
   },
   {
-    "groupID": 13165,
-    "lastDate": 1752067038000,
-    "lastDateString": "7/9/2025, 8:17:18 AM",
-    "avgDate": 1752067038000,
-    "avgDateString": "7/9/2025, 8:17:18 AM"
+    "groupID": 13698,
+    "groupName": "[VNTH]  Poke hunter",
+    "lastDate": 1768517755000,
+    "lastDateString": "1/15/2026, 4:55:55 PM",
+    "avgDate": 1768506324550,
+    "avgDateString": "1/15/2026, 1:45:24 PM"
   },
   {
-    "groupID": 13374,
-    "lastDate": 1752136816000,
-    "lastDateString": "7/10/2025, 3:40:16 AM",
-    "avgDate": 1752011760450,
-    "avgDateString": "7/8/2025, 4:56:00 PM"
-  },
-  {
-    "groupID": 13680,
-    "lastDate": 1751956620000,
-    "lastDateString": "7/8/2025, 1:37:00 AM",
-    "avgDate": 1751956394600,
-    "avgDateString": "7/8/2025, 1:33:14 AM"
-  },
-  {
-    "groupID": 13243,
-    "lastDate": 1751948709000,
-    "lastDateString": "7/7/2025, 11:25:09 PM",
-    "avgDate": 1751948675333.3333,
-    "avgDateString": "7/7/2025, 11:24:35 PM"
-  },
-  {
-    "groupID": 13679,
-    "lastDate": 1751866854000,
-    "lastDateString": "7/7/2025, 12:40:54 AM",
-    "avgDate": 1751866839000,
-    "avgDateString": "7/7/2025, 12:40:39 AM"
-  },
-  {
-    "groupID": 13297,
-    "lastDate": 1752099623000,
-    "lastDateString": "7/9/2025, 5:20:23 PM",
-    "avgDate": 1751806913750,
-    "avgDateString": "7/6/2025, 8:01:53 AM"
-  },
-  {
-    "groupID": 13250,
-    "lastDate": 1751735103000,
-    "lastDateString": "7/5/2025, 12:05:03 PM",
-    "avgDate": 1751735103000,
-    "avgDateString": "7/5/2025, 12:05:03 PM"
-  },
-  {
-    "groupID": 13266,
-    "lastDate": 1751735063000,
-    "lastDateString": "7/5/2025, 12:04:23 PM",
-    "avgDate": 1751735063000,
-    "avgDateString": "7/5/2025, 12:04:23 PM"
-  },
-  {
-    "groupID": 13104,
-    "lastDate": 1752529194000,
-    "lastDateString": "7/14/2025, 4:39:54 PM",
-    "avgDate": 1751682221625,
-    "avgDateString": "7/4/2025, 9:23:41 PM"
-  },
-  {
-    "groupID": 13673,
-    "lastDate": 1751638770000,
-    "lastDateString": "7/4/2025, 9:19:30 AM",
-    "avgDate": 1751606630100,
-    "avgDateString": "7/4/2025, 12:23:50 AM"
-  },
-  {
-    "groupID": 13307,
-    "lastDate": 1751596172000,
-    "lastDateString": "7/3/2025, 9:29:32 PM",
-    "avgDate": 1751497104666.6667,
-    "avgDateString": "7/2/2025, 5:58:24 PM"
-  },
-  {
-    "groupID": 13389,
-    "lastDate": 1751311616000,
-    "lastDateString": "6/30/2025, 2:26:56 PM",
-    "avgDate": 1751305691150,
-    "avgDateString": "6/30/2025, 12:48:11 PM"
-  },
-  {
-    "groupID": 13180,
-    "lastDate": 1752679441000,
-    "lastDateString": "7/16/2025, 10:24:01 AM",
-    "avgDate": 1750842981142.8572,
-    "avgDateString": "6/25/2025, 4:16:21 AM"
-  },
-  {
-    "groupID": 13270,
-    "lastDate": 1751396663000,
-    "lastDateString": "7/1/2025, 2:04:23 PM",
-    "avgDate": 1750800109000,
-    "avgDateString": "6/24/2025, 4:21:49 PM"
-  },
-  {
-    "groupID": 13654,
-    "lastDate": 1752095636000,
-    "lastDateString": "7/9/2025, 4:13:56 PM",
-    "avgDate": 1750435604550,
-    "avgDateString": "6/20/2025, 11:06:44 AM"
-  },
-  {
-    "groupID": 13390,
-    "lastDate": 1750367822000,
-    "lastDateString": "6/19/2025, 4:17:02 PM",
-    "avgDate": 1750367822000,
-    "avgDateString": "6/19/2025, 4:17:02 PM"
-  },
-  {
-    "groupID": 13645,
-    "lastDate": 1750356752000,
-    "lastDateString": "6/19/2025, 1:12:32 PM",
-    "avgDate": 1750356752000,
-    "avgDateString": "6/19/2025, 1:12:32 PM"
-  },
-  {
-    "groupID": 13339,
-    "lastDate": 1752670856000,
-    "lastDateString": "7/16/2025, 8:00:56 AM",
-    "avgDate": 1750307600350,
-    "avgDateString": "6/18/2025, 11:33:20 PM"
-  },
-  {
-    "groupID": 13669,
-    "lastDate": 1750285927000,
-    "lastDateString": "6/18/2025, 5:32:07 PM",
-    "avgDate": 1750205943150,
-    "avgDateString": "6/17/2025, 7:19:03 PM"
-  },
-  {
-    "groupID": 13301,
-    "lastDate": 1752000515000,
-    "lastDateString": "7/8/2025, 1:48:35 PM",
-    "avgDate": 1750194178750,
-    "avgDateString": "6/17/2025, 4:02:58 PM"
-  },
-  {
-    "groupID": 13271,
-    "lastDate": 1750165945000,
-    "lastDateString": "6/17/2025, 8:12:25 AM",
-    "avgDate": 1750064329850,
-    "avgDateString": "6/16/2025, 3:58:49 AM"
+    "groupID": 13021,
+    "groupName": "&rarr;CHIP ARMY&larr;",
+    "lastDate": 1768508070000,
+    "lastDateString": "1/15/2026, 2:14:30 PM",
+    "avgDate": 1768471281285.7144,
+    "avgDateString": "1/15/2026, 4:01:21 AM"
   },
   {
     "groupID": 13106,
-    "lastDate": 1750802287000,
-    "lastDateString": "6/24/2025, 4:58:07 PM",
-    "avgDate": 1749592450400,
-    "avgDateString": "6/10/2025, 4:54:10 PM"
+    "groupName": "Aaron and weeeheeep FUN HAVING PLACE FOR MEN",
+    "lastDate": 1768444158000,
+    "lastDateString": "1/14/2026, 8:29:18 PM",
+    "avgDate": 1768444135400,
+    "avgDateString": "1/14/2026, 8:28:55 PM"
   },
   {
-    "groupID": 13662,
-    "lastDate": 1751003123000,
-    "lastDateString": "6/27/2025, 12:45:23 AM",
-    "avgDate": 1749572847300,
-    "avgDateString": "6/10/2025, 11:27:27 AM"
+    "groupID": 12182,
+    "groupName": "[VNTH] *Ryuusei no Tami*",
+    "lastDate": 1768499189000,
+    "lastDateString": "1/15/2026, 11:46:29 AM",
+    "avgDate": 1768438541400,
+    "avgDateString": "1/14/2026, 6:55:41 PM"
   },
   {
-    "groupID": 13665,
-    "lastDate": 1749503613000,
-    "lastDateString": "6/9/2025, 4:13:33 PM",
-    "avgDate": 1749503570000,
-    "avgDateString": "6/9/2025, 4:12:50 PM"
-  },
-  {
-    "groupID": 13366,
-    "lastDate": 1752379703000,
-    "lastDateString": "7/12/2025, 11:08:23 PM",
-    "avgDate": 1749490030200,
-    "avgDateString": "6/9/2025, 12:27:10 PM"
-  },
-  {
-    "groupID": 13664,
-    "lastDate": 1749434593000,
-    "lastDateString": "6/8/2025, 9:03:13 PM",
-    "avgDate": 1749434593000,
-    "avgDateString": "6/8/2025, 9:03:13 PM"
-  },
-  {
-    "groupID": 13571,
-    "lastDate": 1750661746000,
-    "lastDateString": "6/23/2025, 1:55:46 AM",
-    "avgDate": 1749429181500,
-    "avgDateString": "6/8/2025, 7:33:01 PM"
-  },
-  {
-    "groupID": 13295,
-    "lastDate": 1749777244000,
-    "lastDateString": "6/12/2025, 8:14:04 PM",
-    "avgDate": 1749382321400,
-    "avgDateString": "6/8/2025, 6:32:01 AM"
-  },
-  {
-    "groupID": 13319,
-    "lastDate": 1752659064000,
-    "lastDateString": "7/16/2025, 4:44:24 AM",
-    "avgDate": 1749351200700,
-    "avgDateString": "6/7/2025, 9:53:20 PM"
-  },
-  {
-    "groupID": 12401,
-    "lastDate": 1749306631000,
-    "lastDateString": "6/7/2025, 9:30:31 AM",
-    "avgDate": 1749255284545.4546,
-    "avgDateString": "6/6/2025, 7:14:44 PM"
-  },
-  {
-    "groupID": 13624,
-    "lastDate": 1749151887000,
-    "lastDateString": "6/5/2025, 2:31:27 PM",
-    "avgDate": 1749050582500,
-    "avgDateString": "6/4/2025, 10:23:02 AM"
-  },
-  {
-    "groupID": 13282,
-    "lastDate": 1749042413000,
-    "lastDateString": "6/4/2025, 8:06:53 AM",
-    "avgDate": 1749042413000,
-    "avgDateString": "6/4/2025, 8:06:53 AM"
-  },
-  {
-    "groupID": 13247,
-    "lastDate": 1749042296000,
-    "lastDateString": "6/4/2025, 8:04:56 AM",
-    "avgDate": 1749042296000,
-    "avgDateString": "6/4/2025, 8:04:56 AM"
-  },
-  {
-    "groupID": 13263,
-    "lastDate": 1749042209000,
-    "lastDateString": "6/4/2025, 8:03:29 AM",
-    "avgDate": 1749042209000,
-    "avgDateString": "6/4/2025, 8:03:29 AM"
-  },
-  {
-    "groupID": 13183,
-    "lastDate": 1751342907000,
-    "lastDateString": "6/30/2025, 11:08:27 PM",
-    "avgDate": 1748961487000,
-    "avgDateString": "6/3/2025, 9:38:07 AM"
+    "groupID": 13808,
+    "groupName": "[KDA]",
+    "lastDate": 1768528683000,
+    "lastDateString": "1/15/2026, 7:58:03 PM",
+    "avgDate": 1768434190400,
+    "avgDateString": "1/14/2026, 5:43:10 PM"
   },
   {
     "groupID": 13308,
-    "lastDate": 1749041014000,
-    "lastDateString": "6/4/2025, 7:43:34 AM",
-    "avgDate": 1748830884600,
-    "avgDateString": "6/1/2025, 9:21:24 PM"
+    "groupName": "people who love kool-aid",
+    "lastDate": 1768490647000,
+    "lastDateString": "1/15/2026, 9:24:07 AM",
+    "avgDate": 1768431850850,
+    "avgDateString": "1/14/2026, 5:04:10 PM"
   },
   {
-    "groupID": 13072,
-    "lastDate": 1748817117000,
-    "lastDateString": "6/1/2025, 5:31:57 PM",
-    "avgDate": 1748817008333.3333,
-    "avgDateString": "6/1/2025, 5:30:08 PM"
+    "groupID": 13810,
+    "groupName": "Key :BIG:",
+    "lastDate": 1768479932000,
+    "lastDateString": "1/15/2026, 6:25:32 AM",
+    "avgDate": 1768426875950,
+    "avgDateString": "1/14/2026, 3:41:15 PM"
   },
   {
-    "groupID": 13545,
-    "lastDate": 1748832113000,
-    "lastDateString": "6/1/2025, 9:41:53 PM",
-    "avgDate": 1748788730333.3333,
-    "avgDateString": "6/1/2025, 9:38:50 AM"
+    "groupID": 13811,
+    "groupName": "inky-squid fan club",
+    "lastDate": 1768423781000,
+    "lastDateString": "1/14/2026, 2:49:41 PM",
+    "avgDate": 1768423781000,
+    "avgDateString": "1/14/2026, 2:49:41 PM"
   },
   {
-    "groupID": 13424,
-    "lastDate": 1748770859000,
-    "lastDateString": "6/1/2025, 4:40:59 AM",
-    "avgDate": 1748770859000,
-    "avgDateString": "6/1/2025, 4:40:59 AM"
+    "groupID": 13203,
+    "groupName": "Pyongya- I mean Paris",
+    "lastDate": 1768420829000,
+    "lastDateString": "1/14/2026, 2:00:29 PM",
+    "avgDate": 1768400096850,
+    "avgDateString": "1/14/2026, 8:14:56 AM"
+  },
+  {
+    "groupID": 13389,
+    "groupName": "The Furry Senate (Re-Democratized)",
+    "lastDate": 1768556302000,
+    "lastDateString": "1/16/2026, 3:38:22 AM",
+    "avgDate": 1768381789350,
+    "avgDateString": "1/14/2026, 3:09:49 AM"
+  },
+  {
+    "groupID": 13333,
+    "groupName": "test",
+    "lastDate": 1768379509000,
+    "lastDateString": "1/14/2026, 2:31:49 AM",
+    "avgDate": 1768379508000,
+    "avgDateString": "1/14/2026, 2:31:48 AM"
   },
   {
     "groupID": 13433,
-    "lastDate": 1748766998000,
-    "lastDateString": "6/1/2025, 3:36:38 AM",
-    "avgDate": 1748766998000,
-    "avgDateString": "6/1/2025, 3:36:38 AM"
+    "groupName": "test 4",
+    "lastDate": 1768379491000,
+    "lastDateString": "1/14/2026, 2:31:31 AM",
+    "avgDate": 1768379491000,
+    "avgDateString": "1/14/2026, 2:31:31 AM"
   },
   {
-    "groupID": 12291,
-    "lastDate": 1748757802000,
-    "lastDateString": "6/1/2025, 1:03:22 AM",
-    "avgDate": 1748757745666.6667,
-    "avgDateString": "6/1/2025, 1:02:25 AM"
-  },
-  {
-    "groupID": 13661,
-    "lastDate": 1748731474000,
-    "lastDateString": "5/31/2025, 5:44:34 PM",
-    "avgDate": 1748726839500,
-    "avgDateString": "5/31/2025, 4:27:19 PM"
-  },
-  {
-    "groupID": 13443,
-    "lastDate": 1748673573000,
-    "lastDateString": "5/31/2025, 1:39:33 AM",
-    "avgDate": 1748673573000,
-    "avgDateString": "5/31/2025, 1:39:33 AM"
-  },
-  {
-    "groupID": 13078,
-    "lastDate": 1748630762000,
-    "lastDateString": "5/30/2025, 1:46:02 PM",
-    "avgDate": 1748598751500,
-    "avgDateString": "5/30/2025, 4:52:31 AM"
-  },
-  {
-    "groupID": 13134,
-    "lastDate": 1748569196000,
-    "lastDateString": "5/29/2025, 8:39:56 PM",
-    "avgDate": 1748567999000,
-    "avgDateString": "5/29/2025, 8:19:59 PM"
-  },
-  {
-    "groupID": 13361,
-    "lastDate": 1748529973000,
-    "lastDateString": "5/29/2025, 9:46:13 AM",
-    "avgDate": 1748529887650,
-    "avgDateString": "5/29/2025, 9:44:47 AM"
-  },
-  {
-    "groupID": 13258,
-    "lastDate": 1751512485000,
-    "lastDateString": "7/2/2025, 10:14:45 PM",
-    "avgDate": 1748460988800,
-    "avgDateString": "5/28/2025, 2:36:28 PM"
-  },
-  {
-    "groupID": 13565,
-    "lastDate": 1748508383000,
-    "lastDateString": "5/29/2025, 3:46:23 AM",
-    "avgDate": 1748395007777.7778,
-    "avgDateString": "5/27/2025, 8:16:47 PM"
-  },
-  {
-    "groupID": 13419,
-    "lastDate": 1748368395000,
-    "lastDateString": "5/27/2025, 12:53:15 PM",
-    "avgDate": 1748368389000,
-    "avgDateString": "5/27/2025, 12:53:09 PM"
-  },
-  {
-    "groupID": 13387,
-    "lastDate": 1749043731000,
-    "lastDateString": "6/4/2025, 8:28:51 AM",
-    "avgDate": 1748238597352.9412,
-    "avgDateString": "5/26/2025, 12:49:57 AM"
-  },
-  {
-    "groupID": 13206,
-    "lastDate": 1748424107000,
-    "lastDateString": "5/28/2025, 4:21:47 AM",
-    "avgDate": 1747988293384.6155,
-    "avgDateString": "5/23/2025, 3:18:13 AM"
-  },
-  {
-    "groupID": 13613,
-    "lastDate": 1748051771000,
-    "lastDateString": "5/23/2025, 8:56:11 PM",
-    "avgDate": 1747949100800,
-    "avgDateString": "5/22/2025, 4:25:00 PM"
-  },
-  {
-    "groupID": 13614,
-    "lastDate": 1751992451000,
-    "lastDateString": "7/8/2025, 11:34:11 AM",
-    "avgDate": 1747925145250,
-    "avgDateString": "5/22/2025, 9:45:45 AM"
-  },
-  {
-    "groupID": 12805,
-    "lastDate": 1747924878000,
-    "lastDateString": "5/22/2025, 9:41:18 AM",
-    "avgDate": 1747877843833.3333,
-    "avgDateString": "5/21/2025, 8:37:23 PM"
-  },
-  {
-    "groupID": 12924,
-    "lastDate": 1747864523000,
-    "lastDateString": "5/21/2025, 4:55:23 PM",
-    "avgDate": 1747864523000,
-    "avgDateString": "5/21/2025, 4:55:23 PM"
-  },
-  {
-    "groupID": 13306,
-    "lastDate": 1748632892000,
-    "lastDateString": "5/30/2025, 2:21:32 PM",
-    "avgDate": 1747759363588.2354,
-    "avgDateString": "5/20/2025, 11:42:43 AM"
-  },
-  {
-    "groupID": 12971,
-    "lastDate": 1747748071000,
-    "lastDateString": "5/20/2025, 8:34:31 AM",
-    "avgDate": 1747748036000,
-    "avgDateString": "5/20/2025, 8:33:56 AM"
-  },
-  {
-    "groupID": 13094,
-    "lastDate": 1747748081000,
-    "lastDateString": "5/20/2025, 8:34:41 AM",
-    "avgDate": 1747747973000,
-    "avgDateString": "5/20/2025, 8:32:53 AM"
-  },
-  {
-    "groupID": 13334,
-    "lastDate": 1749128443000,
-    "lastDateString": "6/5/2025, 8:00:43 AM",
-    "avgDate": 1747718137800,
-    "avgDateString": "5/20/2025, 12:15:37 AM"
-  },
-  {
-    "groupID": 13284,
-    "lastDate": 1750611283000,
-    "lastDateString": "6/22/2025, 11:54:43 AM",
-    "avgDate": 1747717381083.3333,
-    "avgDateString": "5/20/2025, 12:03:01 AM"
-  },
-  {
-    "groupID": 13113,
-    "lastDate": 1747712025000,
-    "lastDateString": "5/19/2025, 10:33:45 PM",
-    "avgDate": 1747712025000,
-    "avgDateString": "5/19/2025, 10:33:45 PM"
-  },
-  {
-    "groupID": 13375,
-    "lastDate": 1747747312000,
-    "lastDateString": "5/20/2025, 8:21:52 AM",
-    "avgDate": 1747709572000,
-    "avgDateString": "5/19/2025, 9:52:52 PM"
-  },
-  {
-    "groupID": 13107,
-    "lastDate": 1747486514000,
-    "lastDateString": "5/17/2025, 7:55:14 AM",
-    "avgDate": 1747486514000,
-    "avgDateString": "5/17/2025, 7:55:14 AM"
-  },
-  {
-    "groupID": 13440,
-    "lastDate": 1747479799000,
-    "lastDateString": "5/17/2025, 6:03:19 AM",
-    "avgDate": 1747479799000,
-    "avgDateString": "5/17/2025, 6:03:19 AM"
-  },
-  {
-    "groupID": 13095,
-    "lastDate": 1747603034000,
-    "lastDateString": "5/18/2025, 4:17:14 PM",
-    "avgDate": 1747424703357.1428,
-    "avgDateString": "5/16/2025, 2:45:03 PM"
-  },
-  {
-    "groupID": 13305,
-    "lastDate": 1748914466000,
-    "lastDateString": "6/2/2025, 8:34:26 PM",
-    "avgDate": 1747399217250,
-    "avgDateString": "5/16/2025, 7:40:17 AM"
-  },
-  {
-    "groupID": 13620,
-    "lastDate": 1747384869000,
-    "lastDateString": "5/16/2025, 3:41:09 AM",
-    "avgDate": 1747384869000,
-    "avgDateString": "5/16/2025, 3:41:09 AM"
-  },
-  {
-    "groupID": 13391,
-    "lastDate": 1749042468000,
-    "lastDateString": "6/4/2025, 8:07:48 AM",
-    "avgDate": 1747221513777.7778,
-    "avgDateString": "5/14/2025, 6:18:33 AM"
-  },
-  {
-    "groupID": 13024,
-    "lastDate": 1747250150000,
-    "lastDateString": "5/14/2025, 2:15:50 PM",
-    "avgDate": 1747217849714.2856,
-    "avgDateString": "5/14/2025, 5:17:29 AM"
-  },
-  {
-    "groupID": 12572,
-    "lastDate": 1747219653000,
-    "lastDateString": "5/14/2025, 5:47:33 AM",
-    "avgDate": 1747144875875,
-    "avgDateString": "5/13/2025, 9:01:15 AM"
-  },
-  {
-    "groupID": 12988,
-    "lastDate": 1747228483000,
-    "lastDateString": "5/14/2025, 8:14:43 AM",
-    "avgDate": 1747131028650,
-    "avgDateString": "5/13/2025, 5:10:28 AM"
-  },
-  {
-    "groupID": 13439,
-    "lastDate": 1747058410000,
-    "lastDateString": "5/12/2025, 9:00:10 AM",
-    "avgDate": 1747058410000,
-    "avgDateString": "5/12/2025, 9:00:10 AM"
-  },
-  {
-    "groupID": 13302,
-    "lastDate": 1747091293000,
-    "lastDateString": "5/12/2025, 6:08:13 PM",
-    "avgDate": 1746927946850,
-    "avgDateString": "5/10/2025, 8:45:46 PM"
-  },
-  {
-    "groupID": 12911,
-    "lastDate": 1746928549000,
-    "lastDateString": "5/10/2025, 8:55:49 PM",
-    "avgDate": 1746829780000,
-    "avgDateString": "5/9/2025, 5:29:40 PM"
-  },
-  {
-    "groupID": 13426,
-    "lastDate": 1746715754000,
-    "lastDateString": "5/8/2025, 9:49:14 AM",
-    "avgDate": 1746715332000,
-    "avgDateString": "5/8/2025, 9:42:12 AM"
-  },
-  {
-    "groupID": 12606,
-    "lastDate": 1746714510000,
-    "lastDateString": "5/8/2025, 9:28:30 AM",
-    "avgDate": 1746714502500,
-    "avgDateString": "5/8/2025, 9:28:22 AM"
-  },
-  {
-    "groupID": 13431,
-    "lastDate": 1746714354000,
-    "lastDateString": "5/8/2025, 9:25:54 AM",
-    "avgDate": 1746714344150,
-    "avgDateString": "5/8/2025, 9:25:44 AM"
+    "groupID": 13335,
+    "groupName": "Mongoose Lovers",
+    "lastDate": 1768378622000,
+    "lastDateString": "1/14/2026, 2:17:02 AM",
+    "avgDate": 1768378611500,
+    "avgDateString": "1/14/2026, 2:16:51 AM"
   },
   {
     "groupID": 12768,
-    "lastDate": 1746714286000,
-    "lastDateString": "5/8/2025, 9:24:46 AM",
-    "avgDate": 1746714286000,
-    "avgDateString": "5/8/2025, 9:24:46 AM"
+    "groupName": "the vip club ",
+    "lastDate": 1768372121000,
+    "lastDateString": "1/14/2026, 12:28:41 AM",
+    "avgDate": 1768372121000,
+    "avgDateString": "1/14/2026, 12:28:41 AM"
   },
   {
-    "groupID": 13649,
-    "lastDate": 1746703502000,
-    "lastDateString": "5/8/2025, 6:25:02 AM",
-    "avgDate": 1746703502000,
-    "avgDateString": "5/8/2025, 6:25:02 AM"
+    "groupID": 12775,
+    "groupName": "ITZAKOS BLACKJACK TABLE",
+    "lastDate": 1768372084000,
+    "lastDateString": "1/14/2026, 12:28:04 AM",
+    "avgDate": 1768372084000,
+    "avgDateString": "1/14/2026, 12:28:04 AM"
   },
   {
-    "groupID": 13359,
-    "lastDate": 1746356269000,
-    "lastDateString": "5/4/2025, 5:57:49 AM",
-    "avgDate": 1746356212750,
-    "avgDateString": "5/4/2025, 5:56:52 AM"
+    "groupID": 13340,
+    "groupName": "3DSPAINT KJV Bible Group",
+    "lastDate": 1768447292000,
+    "lastDateString": "1/14/2026, 9:21:32 PM",
+    "avgDate": 1768335742000,
+    "avgDateString": "1/13/2026, 2:22:22 PM"
   },
   {
-    "groupID": 13648,
-    "lastDate": 1746217466000,
-    "lastDateString": "5/2/2025, 3:24:26 PM",
-    "avgDate": 1746217466000,
-    "avgDateString": "5/2/2025, 3:24:26 PM"
+    "groupID": 13339,
+    "groupName": "In God We Trust",
+    "lastDate": 1768488788000,
+    "lastDateString": "1/15/2026, 8:53:08 AM",
+    "avgDate": 1768285892650,
+    "avgDateString": "1/13/2026, 12:31:32 AM"
   },
   {
-    "groupID": 13395,
-    "lastDate": 1746197461000,
-    "lastDateString": "5/2/2025, 9:51:01 AM",
-    "avgDate": 1746195460500,
-    "avgDateString": "5/2/2025, 9:17:40 AM"
+    "groupID": 12988,
+    "groupName": " UNDER RENOVATION ",
+    "lastDate": 1768446340000,
+    "lastDateString": "1/14/2026, 9:05:40 PM",
+    "avgDate": 1768274630600,
+    "avgDateString": "1/12/2026, 9:23:50 PM"
+  },
+  {
+    "groupID": 13731,
+    "groupName": "Gengar&#039;s Furry Fandom X3",
+    "lastDate": 1768244804000,
+    "lastDateString": "1/12/2026, 1:06:44 PM",
+    "avgDate": 1768235468150,
+    "avgDateString": "1/12/2026, 10:31:08 AM"
+  },
+  {
+    "groupID": 13297,
+    "groupName": "[VTRN] JinxCade&#039;s Cozy Metropolis",
+    "lastDate": 1768325924000,
+    "lastDateString": "1/13/2026, 11:38:44 AM",
+    "avgDate": 1768159859450,
+    "avgDateString": "1/11/2026, 1:30:59 PM"
+  },
+  {
+    "groupID": 13445,
+    "groupName": "Would You Rather?",
+    "lastDate": 1768243914000,
+    "lastDateString": "1/12/2026, 12:51:54 PM",
+    "avgDate": 1768154581400,
+    "avgDateString": "1/11/2026, 12:03:01 PM"
+  },
+  {
+    "groupID": 13201,
+    "groupName": " (The Dan Clan)",
+    "lastDate": 1768229328000,
+    "lastDateString": "1/12/2026, 8:48:48 AM",
+    "avgDate": 1768107608050,
+    "avgDateString": "1/10/2026, 11:00:08 PM"
+  },
+  {
+    "groupID": 13640,
+    "groupName": "Phoenix Wright Fan Club",
+    "lastDate": 1768490621000,
+    "lastDateString": "1/15/2026, 9:23:41 AM",
+    "avgDate": 1768101462777.7778,
+    "avgDateString": "1/10/2026, 9:17:42 PM"
+  },
+  {
+    "groupID": 13753,
+    "groupName": "An EPIKAL group :p",
+    "lastDate": 1768161841000,
+    "lastDateString": "1/11/2026, 2:04:01 PM",
+    "avgDate": 1768055002500,
+    "avgDateString": "1/10/2026, 8:23:22 AM"
+  },
+  {
+    "groupID": 13759,
+    "groupName": "Official UwUQueen Fan Queendom",
+    "lastDate": 1768498985000,
+    "lastDateString": "1/15/2026, 11:43:05 AM",
+    "avgDate": 1767879257100,
+    "avgDateString": "1/8/2026, 7:34:17 AM"
+  },
+  {
+    "groupID": 13613,
+    "groupName": "Cowboy Gang",
+    "lastDate": 1767761907000,
+    "lastDateString": "1/6/2026, 10:58:27 PM",
+    "avgDate": 1767694204454.5454,
+    "avgDateString": "1/6/2026, 4:10:04 AM"
+  },
+  {
+    "groupID": 13804,
+    "groupName": "Profile Verification Station",
+    "lastDate": 1768401460000,
+    "lastDateString": "1/14/2026, 8:37:40 AM",
+    "avgDate": 1767575017400,
+    "avgDateString": "1/4/2026, 7:03:37 PM"
+  },
+  {
+    "groupID": 13787,
+    "groupName": "Usagi&lsquo;s KINGDOM",
+    "lastDate": 1767536991000,
+    "lastDateString": "1/4/2026, 8:29:51 AM",
+    "avgDate": 1767536991000,
+    "avgDateString": "1/4/2026, 8:29:51 AM"
+  },
+  {
+    "groupID": 13806,
+    "groupName": "Images",
+    "lastDate": 1767434433000,
+    "lastDateString": "1/3/2026, 4:00:33 AM",
+    "avgDate": 1767434402500,
+    "avgDateString": "1/3/2026, 4:00:02 AM"
+  },
+  {
+    "groupID": 13667,
+    "groupName": "@;3*0",
+    "lastDate": 1767396723000,
+    "lastDateString": "1/2/2026, 5:32:03 PM",
+    "avgDate": 1767396723000,
+    "avgDateString": "1/2/2026, 5:32:03 PM"
+  },
+  {
+    "groupID": 13130,
+    "groupName": "[VNTH] THE DEATH EMPIRE",
+    "lastDate": 1767313675000,
+    "lastDateString": "1/1/2026, 6:27:55 PM",
+    "avgDate": 1767281367083.3333,
+    "avgDateString": "1/1/2026, 9:29:27 AM"
+  },
+  {
+    "groupID": 13078,
+    "groupName": "[VNTH] REPUBLIC OF PAINT",
+    "lastDate": 1767198643000,
+    "lastDateString": "12/31/2025, 10:30:43 AM",
+    "avgDate": 1767172946000,
+    "avgDateString": "12/31/2025, 3:22:26 AM"
+  },
+  {
+    "groupID": 13747,
+    "groupName": "[KDA]",
+    "lastDate": 1768476996000,
+    "lastDateString": "1/15/2026, 5:36:36 AM",
+    "avgDate": 1766956806550,
+    "avgDateString": "12/28/2025, 3:20:06 PM"
+  },
+  {
+    "groupID": 13301,
+    "groupName": " FINAL DESTINATION",
+    "lastDate": 1768480379000,
+    "lastDateString": "1/15/2026, 6:32:59 AM",
+    "avgDate": 1766923664150,
+    "avgDateString": "12/28/2025, 6:07:44 AM"
+  },
+  {
+    "groupID": 13719,
+    "groupName": "Minigames Galore!",
+    "lastDate": 1766934440000,
+    "lastDateString": "12/28/2025, 9:07:20 AM",
+    "avgDate": 1766913363000,
+    "avgDateString": "12/28/2025, 3:16:03 AM"
+  },
+  {
+    "groupID": 13782,
+    "groupName": "usagi.net  admin team",
+    "lastDate": 1767650963000,
+    "lastDateString": "1/5/2026, 4:09:23 PM",
+    "avgDate": 1766899225500,
+    "avgDateString": "12/27/2025, 11:20:25 PM"
+  },
+  {
+    "groupID": 13366,
+    "groupName": "If you click this, then UwU",
+    "lastDate": 1768555360000,
+    "lastDateString": "1/16/2026, 3:22:40 AM",
+    "avgDate": 1766598832650,
+    "avgDateString": "12/24/2025, 11:53:52 AM"
+  },
+  {
+    "groupID": 13374,
+    "groupName": "                                       Latinas ",
+    "lastDate": 1768235090000,
+    "lastDateString": "1/12/2026, 10:24:50 AM",
+    "avgDate": 1766571169100,
+    "avgDateString": "12/24/2025, 4:12:49 AM"
+  },
+  {
+    "groupID": 13098,
+    "groupName": "Kashbanookas book club",
+    "lastDate": 1766565354000,
+    "lastDateString": "12/24/2025, 2:35:54 AM",
+    "avgDate": 1766565354000,
+    "avgDateString": "12/24/2025, 2:35:54 AM"
+  },
+  {
+    "groupID": 13794,
+    "groupName": "Dinoofs Kingdom",
+    "lastDate": 1766490370000,
+    "lastDateString": "12/23/2025, 5:46:10 AM",
+    "avgDate": 1766478258500,
+    "avgDateString": "12/23/2025, 2:24:18 AM"
+  },
+  {
+    "groupID": 13796,
+    "groupName": "-UwU usagi group UwU-",
+    "lastDate": 1766490425000,
+    "lastDateString": "12/23/2025, 5:47:05 AM",
+    "avgDate": 1766474391000,
+    "avgDateString": "12/23/2025, 1:19:51 AM"
+  },
+  {
+    "groupID": 12648,
+    "groupName": "[VNTH] Dragon Clan",
+    "lastDate": 1768372029000,
+    "lastDateString": "1/14/2026, 12:27:09 AM",
+    "avgDate": 1766299252000,
+    "avgDateString": "12/21/2025, 12:40:52 AM"
+  },
+  {
+    "groupID": 13792,
+    "groupName": "1p293",
+    "lastDate": 1766270576000,
+    "lastDateString": "12/20/2025, 4:42:56 PM",
+    "avgDate": 1766270576000,
+    "avgDateString": "12/20/2025, 4:42:56 PM"
+  },
+  {
+    "groupID": 13781,
+    "groupName": "VELTRON.NET",
+    "lastDate": 1768332166000,
+    "lastDateString": "1/13/2026, 1:22:46 PM",
+    "avgDate": 1766250414250,
+    "avgDateString": "12/20/2025, 11:06:54 AM"
+  },
+  {
+    "groupID": 13695,
+    "groupName": "Random UUID Lottery (REMAKE)",
+    "lastDate": 1766177416000,
+    "lastDateString": "12/19/2025, 2:50:16 PM",
+    "avgDate": 1766174926900,
+    "avgDateString": "12/19/2025, 2:08:46 PM"
+  },
+  {
+    "groupID": 13206,
+    "groupName": "FIGURE FIGURE Literature Club!",
+    "lastDate": 1766177505000,
+    "lastDateString": "12/19/2025, 2:51:45 PM",
+    "avgDate": 1766156337500,
+    "avgDateString": "12/19/2025, 8:58:57 AM"
+  },
+  {
+    "groupID": 13771,
+    "groupName": "Venith",
+    "lastDate": 1768493883000,
+    "lastDateString": "1/15/2026, 10:18:03 AM",
+    "avgDate": 1766146570750,
+    "avgDateString": "12/19/2025, 6:16:10 AM"
+  },
+  {
+    "groupID": 13387,
+    "groupName": "The Velvet Room",
+    "lastDate": 1768490638000,
+    "lastDateString": "1/15/2026, 9:23:58 AM",
+    "avgDate": 1766023436117.647,
+    "avgDateString": "12/17/2025, 8:03:56 PM"
+  },
+  {
+    "groupID": 13673,
+    "groupName": "admins chatroom",
+    "lastDate": 1766154262000,
+    "lastDateString": "12/19/2025, 8:24:22 AM",
+    "avgDate": 1765987340000,
+    "avgDateString": "12/17/2025, 10:02:20 AM"
+  },
+  {
+    "groupID": 13779,
+    "groupName": " tutorial de css para o Dinoofs ",
+    "lastDate": 1766491157000,
+    "lastDateString": "12/23/2025, 5:59:17 AM",
+    "avgDate": 1765946746200,
+    "avgDateString": "12/16/2025, 10:45:46 PM"
+  },
+  {
+    "groupID": 13735,
+    "groupName": "[VNTH] Pokemon Legends: Z-A FANCLUB",
+    "lastDate": 1766423084000,
+    "lastDateString": "12/22/2025, 11:04:44 AM",
+    "avgDate": 1765869201500,
+    "avgDateString": "12/16/2025, 1:13:21 AM"
   },
   {
     "groupID": 13460,
-    "lastDate": 1745876362000,
-    "lastDateString": "4/28/2025, 4:39:22 PM",
-    "avgDate": 1745876362000,
-    "avgDateString": "4/28/2025, 4:39:22 PM"
+    "groupName": "Jax&amp;Jade with Gal Group",
+    "lastDate": 1765610278000,
+    "lastDateString": "12/13/2025, 1:17:58 AM",
+    "avgDate": 1765610035100,
+    "avgDateString": "12/13/2025, 1:13:55 AM"
   },
   {
-    "groupID": 12906,
-    "lastDate": 1745685780000,
-    "lastDateString": "4/26/2025, 11:43:00 AM",
-    "avgDate": 1745519634090.9092,
-    "avgDateString": "4/24/2025, 1:33:54 PM"
+    "groupID": 13770,
+    "groupName": "[VNTH] Democratic Front for the Liberation of Paint",
+    "lastDate": 1765561856000,
+    "lastDateString": "12/12/2025, 11:50:56 AM",
+    "avgDate": 1765550640500,
+    "avgDateString": "12/12/2025, 8:44:00 AM"
   },
   {
-    "groupID": 13312,
-    "lastDate": 1747187861000,
-    "lastDateString": "5/13/2025, 8:57:41 PM",
-    "avgDate": 1745406864888.889,
-    "avgDateString": "4/23/2025, 6:14:24 AM"
+    "groupID": 13780,
+    "groupName": "chat for talking",
+    "lastDate": 1765549741000,
+    "lastDateString": "12/12/2025, 8:29:01 AM",
+    "avgDate": 1765549620857.1428,
+    "avgDateString": "12/12/2025, 8:27:00 AM"
   },
   {
-    "groupID": 13126,
-    "lastDate": 1745077220000,
-    "lastDateString": "4/19/2025, 10:40:20 AM",
-    "avgDate": 1745077220000,
-    "avgDateString": "4/19/2025, 10:40:20 AM"
+    "groupID": 13774,
+    "groupName": "Pokemon z-a Fan club",
+    "lastDate": 1766934162000,
+    "lastDateString": "12/28/2025, 9:02:42 AM",
+    "avgDate": 1765545761647.0588,
+    "avgDateString": "12/12/2025, 7:22:41 AM"
+  },
+  {
+    "groupID": 13361,
+    "groupName": "~XGalactiCadeX~",
+    "lastDate": 1765521829000,
+    "lastDateString": "12/12/2025, 12:43:49 AM",
+    "avgDate": 1765482645500,
+    "avgDateString": "12/11/2025, 1:50:45 PM"
+  },
+  {
+    "groupID": 13708,
+    "groupName": "*-Tma-* ",
+    "lastDate": 1765480114000,
+    "lastDateString": "12/11/2025, 1:08:34 PM",
+    "avgDate": 1765480114000,
+    "avgDateString": "12/11/2025, 1:08:34 PM"
+  },
+  {
+    "groupID": 13756,
+    "groupName": "brasil",
+    "lastDate": 1765542762000,
+    "lastDateString": "12/12/2025, 6:32:42 AM",
+    "avgDate": 1765470243500,
+    "avgDateString": "12/11/2025, 10:24:03 AM"
+  },
+  {
+    "groupID": 13778,
+    "groupName": "Galestians",
+    "lastDate": 1765446865000,
+    "lastDateString": "12/11/2025, 3:54:25 AM",
+    "avgDate": 1765442751333.3333,
+    "avgDateString": "12/11/2025, 2:45:51 AM"
+  },
+  {
+    "groupID": 13751,
+    "groupName": "Github",
+    "lastDate": 1765467229000,
+    "lastDateString": "12/11/2025, 9:33:49 AM",
+    "avgDate": 1765415356000,
+    "avgDateString": "12/10/2025, 7:09:16 PM"
+  },
+  {
+    "groupID": 13767,
+    "groupName": "Css test",
+    "lastDate": 1765413936000,
+    "lastDateString": "12/10/2025, 6:45:36 PM",
+    "avgDate": 1765413936000,
+    "avgDateString": "12/10/2025, 6:45:36 PM"
+  },
+  {
+    "groupID": 13677,
+    "groupName": "css help",
+    "lastDate": 1765413853000,
+    "lastDateString": "12/10/2025, 6:44:13 PM",
+    "avgDate": 1765413853000,
+    "avgDateString": "12/10/2025, 6:44:13 PM"
+  },
+  {
+    "groupID": 13752,
+    "groupName": "blog",
+    "lastDate": 1765413612000,
+    "lastDateString": "12/10/2025, 6:40:12 PM",
+    "avgDate": 1765413612000,
+    "avgDateString": "12/10/2025, 6:40:12 PM"
+  },
+  {
+    "groupID": 13646,
+    "groupName": "Wario ware DIY fan club",
+    "lastDate": 1765293753000,
+    "lastDateString": "12/9/2025, 9:22:33 AM",
+    "avgDate": 1765293753000,
+    "avgDateString": "12/9/2025, 9:22:33 AM"
+  },
+  {
+    "groupID": 13768,
+    "groupName": "3ds revive",
+    "lastDate": 1765278752000,
+    "lastDateString": "12/9/2025, 5:12:32 AM",
+    "avgDate": 1765239733500,
+    "avgDateString": "12/8/2025, 6:22:13 PM"
+  },
+  {
+    "groupID": 13765,
+    "groupName": "B.I.G. (blueturtle investigation group)",
+    "lastDate": 1765520818000,
+    "lastDateString": "12/12/2025, 12:26:58 AM",
+    "avgDate": 1765208783250,
+    "avgDateString": "12/8/2025, 9:46:23 AM"
+  },
+  {
+    "groupID": 13645,
+    "groupName": "Minecraft movie fan club",
+    "lastDate": 1765200472000,
+    "lastDateString": "12/8/2025, 7:27:52 AM",
+    "avgDate": 1765200472000,
+    "avgDateString": "12/8/2025, 7:27:52 AM"
+  },
+  {
+    "groupID": 13738,
+    "groupName": "Christmas Part 2025",
+    "lastDate": 1766686931000,
+    "lastDateString": "12/25/2025, 12:22:11 PM",
+    "avgDate": 1765148153000,
+    "avgDateString": "12/7/2025, 4:55:53 PM"
+  },
+  {
+    "groupID": 13764,
+    "groupName": "B.I.G {blueturtle profiles}",
+    "lastDate": 1765047525000,
+    "lastDateString": "12/6/2025, 12:58:45 PM",
+    "avgDate": 1765036107550,
+    "avgDateString": "12/6/2025, 9:48:27 AM"
+  },
+  {
+    "groupID": 13763,
+    "groupName": "Admin group",
+    "lastDate": 1765025596000,
+    "lastDateString": "12/6/2025, 6:53:16 AM",
+    "avgDate": 1765025596000,
+    "avgDateString": "12/6/2025, 6:53:16 AM"
+  },
+  {
+    "groupID": 13717,
+    "groupName": "Just Have Fun/Therapy Room",
+    "lastDate": 1766069286000,
+    "lastDateString": "12/18/2025, 8:48:06 AM",
+    "avgDate": 1764908770000,
+    "avgDateString": "12/4/2025, 10:26:10 PM"
+  },
+  {
+    "groupID": 13411,
+    "groupName": "[3DS House]",
+    "lastDate": 1767134946000,
+    "lastDateString": "12/30/2025, 4:49:06 PM",
+    "avgDate": 1764835376850,
+    "avgDateString": "12/4/2025, 2:02:56 AM"
+  },
+  {
+    "groupID": 13319,
+    "groupName": "     ",
+    "lastDate": 1766243560000,
+    "lastDateString": "12/20/2025, 9:12:40 AM",
+    "avgDate": 1764698068050,
+    "avgDateString": "12/2/2025, 11:54:28 AM"
+  },
+  {
+    "groupID": 12572,
+    "groupName": "[VNTH] Poketopia",
+    "lastDate": 1768372047000,
+    "lastDateString": "1/14/2026, 12:27:27 AM",
+    "avgDate": 1764564075666.6667,
+    "avgDateString": "11/30/2025, 10:41:15 PM"
+  },
+  {
+    "groupID": 13723,
+    "groupName": "how TheSmallBlog&#039;s doing in life",
+    "lastDate": 1764603387000,
+    "lastDateString": "12/1/2025, 9:36:27 AM",
+    "avgDate": 1764538024300,
+    "avgDateString": "11/30/2025, 3:27:04 PM"
+  },
+  {
+    "groupID": 12339,
+    "groupName": "[VNTH] Shinsei no Nippon Suki",
+    "lastDate": 1768372068000,
+    "lastDateString": "1/14/2026, 12:27:48 AM",
+    "avgDate": 1764432969400,
+    "avgDateString": "11/29/2025, 10:16:09 AM"
+  },
+  {
+    "groupID": 13686,
+    "groupName": "need online friends to talk to bc im bored",
+    "lastDate": 1766436190000,
+    "lastDateString": "12/22/2025, 2:43:10 PM",
+    "avgDate": 1764183404800,
+    "avgDateString": "11/26/2025, 12:56:44 PM"
+  },
+  {
+    "groupID": 13745,
+    "groupName": "67 clan ",
+    "lastDate": 1765660255000,
+    "lastDateString": "12/13/2025, 3:10:55 PM",
+    "avgDate": 1764143736000,
+    "avgDateString": "11/26/2025, 1:55:36 AM"
+  },
+  {
+    "groupID": 13730,
+    "groupName": "Brasileiros",
+    "lastDate": 1765466668000,
+    "lastDateString": "12/11/2025, 9:24:28 AM",
+    "avgDate": 1763992734100,
+    "avgDateString": "11/24/2025, 7:58:54 AM"
+  },
+  {
+    "groupID": 13654,
+    "groupName": "[VNTH] very cool group",
+    "lastDate": 1763731223000,
+    "lastDateString": "11/21/2025, 7:20:23 AM",
+    "avgDate": 1763731223000,
+    "avgDateString": "11/21/2025, 7:20:23 AM"
+  },
+  {
+    "groupID": 13724,
+    "groupName": "Nobodeh online",
+    "lastDate": 1763765685000,
+    "lastDateString": "11/21/2025, 4:54:45 PM",
+    "avgDate": 1763713177950,
+    "avgDateString": "11/21/2025, 2:19:37 AM"
+  },
+  {
+    "groupID": 13466,
+    "groupName": "  game??? i guess",
+    "lastDate": 1763700091000,
+    "lastDateString": "11/20/2025, 10:41:31 PM",
+    "avgDate": 1763649458350,
+    "avgDateString": "11/20/2025, 8:37:38 AM"
+  },
+  {
+    "groupID": 13748,
+    "groupName": "Messing around with paint features",
+    "lastDate": 1766812445000,
+    "lastDateString": "12/26/2025, 11:14:05 PM",
+    "avgDate": 1763559075200,
+    "avgDateString": "11/19/2025, 7:31:15 AM"
+  },
+  {
+    "groupID": 13750,
+    "groupName": "#GameBlogTeam",
+    "lastDate": 1763739490000,
+    "lastDateString": "11/21/2025, 9:38:10 AM",
+    "avgDate": 1763500208350,
+    "avgDateString": "11/18/2025, 3:10:08 PM"
+  },
+  {
+    "groupID": 13711,
+    "groupName": "                                                                          ",
+    "lastDate": 1763329837000,
+    "lastDateString": "11/16/2025, 3:50:37 PM",
+    "avgDate": 1763329837000,
+    "avgDateString": "11/16/2025, 3:50:37 PM"
+  },
+  {
+    "groupID": 13716,
+    "groupName": "-Roblox studio- project",
+    "lastDate": 1763048924000,
+    "lastDateString": "11/13/2025, 9:48:44 AM",
+    "avgDate": 1763044763500,
+    "avgDateString": "11/13/2025, 8:39:23 AM"
+  },
+  {
+    "groupID": 13690,
+    "groupName": "chat comands",
+    "lastDate": 1763037230000,
+    "lastDateString": "11/13/2025, 6:33:50 AM",
+    "avgDate": 1763037230000,
+    "avgDateString": "11/13/2025, 6:33:50 AM"
+  },
+  {
+    "groupID": 13504,
+    "groupName": "Abyss",
+    "lastDate": 1762748391000,
+    "lastDateString": "11/9/2025, 10:19:51 PM",
+    "avgDate": 1762748158250,
+    "avgDateString": "11/9/2025, 10:15:58 PM"
+  },
+  {
+    "groupID": 13620,
+    "groupName": "The Name Room",
+    "lastDate": 1762793780000,
+    "lastDateString": "11/10/2025, 10:56:20 AM",
+    "avgDate": 1762742743500,
+    "avgDateString": "11/9/2025, 8:45:43 PM"
+  },
+  {
+    "groupID": 13744,
+    "groupName": "special talk",
+    "lastDate": 1762877985000,
+    "lastDateString": "11/11/2025, 10:19:45 AM",
+    "avgDate": 1762723101375,
+    "avgDateString": "11/9/2025, 3:18:21 PM"
+  },
+  {
+    "groupID": 12401,
+    "groupName": "[VNTH] Truthers and Idealists",
+    "lastDate": 1764939909000,
+    "lastDateString": "12/5/2025, 7:05:09 AM",
+    "avgDate": 1762710277950,
+    "avgDateString": "11/9/2025, 11:44:37 AM"
+  },
+  {
+    "groupID": 13634,
+    "groupName": "the fuzz",
+    "lastDate": 1762612489000,
+    "lastDateString": "11/8/2025, 8:34:49 AM",
+    "avgDate": 1762605799000,
+    "avgDateString": "11/8/2025, 6:43:19 AM"
+  },
+  {
+    "groupID": 13440,
+    "groupName": "Roleplay Club",
+    "lastDate": 1762594815000,
+    "lastDateString": "11/8/2025, 3:40:15 AM",
+    "avgDate": 1762594815000,
+    "avgDateString": "11/8/2025, 3:40:15 AM"
+  },
+  {
+    "groupID": 13444,
+    "groupName": "sky in the dark",
+    "lastDate": 1762594777000,
+    "lastDateString": "11/8/2025, 3:39:37 AM",
+    "avgDate": 1762594777000,
+    "avgDateString": "11/8/2025, 3:39:37 AM"
+  },
+  {
+    "groupID": 13184,
+    "groupName": "THE NEW AND REBORN USM ",
+    "lastDate": 1762594670000,
+    "lastDateString": "11/8/2025, 3:37:50 AM",
+    "avgDate": 1762594670000,
+    "avgDateString": "11/8/2025, 3:37:50 AM"
+  },
+  {
+    "groupID": 13104,
+    "groupName": "Def&#039;s brotherhood",
+    "lastDate": 1762594394000,
+    "lastDateString": "11/8/2025, 3:33:14 AM",
+    "avgDate": 1762594390000,
+    "avgDateString": "11/8/2025, 3:33:10 AM"
+  },
+  {
+    "groupID": 13713,
+    "groupName": "test css",
+    "lastDate": 1762552097000,
+    "lastDateString": "11/7/2025, 3:48:17 PM",
+    "avgDate": 1762552097000,
+    "avgDateString": "11/7/2025, 3:48:17 PM"
+  },
+  {
+    "groupID": 13696,
+    "groupName": "CSS HEAVEN",
+    "lastDate": 1765558574000,
+    "lastDateString": "12/12/2025, 10:56:14 AM",
+    "avgDate": 1762508808100,
+    "avgDateString": "11/7/2025, 3:46:48 AM"
+  },
+  {
+    "groupID": 13743,
+    "groupName": "Test",
+    "lastDate": 1762461528000,
+    "lastDateString": "11/6/2025, 2:38:48 PM",
+    "avgDate": 1762439766500,
+    "avgDateString": "11/6/2025, 8:36:06 AM"
+  },
+  {
+    "groupID": 13741,
+    "groupName": "kitty cat group (pookies only)",
+    "lastDate": 1762285449000,
+    "lastDateString": "11/4/2025, 1:44:09 PM",
+    "avgDate": 1762168442900,
+    "avgDateString": "11/3/2025, 5:14:02 AM"
+  },
+  {
+    "groupID": 13596,
+    "groupName": "DSI club group",
+    "lastDate": 1762162104000,
+    "lastDateString": "11/3/2025, 3:28:24 AM",
+    "avgDate": 1762162104000,
+    "avgDateString": "11/3/2025, 3:28:24 AM"
+  },
+  {
+    "groupID": 13739,
+    "groupName": "Paint&rsquo;s Halloween Party 2025",
+    "lastDate": 1762015580000,
+    "lastDateString": "11/1/2025, 11:46:20 AM",
+    "avgDate": 1762015112000,
+    "avgDateString": "11/1/2025, 11:38:32 AM"
+  },
+  {
+    "groupID": 13020,
+    "groupName": "[VNTH] Master of Death Project",
+    "lastDate": 1762184770000,
+    "lastDateString": "11/3/2025, 9:46:10 AM",
+    "avgDate": 1761940651800,
+    "avgDateString": "10/31/2025, 2:57:31 PM"
+  },
+  {
+    "groupID": 13391,
+    "groupName": "Sizable regrets rp",
+    "lastDate": 1761947670000,
+    "lastDateString": "10/31/2025, 4:54:30 PM",
+    "avgDate": 1761933632750,
+    "avgDateString": "10/31/2025, 1:00:32 PM"
+  },
+  {
+    "groupID": 13271,
+    "groupName": ":o",
+    "lastDate": 1761616851000,
+    "lastDateString": "10/27/2025, 9:00:51 PM",
+    "avgDate": 1761463801833.3333,
+    "avgDateString": "10/26/2025, 2:30:01 AM"
+  },
+  {
+    "groupID": 13722,
+    "groupName": "lets make change",
+    "lastDate": 1760880115000,
+    "lastDateString": "10/19/2025, 8:21:55 AM",
+    "avgDate": 1760850279000,
+    "avgDateString": "10/19/2025, 12:04:39 AM"
   }
 ]
