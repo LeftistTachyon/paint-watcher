@@ -182,7 +182,7 @@ async function run() {
         }
       }
 
-      if (first) {
+      if (first && cacheString) {
         await owner.send("Bot started! Cache:\n" + cacheString);
       } else {
         await owner.send(cacheString);
