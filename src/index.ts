@@ -170,22 +170,11 @@ async function run() {
             ? "Chatroom " + log.chatroom
             : `${await getGroupName(log.groupID)} (group #${log.groupID})`;
         cacheString += "\n";
-
-        if (cacheString.length > 1000) {
-          if (first) {
-            await owner.send("Bot started! Cache:\n" + cacheString);
-            first = false;
-          } else {
-            await owner.send(cacheString);
-          }
-          cacheString = "";
-        }
       }
 
-      if (first && cacheString) {
-        await owner.send("Bot started! Cache:\n" + cacheString);
-      } else {
-        await owner.send(cacheString);
+      // send up to 1000 characters at a time
+      for (let idx = 0; idx < cacheString.length; idx += 900) {
+        await owner.send(cacheString.substring(idx, idx + 1000));
       }
     }
   });
