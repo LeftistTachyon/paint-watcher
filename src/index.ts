@@ -161,8 +161,7 @@ async function run() {
     if (process.env.OWNER_ID) {
       const owner = await readyClient.users.fetch(process.env.OWNER_ID);
 
-      let cacheString = "",
-        first = true;
+      let cacheString = "";
       for (const log of getCache()) {
         cacheString += `<#${log.channelID}> → `;
         cacheString +=
@@ -173,9 +172,15 @@ async function run() {
       }
 
       // send up to 1000 characters at a time
-      for (let idx = 0; idx < cacheString.length; idx += 900) {
-        await owner.send(cacheString.substring(idx, idx + 1000));
+      let start = 0;
+      for (
+        let end = cacheString.indexOf("\n", 850);
+        end !== -1;
+        start = end, end = cacheString.indexOf("\n", start + 850)
+      ) {
+        await owner.send(cacheString.substring(start, end));
       }
+      await owner.send(cacheString.substring(start));
     }
   });
 
