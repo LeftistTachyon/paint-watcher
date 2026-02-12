@@ -171,7 +171,7 @@ async function run() {
         cacheString += "\n";
       }
 
-      // send up to 1000 characters at a time
+      // send 850+ characters at a time (trust that each line doesn't exceed 150 characters)
       let start = 0;
       for (
         let end = cacheString.indexOf("\n", 850);
