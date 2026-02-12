@@ -63,7 +63,7 @@ async function log() {
           }
         } else {
           console.warn(
-            `CHANNEL ${log.channelID} IS NO LONGER ACCESSIBLE;\nREMOVING LOG FOR CHATROOM ${log.chatroom}`
+            `CHANNEL ${log.channelID} IS NO LONGER ACCESSIBLE;\nREMOVING LOG FOR CHATROOM ${log.chatroom}`,
           );
           if (removeChatLog(log.chatroom, log.channelID)) {
             console.warn("Removal successful");
@@ -85,7 +85,7 @@ async function log() {
           }
         } else {
           console.warn(
-            `CHANNEL ${log.channelID} IS NO LONGER ACCESSIBLE;\nREMOVING LOG FOR GROUP ${log.groupID}`
+            `CHANNEL ${log.channelID} IS NO LONGER ACCESSIBLE;\nREMOVING LOG FOR GROUP ${log.groupID}`,
           );
           if (removeShoutLog(log.groupID, log.channelID)) {
             console.warn("Removal successful");
@@ -127,7 +127,7 @@ async function run() {
 
       if (!command) {
         console.error(
-          `No command matching ${interaction.commandName} was found.`
+          `No command matching ${interaction.commandName} was found.`,
         );
         return;
       }
@@ -140,7 +140,7 @@ async function run() {
           if (interaction.deferred) {
             // process.stdout.write("error detected, attempting edit...\n");
             await interaction.editReply(
-              "There was an error while executing this command!"
+              "There was an error while executing this command!",
             );
           } else {
             // process.stdout.write("error detected, attempting reply...\n");
@@ -161,7 +161,8 @@ async function run() {
     if (process.env.OWNER_ID) {
       const owner = await readyClient.users.fetch(process.env.OWNER_ID);
 
-      let cacheString = "";
+      let cacheString = "",
+        first = true;
       for (const log of getCache()) {
         cacheString += `<#${log.channelID}> → `;
         cacheString +=
@@ -169,9 +170,23 @@ async function run() {
             ? "Chatroom " + log.chatroom
             : `${await getGroupName(log.groupID)} (group #${log.groupID})`;
         cacheString += "\n";
+
+        if (cacheString.length > 1000) {
+          if (first) {
+            await owner.send("Bot started! Cache:\n" + cacheString);
+            first = false;
+          } else {
+            await owner.send(cacheString);
+          }
+          cacheString = "";
+        }
       }
 
-      await owner.send("Bot started! Cache:\n" + cacheString);
+      if (first) {
+        await owner.send("Bot started! Cache:\n" + cacheString);
+      } else {
+        await owner.send(cacheString);
+      }
     }
   });
 
