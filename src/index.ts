@@ -178,9 +178,9 @@ async function run() {
         end !== -1;
         start = end, end = cacheString.indexOf("\n", start + 850)
       ) {
-        await owner.send(cacheString.substring(start, end));
+        await owner.send(cacheString.substring(start, end) + ".");
       }
-      await owner.send(cacheString.substring(start));
+      await owner.send(cacheString.substring(start) + ".");
     }
   });
 
