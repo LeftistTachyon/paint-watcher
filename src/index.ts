@@ -161,7 +161,7 @@ async function run() {
     if (process.env.OWNER_ID) {
       const owner = await readyClient.users.fetch(process.env.OWNER_ID);
 
-      let cacheString = "";
+      let cacheString = `Logged in at <t:${Math.floor(new Date().getTime() / 1000)}:F>\n`;
       for (const log of getCache()) {
         cacheString += `<#${log.channelID}> → `;
         cacheString +=
