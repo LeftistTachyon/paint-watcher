@@ -35,13 +35,13 @@ export default async function init() {
 export async function getChatroomMsgs(chatroom: string) {
   const resp = await fetch(
     `https://3dspaint.com/chatroom?ajax=${Number(
-      new Date()
+      new Date(),
     )}&id=${chatroom}&action=read`,
     {
       method: "GET",
       headers,
       redirect: "follow",
-    }
+    },
   );
 
   return (await resp.json()) as ChatMessage[];
@@ -55,13 +55,13 @@ export async function getChatroomMsgs(chatroom: string) {
 export async function getGroupShouts(groupID: number) {
   const resp = await fetch(
     `https://3dspaint.com/group/shoutbox.php?ajax=${Number(
-      new Date()
+      new Date(),
     )}&action=load&id=${groupID}`,
     {
       method: "GET",
       headers,
       redirect: "follow",
-    }
+    },
   );
 
   // if the group no longer exists, do not attempt to convert the shouts
@@ -121,7 +121,7 @@ export function generateChatEmbed(msg: ChatMessage) {
   const parsed = parseMsgString(
     msg.text,
     msg.username ? "" : "_",
-    msg.username ? "" : "_"
+    msg.username ? "" : "_",
   );
 
   let firstEmbed = new EmbedBuilder()
@@ -142,7 +142,7 @@ export function generateChatEmbed(msg: ChatMessage) {
       .map((image) =>
         new EmbedBuilder()
           .setURL("https://3dspaint.com/menu_chatrooms.php")
-          .setImage(correctImage(image))
+          .setImage(correctImage(image)),
       );
     allEmbeds.unshift(firstEmbed);
     return allEmbeds;
@@ -190,7 +190,7 @@ export function generateShoutboxEmbed(shout: Shout) {
       .map((image) =>
         new EmbedBuilder()
           .setURL(`https://3dspaint.com/member/?id=${shout.member}`)
-          .setImage(image)
+          .setImage(image),
       );
     allEmbeds.unshift(firstEmbed);
     return allEmbeds;
@@ -232,6 +232,8 @@ const emotes: Record<string, string> = {
   "/chatroom/smilies/nerd2.gif": "<:nerd2:1378842390261137419>",
   "/chatroom/smilies/redneck.gif": "<:redneck:1378842074945687552>",
   "/chatroom/smilies/smirk.gif": "<:smirk:1378842356182159442>",
+  "/chatroom/smilies/thumb_down.png": "<:disagree:1352039357111861248>",
+  "/chatroom/smilies/thumb_up.png": "<:agree:1352039300228845669>",
 };
 
 /**
@@ -244,7 +246,7 @@ const emotes: Record<string, string> = {
 function parseMsgString(
   msgString: string,
   initialString: string = "",
-  finalString: string = ""
+  finalString: string = "",
 ) {
   const parsed = parse(msgString);
 
@@ -261,7 +263,7 @@ function parseMsgString(
             break;
           case "img":
             let src = node.attributes.find(
-              (attribute) => attribute.name.value === "src"
+              (attribute) => attribute.name.value === "src",
             )?.value?.value;
             if (!src) break;
 
@@ -284,7 +286,7 @@ function parseMsgString(
         if (text.endsWith("[")) text += "LINK";
 
         let href = node.attributes.find(
-          (attribute) => attribute.name.value === "href"
+          (attribute) => attribute.name.value === "href",
         )?.value?.value;
         if (href?.startsWith("/")) href = "https://3dspaint.com" + href;
         text += `](${href})`;
