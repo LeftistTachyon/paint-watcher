@@ -46,14 +46,18 @@ export async function kill() {
  * Log all messages once
  */
 async function log() {
+  // for keeping track of total tracked places
+  let chatrooms = 0,
+    groups = 0;
+
   for (const log of getCache()) {
     try {
       const channel = await client.channels.fetch(log.channelID);
 
       if (log.type === "chat") {
-        process.stdout.write(`Logging ${log.chatroom}..`);
+        // process.stdout.write(`Logging ${log.chatroom}..`);
         const chats = await backOff(async () => {
-          process.stdout.write(".");
+          // process.stdout.write(".");
           return getChatroomMsgs(log.chatroom);
         }, backoffOptions);
 
@@ -71,11 +75,12 @@ async function log() {
             console.warn("Removal unsuccessful");
           }
         }
-        process.stdout.write("done.\n");
+        // process.stdout.write("done.\n");
+        chatrooms++;
       } else {
-        process.stdout.write(`Logging group #${log.groupID}..`);
+        // process.stdout.write(`Logging group #${log.groupID}..`);
         const shouts = await backOff(async () => {
-          process.stdout.write(".");
+          // process.stdout.write(".");
           return getGroupShouts(log.groupID);
         }, backoffOptions);
 
@@ -93,7 +98,8 @@ async function log() {
             console.warn("Removal unsuccessful");
           }
         }
-        process.stdout.write("done.\n");
+        // process.stdout.write("done.\n");
+        groups++;
       }
     } catch (error) {
       const e = error as Partial<Error>;
@@ -110,6 +116,10 @@ ${e?.stack}
 \`\`\``);
     }
   }
+
+  process.stdout.write(
+    `Successfully logged ${chatrooms} chatrooms and ${groups} groups.`,
+  );
 
   await saveCache();
 }
