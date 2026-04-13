@@ -1,67 +1,363 @@
 [
   {
-    "groupID": 13389,
-    "groupName": "The Furry Senate (Re-Democratized)",
-    "lastDate": 1771736576000,
-    "lastDateString": "2/21/2026, 11:02:56 PM",
-    "avgDate": 1771712819100,
-    "avgDateString": "2/21/2026, 4:26:59 PM"
-  },
-  {
-    "groupID": 12401,
-    "groupName": "[VNTH] Truthers and Idealists",
-    "lastDate": 1771730015000,
-    "lastDateString": "2/21/2026, 9:13:35 PM",
-    "avgDate": 1771703592600,
-    "avgDateString": "2/21/2026, 1:53:12 PM"
+    "groupID": 13831,
+    "groupName": "Group Pages",
+    "lastDate": 1775852456000,
+    "lastDateString": "4/10/2026, 3:20:56 PM",
+    "avgDate": 1775798227700,
+    "avgDateString": "4/10/2026, 12:17:07 AM"
   },
   {
     "groupID": 13191,
     "groupName": "[VNTH] 3DSiPaint",
-    "lastDate": 1771736600000,
-    "lastDateString": "2/21/2026, 11:03:20 PM",
-    "avgDate": 1771702020700,
-    "avgDateString": "2/21/2026, 1:27:00 PM"
+    "lastDate": 1775839139000,
+    "lastDateString": "4/10/2026, 11:38:59 AM",
+    "avgDate": 1775771288850,
+    "avgDateString": "4/9/2026, 4:48:08 PM"
   },
   {
-    "groupID": 12182,
-    "groupName": "[VNTH] *Ryuusei no Tami*",
-    "lastDate": 1771718061000,
-    "lastDateString": "2/21/2026, 5:54:21 PM",
-    "avgDate": 1771693067400,
-    "avgDateString": "2/21/2026, 10:57:47 AM"
+    "groupID": 13203,
+    "groupName": "Pyongya- I mean Paris",
+    "lastDate": 1775832375000,
+    "lastDateString": "4/10/2026, 9:46:15 AM",
+    "avgDate": 1775767961400,
+    "avgDateString": "4/9/2026, 3:52:41 PM"
   },
   {
     "groupID": 13441,
     "groupName": "*-CelestialGalaxies-*",
-    "lastDate": 1771729630000,
-    "lastDateString": "2/21/2026, 9:07:10 PM",
-    "avgDate": 1771676884400,
-    "avgDateString": "2/21/2026, 6:28:04 AM"
+    "lastDate": 1775833917000,
+    "lastDateString": "4/10/2026, 10:11:57 AM",
+    "avgDate": 1775717939550,
+    "avgDateString": "4/9/2026, 1:58:59 AM"
   },
   {
-    "groupID": 13808,
-    "groupName": "[KDA]",
-    "lastDate": 1771688873000,
-    "lastDateString": "2/21/2026, 9:47:53 AM",
-    "avgDate": 1771609049300,
-    "avgDateString": "2/20/2026, 11:37:29 AM"
+    "groupID": 13830,
+    "groupName": "dfggfdrtgf",
+    "lastDate": 1775769017000,
+    "lastDateString": "4/9/2026, 4:10:17 PM",
+    "avgDate": 1775713935750,
+    "avgDateString": "4/9/2026, 12:52:15 AM"
+  },
+  {
+    "groupID": 13828,
+    "groupName": "Joashu&#039;s Laboratory",
+    "lastDate": 1775582068000,
+    "lastDateString": "4/7/2026, 12:14:28 PM",
+    "avgDate": 1775581953625,
+    "avgDateString": "4/7/2026, 12:12:33 PM"
+  },
+  {
+    "groupID": 12182,
+    "groupName": "[VNTH] *Ryuusei no Tami*",
+    "lastDate": 1775839616000,
+    "lastDateString": "4/10/2026, 11:46:56 AM",
+    "avgDate": 1775537831450,
+    "avgDateString": "4/6/2026, 11:57:11 PM"
+  },
+  {
+    "groupID": 13339,
+    "groupName": "In God We Trust",
+    "lastDate": 1775814149000,
+    "lastDateString": "4/10/2026, 4:42:29 AM",
+    "avgDate": 1775411841100,
+    "avgDateString": "4/5/2026, 12:57:21 PM"
+  },
+  {
+    "groupID": 13201,
+    "groupName": " (The Kingdom of Tyrarch)",
+    "lastDate": 1775662813000,
+    "lastDateString": "4/8/2026, 10:40:13 AM",
+    "avgDate": 1775279195300,
+    "avgDateString": "4/4/2026, 12:06:35 AM"
+  },
+  {
+    "groupID": 13389,
+    "groupName": "The Furry Senate (Re-Democratized)",
+    "lastDate": 1775072305000,
+    "lastDateString": "4/1/2026, 2:38:25 PM",
+    "avgDate": 1774989434850,
+    "avgDateString": "3/31/2026, 3:37:14 PM"
+  },
+  {
+    "groupID": 13723,
+    "groupName": "how TheSmallBlog&#039;s doing in life",
+    "lastDate": 1774816240000,
+    "lastDateString": "3/29/2026, 3:30:40 PM",
+    "avgDate": 1774791459500,
+    "avgDateString": "3/29/2026, 8:37:39 AM"
+  },
+  {
+    "groupID": 13751,
+    "groupName": "Github",
+    "lastDate": 1774815685000,
+    "lastDateString": "3/29/2026, 3:21:25 PM",
+    "avgDate": 1774777181250,
+    "avgDateString": "3/29/2026, 4:39:41 AM"
+  },
+  {
+    "groupID": 13719,
+    "groupName": "Minigames Galore!",
+    "lastDate": 1774759343000,
+    "lastDateString": "3/28/2026, 11:42:23 PM",
+    "avgDate": 1774759264000,
+    "avgDateString": "3/28/2026, 11:41:04 PM"
+  },
+  {
+    "groupID": 13639,
+    "groupName": "꓄ꁝꏂ ꋊ꒤꓄ꁝꄲ꒤ꇙꏂ",
+    "lastDate": 1774561919000,
+    "lastDateString": "3/26/2026, 4:51:59 PM",
+    "avgDate": 1774561919000,
+    "avgDateString": "3/26/2026, 4:51:59 PM"
+  },
+  {
+    "groupID": 13319,
+    "groupName": "     ",
+    "lastDate": 1775753678000,
+    "lastDateString": "4/9/2026, 11:54:38 AM",
+    "avgDate": 1774445094833.3333,
+    "avgDateString": "3/25/2026, 8:24:54 AM"
+  },
+  {
+    "groupID": 13206,
+    "groupName": "FIGURE FIGURE Literature Club!",
+    "lastDate": 1775493488000,
+    "lastDateString": "4/6/2026, 11:38:08 AM",
+    "avgDate": 1774403141100,
+    "avgDateString": "3/24/2026, 8:45:41 PM"
+  },
+  {
+    "groupID": 12401,
+    "groupName": "[VNTH] Truthers and Idealists",
+    "lastDate": 1775073467000,
+    "lastDateString": "4/1/2026, 2:57:47 PM",
+    "avgDate": 1774353383300,
+    "avgDateString": "3/24/2026, 6:56:23 AM"
+  },
+  {
+    "groupID": 13020,
+    "groupName": "[VNTH] Master of Death Project",
+    "lastDate": 1774270221000,
+    "lastDateString": "3/23/2026, 7:50:21 AM",
+    "avgDate": 1774270221000,
+    "avgDateString": "3/23/2026, 7:50:21 AM"
   },
   {
     "groupID": 12339,
     "groupName": "[VNTH] Shinsei no Nippon Suki",
-    "lastDate": 1771709255000,
-    "lastDateString": "2/21/2026, 3:27:35 PM",
-    "avgDate": 1771596936800,
-    "avgDateString": "2/20/2026, 8:15:36 AM"
+    "lastDate": 1775497450000,
+    "lastDateString": "4/6/2026, 12:44:10 PM",
+    "avgDate": 1774233278100,
+    "avgDateString": "3/22/2026, 9:34:38 PM"
+  },
+  {
+    "groupID": 13770,
+    "groupName": "[VNTH] Democratic Front for the Liberation of Paint",
+    "lastDate": 1775350450000,
+    "lastDateString": "4/4/2026, 7:54:10 PM",
+    "avgDate": 1773980706050,
+    "avgDateString": "3/19/2026, 11:25:06 PM"
+  },
+  {
+    "groupID": 13759,
+    "groupName": "Official UwUQueen Fan Queendom",
+    "lastDate": 1774815207000,
+    "lastDateString": "3/29/2026, 3:13:27 PM",
+    "avgDate": 1773973917250,
+    "avgDateString": "3/19/2026, 9:31:57 PM"
+  },
+  {
+    "groupID": 12272,
+    "groupName": "Freedom Fighters",
+    "lastDate": 1773861445000,
+    "lastDateString": "3/18/2026, 2:17:25 PM",
+    "avgDate": 1773853345000,
+    "avgDateString": "3/18/2026, 12:02:25 PM"
+  },
+  {
+    "groupID": 13753,
+    "groupName": "An EPIKAL group :p",
+    "lastDate": 1774833977000,
+    "lastDateString": "3/29/2026, 8:26:17 PM",
+    "avgDate": 1773821263750,
+    "avgDateString": "3/18/2026, 3:07:43 AM"
+  },
+  {
+    "groupID": 13731,
+    "groupName": "Gengar&#039;s Furry Fandom X3",
+    "lastDate": 1773447530000,
+    "lastDateString": "3/13/2026, 7:18:50 PM",
+    "avgDate": 1773444494400,
+    "avgDateString": "3/13/2026, 6:28:14 PM"
+  },
+  {
+    "groupID": 13736,
+    "groupName": "Ohio rizzler Css test",
+    "lastDate": 1773425013000,
+    "lastDateString": "3/13/2026, 1:03:33 PM",
+    "avgDate": 1773425013000,
+    "avgDateString": "3/13/2026, 1:03:33 PM"
+  },
+  {
+    "groupID": 13565,
+    "groupName": "The kingdom of metrogolon remake",
+    "lastDate": 1773424286000,
+    "lastDateString": "3/13/2026, 12:51:26 PM",
+    "avgDate": 1773322966933.3333,
+    "avgDateString": "3/12/2026, 8:42:46 AM"
+  },
+  {
+    "groupID": 13808,
+    "groupName": "[KDA]",
+    "lastDate": 1775640793000,
+    "lastDateString": "4/8/2026, 4:33:13 AM",
+    "avgDate": 1773160234850,
+    "avgDateString": "3/10/2026, 11:30:34 AM"
+  },
+  {
+    "groupID": 13750,
+    "groupName": "#GameBlogTeam",
+    "lastDate": 1773391879000,
+    "lastDateString": "3/13/2026, 3:51:19 AM",
+    "avgDate": 1773132373687.5,
+    "avgDateString": "3/10/2026, 3:46:13 AM"
+  },
+  {
+    "groupID": 13301,
+    "groupName": " FINAL DESTINATION",
+    "lastDate": 1773543425000,
+    "lastDateString": "3/14/2026, 9:57:05 PM",
+    "avgDate": 1773122442450,
+    "avgDateString": "3/10/2026, 1:00:42 AM"
+  },
+  {
+    "groupID": 13094,
+    "groupName": "frivolously fantastic frog faction",
+    "lastDate": 1774304671000,
+    "lastDateString": "3/23/2026, 5:24:31 PM",
+    "avgDate": 1773046652550,
+    "avgDateString": "3/9/2026, 3:57:32 AM"
+  },
+  {
+    "groupID": 13091,
+    "groupName": "Cursed Omori RP uwu",
+    "lastDate": 1773009452000,
+    "lastDateString": "3/8/2026, 5:37:32 PM",
+    "avgDate": 1773009438500,
+    "avgDateString": "3/8/2026, 5:37:18 PM"
+  },
+  {
+    "groupID": 13673,
+    "groupName": "adm1ns chatr00m",
+    "lastDate": 1773148825000,
+    "lastDateString": "3/10/2026, 8:20:25 AM",
+    "avgDate": 1772979925450,
+    "avgDateString": "3/8/2026, 9:25:25 AM"
+  },
+  {
+    "groupID": 13696,
+    "groupName": "CSS HEAVEN",
+    "lastDate": 1773051815000,
+    "lastDateString": "3/9/2026, 5:23:35 AM",
+    "avgDate": 1772928020050,
+    "avgDateString": "3/7/2026, 6:00:20 PM"
+  },
+  {
+    "groupID": 12971,
+    "groupName": "Hidden Small group",
+    "lastDate": 1772660643000,
+    "lastDateString": "3/4/2026, 3:44:03 PM",
+    "avgDate": 1772660643000,
+    "avgDateString": "3/4/2026, 3:44:03 PM"
+  },
+  {
+    "groupID": 13341,
+    "groupName": "&lt;Paintropolis&gt;",
+    "lastDate": 1772660597000,
+    "lastDateString": "3/4/2026, 3:43:17 PM",
+    "avgDate": 1772660597000,
+    "avgDateString": "3/4/2026, 3:43:17 PM"
+  },
+  {
+    "groupID": 13738,
+    "groupName": "Christmas Part 2025-2026",
+    "lastDate": 1772468264000,
+    "lastDateString": "3/2/2026, 10:17:44 AM",
+    "avgDate": 1772442028333.3333,
+    "avgDateString": "3/2/2026, 3:00:28 AM"
+  },
+  {
+    "groupID": 13466,
+    "groupName": "  game??? i guess",
+    "lastDate": 1774815268000,
+    "lastDateString": "3/29/2026, 3:14:28 PM",
+    "avgDate": 1772435459000,
+    "avgDateString": "3/2/2026, 1:10:59 AM"
+  },
+  {
+    "groupID": 13079,
+    "groupName": "[VNTH] * ~ MARCH!ERIDAN&#039;S CARACAL PALACE ~ *",
+    "lastDate": 1772288816000,
+    "lastDateString": "2/28/2026, 8:26:56 AM",
+    "avgDate": 1772181921400,
+    "avgDateString": "2/27/2026, 2:45:21 AM"
+  },
+  {
+    "groupID": 12572,
+    "groupName": "[VNTH] Poketopia",
+    "lastDate": 1774590668000,
+    "lastDateString": "3/27/2026, 12:51:08 AM",
+    "avgDate": 1772078675090.9092,
+    "avgDateString": "2/25/2026, 10:04:35 PM"
+  },
+  {
+    "groupID": 13728,
+    "groupName": "Moderaitors",
+    "lastDate": 1771971616000,
+    "lastDateString": "2/24/2026, 4:20:16 PM",
+    "avgDate": 1771971616000,
+    "avgDateString": "2/24/2026, 4:20:16 PM"
+  },
+  {
+    "groupID": 13608,
+    "groupName": "test",
+    "lastDate": 1771952096000,
+    "lastDateString": "2/24/2026, 10:54:56 AM",
+    "avgDate": 1771951931000,
+    "avgDateString": "2/24/2026, 10:52:11 AM"
+  },
+  {
+    "groupID": 13793,
+    "groupName": "The gold",
+    "lastDate": 1771971223000,
+    "lastDateString": "2/24/2026, 4:13:43 PM",
+    "avgDate": 1771912696400,
+    "avgDateString": "2/23/2026, 11:58:16 PM"
+  },
+  {
+    "groupID": 13698,
+    "groupName": "[VNTH]  Poke hunter",
+    "lastDate": 1774758809000,
+    "lastDateString": "3/28/2026, 11:33:29 PM",
+    "avgDate": 1771837570700,
+    "avgDateString": "2/23/2026, 3:06:10 AM"
+  },
+  {
+    "groupID": 13754,
+    "groupName": "[KDA]",
+    "lastDate": 1771781956000,
+    "lastDateString": "2/22/2026, 11:39:16 AM",
+    "avgDate": 1771620904100,
+    "avgDateString": "2/20/2026, 2:55:04 PM"
   },
   {
     "groupID": 13747,
     "groupName": "[KDA]",
-    "lastDate": 1771731144000,
-    "lastDateString": "2/21/2026, 9:32:24 PM",
-    "avgDate": 1771566303950,
-    "avgDateString": "2/19/2026, 11:45:03 PM"
+    "lastDate": 1771778195000,
+    "lastDateString": "2/22/2026, 10:36:35 AM",
+    "avgDate": 1771562639550,
+    "avgDateString": "2/19/2026, 10:43:59 PM"
   },
   {
     "groupID": 13765,
@@ -72,52 +368,20 @@
     "avgDateString": "2/19/2026, 11:18:49 AM"
   },
   {
-    "groupID": 13339,
-    "groupName": "In God We Trust",
-    "lastDate": 1771680546000,
-    "lastDateString": "2/21/2026, 7:29:06 AM",
-    "avgDate": 1771517341850,
-    "avgDateString": "2/19/2026, 10:09:01 AM"
+    "groupID": 13667,
+    "groupName": "@;3*0",
+    "lastDate": 1771284234000,
+    "lastDateString": "2/16/2026, 5:23:54 PM",
+    "avgDate": 1771284234000,
+    "avgDateString": "2/16/2026, 5:23:54 PM"
   },
   {
-    "groupID": 13203,
-    "groupName": "Pyongya- I mean Paris",
-    "lastDate": 1771702747000,
-    "lastDateString": "2/21/2026, 1:39:07 PM",
-    "avgDate": 1771514124400,
-    "avgDateString": "2/19/2026, 9:15:24 AM"
-  },
-  {
-    "groupID": 13753,
-    "groupName": "An EPIKAL group :p",
-    "lastDate": 1771608607000,
-    "lastDateString": "2/20/2026, 11:30:07 AM",
-    "avgDate": 1771491494000,
-    "avgDateString": "2/19/2026, 2:58:14 AM"
-  },
-  {
-    "groupID": 13466,
-    "groupName": "  game??? i guess",
-    "lastDate": 1771543181000,
-    "lastDateString": "2/19/2026, 5:19:41 PM",
-    "avgDate": 1771463721642.8572,
-    "avgDateString": "2/18/2026, 7:15:21 PM"
-  },
-  {
-    "groupID": 13754,
-    "groupName": "[KDA]",
-    "lastDate": 1771730020000,
-    "lastDateString": "2/21/2026, 9:13:40 PM",
-    "avgDate": 1771384170800,
-    "avgDateString": "2/17/2026, 9:09:30 PM"
-  },
-  {
-    "groupID": 13698,
-    "groupName": "[VNTH]  Poke hunter",
-    "lastDate": 1771434288000,
-    "lastDateString": "2/18/2026, 11:04:48 AM",
-    "avgDate": 1771131570200,
-    "avgDateString": "2/14/2026, 10:59:30 PM"
+    "groupID": 13813,
+    "groupName": "Nobody Online (PC/Phone users only!)",
+    "lastDate": 1774759482000,
+    "lastDateString": "3/28/2026, 11:44:42 PM",
+    "avgDate": 1771135236700,
+    "avgDateString": "2/15/2026, 12:00:36 AM"
   },
   {
     "groupID": 12208,
@@ -128,12 +392,12 @@
     "avgDateString": "2/13/2026, 1:04:11 PM"
   },
   {
-    "groupID": 13301,
-    "groupName": " FINAL DESTINATION",
-    "lastDate": 1771672107000,
-    "lastDateString": "2/21/2026, 5:08:27 AM",
-    "avgDate": 1770653967500,
-    "avgDateString": "2/9/2026, 10:19:27 AM"
+    "groupID": 13810,
+    "groupName": "Key :BIG:",
+    "lastDate": 1773542935000,
+    "lastDateString": "3/14/2026, 9:48:55 PM",
+    "avgDate": 1770708635950,
+    "avgDateString": "2/10/2026, 1:30:35 AM"
   },
   {
     "groupID": 13302,
@@ -142,14 +406,6 @@
     "lastDateString": "2/10/2026, 6:10:29 PM",
     "avgDate": 1770585989400,
     "avgDateString": "2/8/2026, 3:26:29 PM"
-  },
-  {
-    "groupID": 13759,
-    "groupName": "Official UwUQueen Fan Queendom",
-    "lastDate": 1770719432000,
-    "lastDateString": "2/10/2026, 4:30:32 AM",
-    "avgDate": 1770488768500,
-    "avgDateString": "2/7/2026, 12:26:08 PM"
   },
   {
     "groupID": 13576,
@@ -168,6 +424,14 @@
     "avgDateString": "2/2/2026, 11:53:54 AM"
   },
   {
+    "groupID": 12988,
+    "groupName": " UNDER RENOVATION ",
+    "lastDate": 1773339101000,
+    "lastDateString": "3/12/2026, 1:11:41 PM",
+    "avgDate": 1770029058500,
+    "avgDateString": "2/2/2026, 4:44:18 AM"
+  },
+  {
     "groupID": 13271,
     "groupName": ":o",
     "lastDate": 1770053776000,
@@ -176,28 +440,36 @@
     "avgDateString": "1/30/2026, 10:52:25 PM"
   },
   {
+    "groupID": 13730,
+    "groupName": "Brasileiros",
+    "lastDate": 1769874513000,
+    "lastDateString": "1/31/2026, 9:48:33 AM",
+    "avgDate": 1769802644000,
+    "avgDateString": "1/30/2026, 1:50:44 PM"
+  },
+  {
+    "groupID": 13361,
+    "groupName": "~XGalactiCadeX~",
+    "lastDate": 1769794995000,
+    "lastDateString": "1/30/2026, 11:43:15 AM",
+    "avgDate": 1769776441500,
+    "avgDateString": "1/30/2026, 6:34:01 AM"
+  },
+  {
+    "groupID": 13724,
+    "groupName": "Nobodeh online",
+    "lastDate": 1774759403000,
+    "lastDateString": "3/28/2026, 11:43:23 PM",
+    "avgDate": 1769695694950,
+    "avgDateString": "1/29/2026, 8:08:14 AM"
+  },
+  {
     "groupID": 13721,
     "groupName": "Ryuusei no tami- Fan club",
     "lastDate": 1769718046000,
     "lastDateString": "1/29/2026, 2:20:46 PM",
-    "avgDate": 1769679614666.6667,
-    "avgDateString": "1/29/2026, 3:40:14 AM"
-  },
-  {
-    "groupID": 12988,
-    "groupName": " UNDER RENOVATION ",
-    "lastDate": 1769815906000,
-    "lastDateString": "1/30/2026, 5:31:46 PM",
-    "avgDate": 1769649420800,
-    "avgDateString": "1/28/2026, 7:17:00 PM"
-  },
-  {
-    "groupID": 13201,
-    "groupName": " (The Dan Clan)",
-    "lastDate": 1771728101000,
-    "lastDateString": "2/21/2026, 8:41:41 PM",
-    "avgDate": 1769642790200,
-    "avgDateString": "1/28/2026, 5:26:30 PM"
+    "avgDate": 1769688945400,
+    "avgDateString": "1/29/2026, 6:15:45 AM"
   },
   {
     "groupID": 13387,
@@ -232,20 +504,28 @@
     "avgDateString": "1/27/2026, 5:37:29 PM"
   },
   {
-    "groupID": 13094,
-    "groupName": "frivolously fantastic frog faction",
-    "lastDate": 1769530929000,
-    "lastDateString": "1/27/2026, 10:22:09 AM",
-    "avgDate": 1769394711650,
-    "avgDateString": "1/25/2026, 8:31:51 PM"
+    "groupID": 13774,
+    "groupName": "Pokemon z-a Fan club",
+    "lastDate": 1769456234000,
+    "lastDateString": "1/26/2026, 1:37:14 PM",
+    "avgDate": 1769456234000,
+    "avgDateString": "1/26/2026, 1:37:14 PM"
   },
   {
-    "groupID": 13079,
-    "groupName": "[VNTH] * ~ MARCH!ERIDAN&#039;S CARACAL PALACE ~ *",
-    "lastDate": 1769450276000,
-    "lastDateString": "1/26/2026, 11:57:56 AM",
-    "avgDate": 1769387408700,
-    "avgDateString": "1/25/2026, 6:30:08 PM"
+    "groupID": 13818,
+    "groupName": "{H.C} [help center] for new members",
+    "lastDate": 1769454825000,
+    "lastDateString": "1/26/2026, 1:13:45 PM",
+    "avgDate": 1769454825000,
+    "avgDateString": "1/26/2026, 1:13:45 PM"
+  },
+  {
+    "groupID": 13640,
+    "groupName": "Phoenix Wright Fan Club",
+    "lastDate": 1770297584000,
+    "lastDateString": "2/5/2026, 7:19:44 AM",
+    "avgDate": 1769373701500,
+    "avgDateString": "1/25/2026, 2:41:41 PM"
   },
   {
     "groupID": 13634,
@@ -254,14 +534,6 @@
     "lastDateString": "1/26/2026, 5:15:26 AM",
     "avgDate": 1769340964555.5557,
     "avgDateString": "1/25/2026, 5:36:04 AM"
-  },
-  {
-    "groupID": 13667,
-    "groupName": "@;3*0",
-    "lastDate": 1771284234000,
-    "lastDateString": "2/16/2026, 5:23:54 PM",
-    "avgDate": 1769340478500,
-    "avgDateString": "1/25/2026, 5:27:58 AM"
   },
   {
     "groupID": 13054,
@@ -288,12 +560,20 @@
     "avgDateString": "1/24/2026, 1:17:22 PM"
   },
   {
-    "groupID": 13673,
-    "groupName": "adm1ns chatr00m",
-    "lastDate": 1769430499000,
-    "lastDateString": "1/26/2026, 6:28:19 AM",
-    "avgDate": 1769240015300,
-    "avgDateString": "1/24/2026, 1:33:35 AM"
+    "groupID": 13816,
+    "groupName": "Weeeheeep fanclub!!",
+    "lastDate": 1771554703000,
+    "lastDateString": "2/19/2026, 8:31:43 PM",
+    "avgDate": 1769253954600,
+    "avgDateString": "1/24/2026, 5:25:54 AM"
+  },
+  {
+    "groupID": 13817,
+    "groupName": "Inky gifs here",
+    "lastDate": 1769305391000,
+    "lastDateString": "1/24/2026, 7:43:11 PM",
+    "avgDate": 1769219401222.2222,
+    "avgDateString": "1/23/2026, 7:50:01 PM"
   },
   {
     "groupID": 13366,
@@ -320,20 +600,12 @@
     "avgDateString": "1/19/2026, 8:15:03 PM"
   },
   {
-    "groupID": 13724,
-    "groupName": "Nobodeh online",
-    "lastDate": 1768920983000,
-    "lastDateString": "1/20/2026, 8:56:23 AM",
-    "avgDate": 1768798793850,
-    "avgDateString": "1/18/2026, 10:59:53 PM"
-  },
-  {
-    "groupID": 13640,
-    "groupName": "Phoenix Wright Fan Club",
-    "lastDate": 1770297584000,
-    "lastDateString": "2/5/2026, 7:19:44 AM",
-    "avgDate": 1768754724285.7144,
-    "avgDateString": "1/18/2026, 10:45:24 AM"
+    "groupID": 13814,
+    "groupName": "Ideas for kris site",
+    "lastDate": 1768847201000,
+    "lastDateString": "1/19/2026, 12:26:41 PM",
+    "avgDate": 1768842910333.3333,
+    "avgDateString": "1/19/2026, 11:15:10 AM"
   },
   {
     "groupID": 13021,
@@ -352,20 +624,20 @@
     "avgDateString": "1/15/2026, 10:36:14 PM"
   },
   {
+    "groupID": 13771,
+    "groupName": "Venith",
+    "lastDate": 1768493883000,
+    "lastDateString": "1/15/2026, 10:18:03 AM",
+    "avgDate": 1768480650000,
+    "avgDateString": "1/15/2026, 6:37:30 AM"
+  },
+  {
     "groupID": 12775,
     "groupName": "ITZAKOS BLACKJACK TABLE",
     "lastDate": 1768586820000,
     "lastDateString": "1/16/2026, 12:07:00 PM",
     "avgDate": 1768479452000,
     "avgDateString": "1/15/2026, 6:17:32 AM"
-  },
-  {
-    "groupID": 13810,
-    "groupName": "Key :BIG:",
-    "lastDate": 1768836581000,
-    "lastDateString": "1/19/2026, 9:29:41 AM",
-    "avgDate": 1768448388550,
-    "avgDateString": "1/14/2026, 9:39:48 PM"
   },
   {
     "groupID": 13106,
@@ -390,6 +662,14 @@
     "lastDateString": "2/8/2026, 10:07:19 AM",
     "avgDate": 1768411901550,
     "avgDateString": "1/14/2026, 11:31:41 AM"
+  },
+  {
+    "groupID": 13804,
+    "groupName": "Profile Verification Station",
+    "lastDate": 1768401460000,
+    "lastDateString": "1/14/2026, 8:37:40 AM",
+    "avgDate": 1768390949750,
+    "avgDateString": "1/14/2026, 5:42:29 AM"
   },
   {
     "groupID": 13333,
@@ -424,6 +704,14 @@
     "avgDateString": "1/14/2026, 12:28:41 AM"
   },
   {
+    "groupID": 12648,
+    "groupName": "[VNTH] Dragon Clan",
+    "lastDate": 1768372029000,
+    "lastDateString": "1/14/2026, 12:27:09 AM",
+    "avgDate": 1768372029000,
+    "avgDateString": "1/14/2026, 12:27:09 AM"
+  },
+  {
     "groupID": 13340,
     "groupName": "3DSPAINT KJV Bible Group",
     "lastDate": 1768447292000,
@@ -432,379 +720,11 @@
     "avgDateString": "1/13/2026, 2:22:22 PM"
   },
   {
-    "groupID": 13731,
-    "groupName": "Gengar&#039;s Furry Fandom X3",
-    "lastDate": 1768244804000,
-    "lastDateString": "1/12/2026, 1:06:44 PM",
-    "avgDate": 1768234974200,
-    "avgDateString": "1/12/2026, 10:22:54 AM"
-  },
-  {
-    "groupID": 13613,
-    "groupName": "Cowboy Gang",
-    "lastDate": 1767761907000,
-    "lastDateString": "1/6/2026, 10:58:27 PM",
-    "avgDate": 1767694204454.5454,
-    "avgDateString": "1/6/2026, 4:10:04 AM"
-  },
-  {
-    "groupID": 13361,
-    "groupName": "~XGalactiCadeX~",
-    "lastDate": 1769794995000,
-    "lastDateString": "1/30/2026, 11:43:15 AM",
-    "avgDate": 1767629543500,
-    "avgDateString": "1/5/2026, 10:12:23 AM"
-  },
-  {
-    "groupID": 13804,
-    "groupName": "Profile Verification Station",
-    "lastDate": 1768401460000,
-    "lastDateString": "1/14/2026, 8:37:40 AM",
-    "avgDate": 1767575017400,
-    "avgDateString": "1/4/2026, 7:03:37 PM"
-  },
-  {
-    "groupID": 13787,
-    "groupName": "Usagi&lsquo;s KINGDOM",
-    "lastDate": 1767536991000,
-    "lastDateString": "1/4/2026, 8:29:51 AM",
-    "avgDate": 1767536991000,
-    "avgDateString": "1/4/2026, 8:29:51 AM"
-  },
-  {
-    "groupID": 13806,
-    "groupName": "Images",
-    "lastDate": 1767434433000,
-    "lastDateString": "1/3/2026, 4:00:33 AM",
-    "avgDate": 1767434402500,
-    "avgDateString": "1/3/2026, 4:00:02 AM"
-  },
-  {
-    "groupID": 13130,
-    "groupName": "[VNTH] THE DEATH EMPIRE",
-    "lastDate": 1767313675000,
-    "lastDateString": "1/1/2026, 6:27:55 PM",
-    "avgDate": 1767281367083.3333,
-    "avgDateString": "1/1/2026, 9:29:27 AM"
-  },
-  {
-    "groupID": 13078,
-    "groupName": "[VNTH] REPUBLIC OF PAINT",
-    "lastDate": 1767198643000,
-    "lastDateString": "12/31/2025, 10:30:43 AM",
-    "avgDate": 1767172946000,
-    "avgDateString": "12/31/2025, 3:22:26 AM"
-  },
-  {
-    "groupID": 13206,
-    "groupName": "FIGURE FIGURE Literature Club!",
-    "lastDate": 1770244092000,
-    "lastDateString": "2/4/2026, 4:28:12 PM",
-    "avgDate": 1767155539350,
-    "avgDateString": "12/30/2025, 10:32:19 PM"
-  },
-  {
-    "groupID": 13770,
-    "groupName": "[VNTH] Democratic Front for the Liberation of Paint",
-    "lastDate": 1771692762000,
-    "lastDateString": "2/21/2026, 10:52:42 AM",
-    "avgDate": 1767078275950,
-    "avgDateString": "12/30/2025, 1:04:35 AM"
-  },
-  {
-    "groupID": 13411,
-    "groupName": "[3DS House]",
-    "lastDate": 1767132799000,
-    "lastDateString": "12/30/2025, 4:13:19 PM",
-    "avgDate": 1767040787750,
-    "avgDateString": "12/29/2025, 2:39:47 PM"
-  },
-  {
-    "groupID": 13719,
-    "groupName": "Minigames Galore!",
-    "lastDate": 1766934440000,
-    "lastDateString": "12/28/2025, 9:07:20 AM",
-    "avgDate": 1766912902050,
-    "avgDateString": "12/28/2025, 3:08:22 AM"
-  },
-  {
-    "groupID": 13782,
-    "groupName": "usagi.net  admin team",
-    "lastDate": 1767650963000,
-    "lastDateString": "1/5/2026, 4:09:23 PM",
-    "avgDate": 1766899225500,
-    "avgDateString": "12/27/2025, 11:20:25 PM"
-  },
-  {
-    "groupID": 13748,
-    "groupName": "Messing around with paint features",
-    "lastDate": 1766812445000,
-    "lastDateString": "12/26/2025, 11:14:05 PM",
-    "avgDate": 1766812445000,
-    "avgDateString": "12/26/2025, 11:14:05 PM"
-  },
-  {
-    "groupID": 13730,
-    "groupName": "Brasileiros",
-    "lastDate": 1769874513000,
-    "lastDateString": "1/31/2026, 9:48:33 AM",
-    "avgDate": 1766582945250,
-    "avgDateString": "12/24/2025, 7:29:05 AM"
-  },
-  {
-    "groupID": 13098,
-    "groupName": "Kashbanookas book club",
-    "lastDate": 1766565354000,
-    "lastDateString": "12/24/2025, 2:35:54 AM",
-    "avgDate": 1766565354000,
-    "avgDateString": "12/24/2025, 2:35:54 AM"
-  },
-  {
-    "groupID": 13738,
-    "groupName": "Christmas Part 2025",
-    "lastDate": 1766686931000,
-    "lastDateString": "12/25/2025, 12:22:11 PM",
-    "avgDate": 1766526787642.8572,
-    "avgDateString": "12/23/2025, 3:53:07 PM"
-  },
-  {
-    "groupID": 13794,
-    "groupName": "Dinoofs Kingdom",
-    "lastDate": 1766490370000,
-    "lastDateString": "12/23/2025, 5:46:10 AM",
-    "avgDate": 1766478258500,
-    "avgDateString": "12/23/2025, 2:24:18 AM"
-  },
-  {
-    "groupID": 13796,
-    "groupName": "-UwU usagi group UwU-",
-    "lastDate": 1766490425000,
-    "lastDateString": "12/23/2025, 5:47:05 AM",
-    "avgDate": 1766474391000,
-    "avgDateString": "12/23/2025, 1:19:51 AM"
-  },
-  {
-    "groupID": 13686,
-    "groupName": "need online friends to talk to bc im bored",
-    "lastDate": 1766436190000,
-    "lastDateString": "12/22/2025, 2:43:10 PM",
-    "avgDate": 1766419769500,
-    "avgDateString": "12/22/2025, 10:09:29 AM"
-  },
-  {
-    "groupID": 12648,
-    "groupName": "[VNTH] Dragon Clan",
-    "lastDate": 1768372029000,
-    "lastDateString": "1/14/2026, 12:27:09 AM",
-    "avgDate": 1766299252000,
-    "avgDateString": "12/21/2025, 12:40:52 AM"
-  },
-  {
-    "groupID": 13792,
-    "groupName": "1p293",
-    "lastDate": 1766270576000,
-    "lastDateString": "12/20/2025, 4:42:56 PM",
-    "avgDate": 1766270576000,
-    "avgDateString": "12/20/2025, 4:42:56 PM"
-  },
-  {
     "groupID": 13781,
     "groupName": "VELTRON.NET",
     "lastDate": 1768332166000,
     "lastDateString": "1/13/2026, 1:22:46 PM",
-    "avgDate": 1766250414250,
-    "avgDateString": "12/20/2025, 11:06:54 AM"
-  },
-  {
-    "groupID": 13771,
-    "groupName": "Venith",
-    "lastDate": 1768493883000,
-    "lastDateString": "1/15/2026, 10:18:03 AM",
-    "avgDate": 1766146570750,
-    "avgDateString": "12/19/2025, 6:16:10 AM"
-  },
-  {
-    "groupID": 13319,
-    "groupName": "     ",
-    "lastDate": 1766243560000,
-    "lastDateString": "12/20/2025, 9:12:40 AM",
-    "avgDate": 1766064172090.9092,
-    "avgDateString": "12/18/2025, 7:22:52 AM"
-  },
-  {
-    "groupID": 13774,
-    "groupName": "Pokemon z-a Fan club",
-    "lastDate": 1769456234000,
-    "lastDateString": "1/26/2026, 1:37:14 PM",
-    "avgDate": 1765957387789.4736,
-    "avgDateString": "12/17/2025, 1:43:07 AM"
-  },
-  {
-    "groupID": 13779,
-    "groupName": " tutorial de css para o Dinoofs ",
-    "lastDate": 1766491157000,
-    "lastDateString": "12/23/2025, 5:59:17 AM",
-    "avgDate": 1765946746200,
-    "avgDateString": "12/16/2025, 10:45:46 PM"
-  },
-  {
-    "groupID": 13735,
-    "groupName": "[VNTH] Pokemon Legends: Z-A FANCLUB",
-    "lastDate": 1766423084000,
-    "lastDateString": "12/22/2025, 11:04:44 AM",
-    "avgDate": 1765869201500,
-    "avgDateString": "12/16/2025, 1:13:21 AM"
-  },
-  {
-    "groupID": 13717,
-    "groupName": "Just Have Fun/Therapy Room",
-    "lastDate": 1766069286000,
-    "lastDateString": "12/18/2025, 8:48:06 AM",
-    "avgDate": 1765759887833.3333,
-    "avgDateString": "12/14/2025, 6:51:27 PM"
-  },
-  {
-    "groupID": 13745,
-    "groupName": "67 clan ",
-    "lastDate": 1765660255000,
-    "lastDateString": "12/13/2025, 3:10:55 PM",
-    "avgDate": 1765660255000,
-    "avgDateString": "12/13/2025, 3:10:55 PM"
-  },
-  {
-    "groupID": 13460,
-    "groupName": "Jax&amp;Jade with Gal Group",
-    "lastDate": 1765610278000,
-    "lastDateString": "12/13/2025, 1:17:58 AM",
-    "avgDate": 1765610035100,
-    "avgDateString": "12/13/2025, 1:13:55 AM"
-  },
-  {
-    "groupID": 13696,
-    "groupName": "CSS HEAVEN",
-    "lastDate": 1765558574000,
-    "lastDateString": "12/12/2025, 10:56:14 AM",
-    "avgDate": 1765558574000,
-    "avgDateString": "12/12/2025, 10:56:14 AM"
-  },
-  {
-    "groupID": 13780,
-    "groupName": "chat for talking",
-    "lastDate": 1765549741000,
-    "lastDateString": "12/12/2025, 8:29:01 AM",
-    "avgDate": 1765549620857.1428,
-    "avgDateString": "12/12/2025, 8:27:00 AM"
-  },
-  {
-    "groupID": 13708,
-    "groupName": "*-Tma-* ",
-    "lastDate": 1765480114000,
-    "lastDateString": "12/11/2025, 1:08:34 PM",
-    "avgDate": 1765480114000,
-    "avgDateString": "12/11/2025, 1:08:34 PM"
-  },
-  {
-    "groupID": 13756,
-    "groupName": "brasil",
-    "lastDate": 1765542762000,
-    "lastDateString": "12/12/2025, 6:32:42 AM",
-    "avgDate": 1765470243500,
-    "avgDateString": "12/11/2025, 10:24:03 AM"
-  },
-  {
-    "groupID": 13778,
-    "groupName": "Galestians",
-    "lastDate": 1765446865000,
-    "lastDateString": "12/11/2025, 3:54:25 AM",
-    "avgDate": 1765442751333.3333,
-    "avgDateString": "12/11/2025, 2:45:51 AM"
-  },
-  {
-    "groupID": 13751,
-    "groupName": "Github",
-    "lastDate": 1765467229000,
-    "lastDateString": "12/11/2025, 9:33:49 AM",
-    "avgDate": 1765415356000,
-    "avgDateString": "12/10/2025, 7:09:16 PM"
-  },
-  {
-    "groupID": 13767,
-    "groupName": "Css test",
-    "lastDate": 1765413936000,
-    "lastDateString": "12/10/2025, 6:45:36 PM",
-    "avgDate": 1765413936000,
-    "avgDateString": "12/10/2025, 6:45:36 PM"
-  },
-  {
-    "groupID": 13677,
-    "groupName": "css help",
-    "lastDate": 1765413853000,
-    "lastDateString": "12/10/2025, 6:44:13 PM",
-    "avgDate": 1765413853000,
-    "avgDateString": "12/10/2025, 6:44:13 PM"
-  },
-  {
-    "groupID": 13752,
-    "groupName": "blog",
-    "lastDate": 1765413612000,
-    "lastDateString": "12/10/2025, 6:40:12 PM",
-    "avgDate": 1765413612000,
-    "avgDateString": "12/10/2025, 6:40:12 PM"
-  },
-  {
-    "groupID": 13646,
-    "groupName": "Wario ware DIY fan club",
-    "lastDate": 1765293753000,
-    "lastDateString": "12/9/2025, 9:22:33 AM",
-    "avgDate": 1765293753000,
-    "avgDateString": "12/9/2025, 9:22:33 AM"
-  },
-  {
-    "groupID": 13768,
-    "groupName": "3ds revive",
-    "lastDate": 1765278752000,
-    "lastDateString": "12/9/2025, 5:12:32 AM",
-    "avgDate": 1765239733500,
-    "avgDateString": "12/8/2025, 6:22:13 PM"
-  },
-  {
-    "groupID": 13645,
-    "groupName": "Minecraft movie fan club",
-    "lastDate": 1765200472000,
-    "lastDateString": "12/8/2025, 7:27:52 AM",
-    "avgDate": 1765200472000,
-    "avgDateString": "12/8/2025, 7:27:52 AM"
-  },
-  {
-    "groupID": 13764,
-    "groupName": "B.I.G {blueturtle profiles}",
-    "lastDate": 1765047525000,
-    "lastDateString": "12/6/2025, 12:58:45 PM",
-    "avgDate": 1765036107550,
-    "avgDateString": "12/6/2025, 9:48:27 AM"
-  },
-  {
-    "groupID": 13763,
-    "groupName": "Admin group",
-    "lastDate": 1765025596000,
-    "lastDateString": "12/6/2025, 6:53:16 AM",
-    "avgDate": 1765025596000,
-    "avgDateString": "12/6/2025, 6:53:16 AM"
-  },
-  {
-    "groupID": 12572,
-    "groupName": "[VNTH] Poketopia",
-    "lastDate": 1768372047000,
-    "lastDateString": "1/14/2026, 12:27:27 AM",
-    "avgDate": 1764564075666.6667,
-    "avgDateString": "11/30/2025, 10:41:15 PM"
-  },
-  {
-    "groupID": 13723,
-    "groupName": "how TheSmallBlog&#039;s doing in life",
-    "lastDate": 1764603387000,
-    "lastDateString": "12/1/2025, 9:36:27 AM",
-    "avgDate": 1764452543400,
-    "avgDateString": "11/29/2025, 3:42:23 PM"
+    "avgDate": 1768332166000,
+    "avgDateString": "1/13/2026, 1:22:46 PM"
   }
 ]

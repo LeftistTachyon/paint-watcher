@@ -15,7 +15,7 @@ type GroupData = {
 const arrayRange = (start: number, stop: number, step: number) =>
   Array.from(
     { length: (stop - start) / step + 1 },
-    (_value, index) => start + index * step
+    (_value, index) => start + index * step,
   );
 
 (async () => {
@@ -23,7 +23,7 @@ const arrayRange = (start: number, stop: number, step: number) =>
   if (!existsSync("data/saves")) await mkdir("data/saves");
 
   const groupList: GroupData[] = [];
-  for (const groupID of tqdm(arrayRange(13812, 12182, -1), {
+  for (const groupID of tqdm(arrayRange(13832, 12182, -1), {
     description: "Scanning groups",
     unit: ["group", "groups"],
     progressColor: "red",
@@ -34,7 +34,7 @@ const arrayRange = (start: number, stop: number, step: number) =>
       // );
       await writeFile(
         `data/saves/groups_${groupID}.json`,
-        JSON.stringify(groupList, null, 2)
+        JSON.stringify(groupList, null, 2),
       );
     }
 
@@ -64,9 +64,9 @@ const arrayRange = (start: number, stop: number, step: number) =>
         {
           url: `https://3dspaint.com/group/shoutbox.php?id=${group.groupID}`,
         },
-        group
-      )
-    )
+        group,
+      ),
+    ),
   );
 
   console.log("writing to file...");
