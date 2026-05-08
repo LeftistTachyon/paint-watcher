@@ -1,12 +1,5 @@
-import { Client, Events, GatewayIntentBits } from "discord.js";
-import commands from "./commands";
-import init, {
-  generateChatEmbed,
-  generateShoutboxEmbed,
-  getChatroomMsgs,
-  getGroupName,
-  getGroupShouts,
-} from "./request";
+import { Client, Events, GatewayIntentBits, MessageFlags } from "discord.js";
+import { backOff, type BackoffOptions } from "exponential-backoff";
 import {
   getCache,
   loadCache,
@@ -15,7 +8,14 @@ import {
   saveCache,
   updateShoutCache,
 } from "./cache";
-import { backOff, type BackoffOptions } from "exponential-backoff";
+import commands from "./commands";
+import init, {
+  generateChatEmbed,
+  generateShoutboxEmbed,
+  getChatroomMsgs,
+  getGroupName,
+  getGroupShouts,
+} from "./request";
 
 // the Discord client
 const client: Client = new Client({
@@ -156,7 +156,7 @@ async function run() {
             // process.stdout.write("error detected, attempting reply...\n");
             await interaction.reply({
               content: "There was an error while executing this command!",
-              ephemeral: true,
+              flags: MessageFlags.Ephemeral,
             });
           }
         }
