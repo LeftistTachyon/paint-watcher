@@ -232,8 +232,8 @@ const emotes: Record<string, string> = {
   "/chatroom/smilies/nerd2.gif": "<:nerd2:1378842390261137419>",
   "/chatroom/smilies/redneck.gif": "<:redneck:1378842074945687552>",
   "/chatroom/smilies/smirk.gif": "<:smirk:1378842356182159442>",
-  "/chatroom/smilies/thumb_down.png": "<:disagree:1352039357111861248>",
-  "/chatroom/smilies/thumb_up.png": "<:agree:1352039300228845669>",
+  "/images/thumb_down.png": "<:disagree:1352039357111861248>",
+  "/images/thumb_up.png": "<:agree:1352039300228845669>",
 };
 
 /**
@@ -243,12 +243,12 @@ const emotes: Record<string, string> = {
  * @param finalString the string to append to the text
  * @returns plaintext and image data contained in the given HTML string
  */
-function parseMsgString(
+export function parseMsgString(
   msgString: string,
   initialString: string = "",
   finalString: string = "",
 ) {
-  const parsed = parse(msgString);
+  const parsed = parse(msgString, { setAttributeMap: true });
 
   let text = initialString;
   const images: string[] = [];
@@ -261,10 +261,17 @@ function parseMsgString(
           case "a":
             text += "[";
             break;
+          case "span":
+            // care only for [b] or [u]
+            let style = node.attributeMap?.style.value?.value;
+            if (style === "font-weight:bold") {
+              text += "**";
+            } else if (style === "text-decoration:underline") {
+              text += "__";
+            }
+            break;
           case "img":
-            let src = node.attributes.find(
-              (attribute) => attribute.name.value === "src",
-            )?.value?.value;
+            let src = node.attributeMap?.src.value?.value;
             if (!src) break;
 
             if (emotes[src]) {
@@ -274,6 +281,7 @@ function parseMsgString(
               images.push(src);
             }
             break;
+          case "hr":
           case "br":
             text += "\n";
             break;
@@ -282,14 +290,26 @@ function parseMsgString(
     },
 
     leave(node) {
-      if (node.type === SyntaxKind.Tag && node.name === "a") {
-        if (text.endsWith("[")) text += "LINK";
+      if (node.type === SyntaxKind.Tag) {
+        switch (node.name) {
+          case "a":
+            if (text.endsWith("[")) text += "LINK";
 
-        let href = node.attributes.find(
-          (attribute) => attribute.name.value === "href",
-        )?.value?.value;
-        if (href?.startsWith("/")) href = "https://3dspaint.com" + href;
-        text += `](${href})`;
+            let href = node.attributeMap?.href.value?.value;
+            if (href?.startsWith("/")) href = "https://3dspaint.com" + href;
+            text += `](${href})`;
+            break;
+
+          case "span":
+            // care only for [b] or [u]
+            let style = node.attributeMap?.style.value?.value;
+            if (style === "font-weight:bold") {
+              text += "**";
+            } else if (style === "text-decoration:underline") {
+              text += "__";
+            }
+            break;
+        }
       }
     },
   });
