@@ -315,6 +315,7 @@ export function parseMsgString(
   });
 
   text += finalString;
+  text = text.replace(/\[(.+)\]\(\1\)/gm, "<$1>");
 
   return { text, images };
 }
