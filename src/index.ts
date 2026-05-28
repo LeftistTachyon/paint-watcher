@@ -1,4 +1,10 @@
-import { Client, Events, GatewayIntentBits, MessageFlags } from "discord.js";
+import {
+  AttachmentBuilder,
+  Client,
+  Events,
+  GatewayIntentBits,
+  MessageFlags,
+} from "discord.js";
 import { backOff, type BackoffOptions } from "exponential-backoff";
 import {
   getCache,
@@ -191,6 +197,18 @@ async function run() {
         await owner.send(cacheString.substring(start, end) + ".");
       }
       await owner.send(cacheString.substring(start) + ".");
+
+      // experimental attachments
+      await owner.send({
+        content: "Weekly cache log",
+        files: [
+          {
+            attachment: "./cache.json",
+            name: "cache.json",
+            description: "This bot's tracking cache",
+          },
+        ],
+      });
     }
   });
 
