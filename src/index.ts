@@ -22,6 +22,7 @@ import init, {
   getGroupName,
   getGroupShouts,
 } from "./request";
+import { schedule } from "node-cron";
 
 // the Discord client
 const client: Client = new Client({
@@ -200,7 +201,7 @@ async function run() {
 
       // experimental attachments
       await owner.send({
-        content: "Weekly cache log",
+        content: "Current cache:",
         files: [
           {
             attachment: "./cache.json",
@@ -208,6 +209,19 @@ async function run() {
             description: "This bot's tracking cache",
           },
         ],
+      });
+
+      schedule("5 8 * * 0", () => {
+        owner.send({
+          content: "Weekly cache update:",
+          files: [
+            {
+              attachment: "./cache.json",
+              name: "cache.json",
+              description: "This bot's tracking cache",
+            },
+          ],
+        });
       });
     }
   });
