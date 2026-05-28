@@ -119,7 +119,7 @@ function correctImage(imageURL: string) {
  */
 export function generateChatEmbed(msg: ChatMessage) {
   const parsed = parseMsgString(
-    msg.text,
+    msg.text.replace(/([*_])/g, "\\$1"),
     msg.username ? "" : "_",
     msg.username ? "" : "_",
   );

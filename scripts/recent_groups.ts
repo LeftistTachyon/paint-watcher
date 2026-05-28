@@ -23,7 +23,7 @@ const arrayRange = (start: number, stop: number, step: number) =>
   if (!existsSync("data/saves")) await mkdir("data/saves");
 
   const groupList: GroupData[] = [];
-  for (const groupID of tqdm(arrayRange(13832, 12182, -1), {
+  for (const groupID of tqdm(arrayRange(13836, 12182, -1), {
     description: "Scanning groups",
     unit: ["group", "groups"],
     progressColor: "red",
