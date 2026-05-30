@@ -119,7 +119,7 @@ function correctImage(imageURL: string) {
  */
 export function generateChatEmbed(msg: ChatMessage) {
   const parsed = parseMsgString(
-    msg.text.replace(/([*_])/g, "\\$1"),
+    msg.text.replace(/([*~_])/g, "\\$1"),
     msg.username ? "" : "_",
     msg.username ? "" : "_",
   );
@@ -169,7 +169,7 @@ function convertChatColor(chatColor: string) {
  * @returns an embed that contains info from the given shout
  */
 export function generateShoutboxEmbed(shout: Shout) {
-  const parsed = parseMsgString(shout.text);
+  const parsed = parseMsgString(shout.text.replace(/([*~_])/g, "\\$1"));
 
   let firstEmbed = new EmbedBuilder()
     .setAuthor({
