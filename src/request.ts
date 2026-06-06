@@ -258,7 +258,10 @@ export function parseMsgString(
   walk(parsed, {
     enter(node) {
       if (node.type === SyntaxKind.Text) {
-        text += decode(node.value.replace(/\s+/, " "));
+        text += decode(
+          node.value.replace(/\s+/g, " "),
+          // .replace(/([_~*])/gm, "\\$1")
+        );
       } else if (node.type === SyntaxKind.Tag) {
         switch (node.name) {
           case "a":
