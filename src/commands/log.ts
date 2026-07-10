@@ -1,4 +1,5 @@
 import {
+  InteractionContextType,
   MessageFlags,
   NewsChannel,
   SlashCommandBuilder,
@@ -85,50 +86,51 @@ const log: DiscordCommand = {
   data: new SlashCommandBuilder()
     .setName("log")
     .setDescription(
-      "Logs important information from Paint into a Discord channel or thread"
+      "Logs important information from Paint into a Discord channel or thread",
     )
+    .setContexts(InteractionContextType.Guild)
     .addSubcommand((builder) =>
       builder
         .setName("group")
         .setDescription(
-          "Logs a group's shoutbox messages into a Discord channel or thread"
+          "Logs a group's shoutbox messages into a Discord channel or thread",
         )
         .addIntegerOption((option) =>
           option
             .setName("group-id")
             .setDescription(
-              "The last number in the URL of the group to log shouts from"
+              "The last number in the URL of the group to log shouts from",
             )
-            .setRequired(true)
+            .setRequired(true),
         )
         .addStringOption((option) =>
           option
             .setName("thread")
             .setDescription("Choose if a new thread should be started")
             .setChoices(threadChoices)
-            .setRequired(false)
-        )
+            .setRequired(false),
+        ),
     )
     .addSubcommand((builder) =>
       builder
         .setName("chatroom")
         .setDescription(
-          "Logs a chatroom's messages into a Discord channel or thread"
+          "Logs a chatroom's messages into a Discord channel or thread",
         )
         .addStringOption((option) =>
           option
             .setName("chatroom")
             .setDescription("The name of the chatroom to log")
             .addChoices(allChatrooms)
-            .setRequired(true)
+            .setRequired(true),
         )
         .addStringOption((option) =>
           option
             .setName("thread")
             .setDescription("Choose if a new thread should be started")
             .setChoices(threadChoices)
-            .setRequired(false)
-        )
+            .setRequired(false),
+        ),
     ),
 
   async execute(interaction) {
