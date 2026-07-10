@@ -7,8 +7,10 @@
     "build": "tsc",
     "start": "ts-node -r dotenv/config src/index.ts",
     "test": "ts-node -r dotenv/config test/index.ts",
+    "test-decode": "ts-node -r dotenv/config test/decode.ts",
     "recent-groups": "ts-node -r dotenv/config scripts/recent_groups.ts",
-    "create-cache": "ts-node -r dotenv/config scripts/create_cache.ts"
+    "create-cache": "ts-node -r dotenv/config scripts/create_cache.ts",
+    "deploy": "ts-node -r dotenv/config src/deploy-commands.ts"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,12 @@
 import { Collection } from "discord.js";
 import { DiscordCommand } from "../type";
-import ping from "./ping";
+import dumpCache from "./dumpCache";
 import log from "./log";
+import ping from "./ping";
 import unlog from "./unlog";
 
 // ! Add any new commands into this list!
-export const commandList: DiscordCommand[] = [ping, log, unlog];
+export const commandList: DiscordCommand[] = [ping, log, unlog, dumpCache];
 
 // Creating collection of commands
 const output = new Collection<string, DiscordCommand>();

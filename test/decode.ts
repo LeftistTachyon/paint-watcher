@@ -1,7 +1,9 @@
-import { decode } from "he";
+import { parseMsgString } from "../src/request";
 
 console.log(
-  decode(
-    "&ldquo;&rdquo;&ldquo;&quot;&rdquo;&ldquo;&quot;&rdquo;&ldquo;&rdquo;&quot;&rdquo;&ldquo;&Prime;&Prime;&quot;&ldquo;&Prime;"
-  )
+  parseMsgString(`
+<a href=\"\/images\/upload_gallery\/50f4af7f-1984-464a-80e3-10d91b14a5b0.jpg\">
+    <img src=\"\/images\/upload_gallery\/50f4af7f-1984-464a-80e3-10d91b14a5b0_thumb.jpg\" alt=\"thumb\">
+    <\/a>
+        `),
 );
