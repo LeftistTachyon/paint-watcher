@@ -287,6 +287,8 @@ export function parseMsgString(
               images.push(src);
             }
             break;
+          case "blockquote":
+            text += "\n> ";
           case "hr":
           case "br":
             text += "\n";
@@ -315,6 +317,9 @@ export function parseMsgString(
               text += "__";
             }
             break;
+
+          case "blockquote":
+            text += "\n";
         }
       }
     },
