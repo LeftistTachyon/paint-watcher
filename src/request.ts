@@ -232,11 +232,11 @@ const emotes: Record<string, string> = {
   "/chatroom/smilies/nerd2.gif": "<:nerd2:1378842390261137419>",
   "/chatroom/smilies/redneck.gif": "<:redneck:1378842074945687552>",
   "/chatroom/smilies/smirk.gif": "<:smirk:1378842356182159442>",
-  "/images/thumb_down.png": "<:disagree:1352039357111861248>",
+  "/images/thumb_down.png": "<:disagree:1255380820911456367>",
   "https://3dspaint.com/images/thumb_down.png":
-    "<:disagree:1352039357111861248>",
-  "/images/thumb_up.png": "<:agree:1352039300228845669>",
-  "https://3dspaint.com/images/thumb_up.png": "<:agree:1352039300228845669>",
+    "<:disagree:1255380820911456367>",
+  "/images/thumb_up.png": "<:agree:1255379952602451980>",
+  "https://3dspaint.com/images/thumb_up.png": "<:agree:1255379952602451980>",
 };
 
 /**

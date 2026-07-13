@@ -84,7 +84,7 @@ async function log() {
         }
         // process.stdout.write("done.\n");
         chatrooms++;
-      } else {
+      } else if (log.type === "shout") {
         // process.stdout.write(`Logging group #${log.groupID}..`);
         const shouts = await backOff(async () => {
           // process.stdout.write(".");
