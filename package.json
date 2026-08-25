@@ -31,7 +31,7 @@
   "homepage": "https://github.com/LeftistTachyon/paint-watcher#readme",
   "devDependencies": {
     "@types/he": "^1.2.3",
-    "@types/node": "^22.15.29",
+    "@types/node": "^22.20.1",
     "node-console-progress-bar-tqdm": "^1.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"

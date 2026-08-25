@@ -1,10 +1,21 @@
-import { parseMsgString } from "../src/request";
 (async () => {
+  const username = process.env.PAINT_USERNAME || "GuiedGui";
+
+  const formdata = new FormData();
+  formdata.append("username", username);
+  formdata.append("password", process.env.PAINT_PSWD || "");
+  formdata.append("remember", "true");
+
+  const loginResp = await fetch("https://3dspaint.com/", {
+    method: "POST",
+    body: formdata,
+    redirect: "manual",
+    credentials: "include",
+  });
+  const loginText = await loginResp.text();
   console.log(
-    parseMsgString(
-      // `<div style="clear:both">Me when the <span style="font-weight:bold">3PM</span> melody <span style="text-decoration:underline">hits</span>:</div>`,
-      // `<a href="https://www.youtube.com/watch?v=a4na2opArGY" rel="nofollow">Dandadan dandadan dandadan dandadan dandadan, Dandadan dandadan dandadan dandadan dandadan, Dandadan dandadan dandadan dandadan dandadan, Dandadan dandadan dandadan.</a>`,
-      `hi <a href="https://mh.lurc.cc/upload/igr-DX98SOSMYw3.mp4" rel="nofollow">https://mh.lurc.cc/upload/igr-DX98SOSMYw3.mp4</a>`,
-    ),
+    loginResp.status,
+    loginResp.headers.getSetCookie(),
+    loginText.includes("GuiedGui"),
   );
 })();
