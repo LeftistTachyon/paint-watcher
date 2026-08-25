@@ -29,7 +29,7 @@ import { fetch as fetch2 } from "undici";
   // make the agent
   const jar = new CookieJar();
   for (const cookie of loginResp.headers.getSetCookie()) {
-    jar.setCookie(cookie, "https://3dspaint.com");
+    jar.setCookieSync(cookie, "https://3dspaint.com");
   }
   const agent = new CookieAgent({ cookies: { jar } });
 
