@@ -1,31 +1,74 @@
 import { EmbedBuilder } from "discord.js";
 import { decode } from "he";
 import { parse, SyntaxKind, walk } from "html5parser";
+import { CookieAgent } from "http-cookie-agent/undici";
+import { CookieJar } from "tough-cookie";
+import { fetch as fetch2 } from "undici";
 import type { ChatMessage, Shout } from "./type";
 
-let headers: Headers | undefined;
+// the cookie jar to store 3DSPaint cookies in
+const jar = new CookieJar();
+// the agent that can use the cookies to send user-gated requests
+const agent = new CookieAgent({ cookies: { jar } });
+
+// ! COOKIES FUNCTIONS
 
 /**
  * Inititializes the session (logs in)
  */
 export default async function init() {
-  const formdata = new FormData();
-  formdata.append("username", process.env.PAINT_USERNAME || "missing-username");
-  formdata.append("password", process.env.PAINT_PSWD || "missing-pswd");
-  formdata.append("remember", "false");
-  // process.stdout.write(formdata);
+  // login creds
+  const username = process.env.PAINT_USERNAME || "fake-username";
+  const password = process.env.PAINT_PSWD || "fake-password";
 
-  const resp = await fetch("https://3dspaint.com/", {
+  // create the form data
+  const formdata = new FormData();
+  formdata.append("username", username);
+  formdata.append("password", password);
+  formdata.append("remember", "true");
+
+  // send the login request to steal the cookies
+  const loginResp = await fetch("https://3dspaint.com/", {
     method: "POST",
     body: formdata,
-    redirect: "follow",
+    redirect: "manual",
+    credentials: "include",
   });
+  // const loginText = await loginResp.text();
+  // console.log(
+  //   loginResp.status,
+  //   loginResp.headers.getSetCookie(),
+  //   loginText.includes(username),
+  //   loginText.includes("Guest"),
+  // );
 
-  const cookies = resp.headers.get("set-cookie");
-  // process.stdout.write(cookies);
-  headers = new Headers();
-  headers.append("Cookie", String(cookies));
+  // set the cookies
+  jar.removeAllCookiesSync();
+  for (const cookie of loginResp.headers.getSetCookie()) {
+    jar.setCookieSync(cookie, "https://3dspaint.com");
+  }
+
+  // verify login
+  await fetch2(
+    `https://3dspaint.com/chatroom?ajax=${+new Date()}&id=Debug&action=post&post=It is currently ${new Date()}&color=ace`,
+    {
+      method: "GET",
+      credentials: "include",
+      dispatcher: agent,
+    },
+  );
+  // const pingJSON = await pingResp.text();
+  // console.log(pingResp.status, pingResp.headers.getSetCookie(), pingJSON);
 }
+
+function cookiesValid() {
+  const cookies = jar.getCookiesSync("https://3dspaint.com");
+  for (const cookie of cookies) {
+    console.log();
+  }
+}
+
+// ! CHATROOM FUNCTIONS
 
 /**
  * Fetches the most recent NEW messages in a chatroom
@@ -39,13 +82,20 @@ export async function getChatroomMsgs(chatroom: string) {
     )}&id=${chatroom}&action=read`,
     {
       method: "GET",
-      headers,
       redirect: "follow",
     },
   );
 
   return (await resp.json()) as ChatMessage[];
 }
+
+export async function sendChatroomMsg(
+  chatroom: string,
+  msg: string,
+  color = "ace",
+) {}
+
+// ! GROUP FUNCTIONS
 
 /**
  * Fetches all visible group shouts in the given group's shoutbox
@@ -59,7 +109,6 @@ export async function getGroupShouts(groupID: number) {
     )}&action=load&id=${groupID}`,
     {
       method: "GET",
-      headers,
       redirect: "follow",
     },
   );
@@ -79,7 +128,6 @@ export async function getGroupShouts(groupID: number) {
 export async function getGroupName(groupID: number) {
   const resp = await fetch(`https://3dspaint.com/group/?id=${groupID}`, {
     method: "GET",
-    headers,
     redirect: "follow",
   });
 
@@ -101,6 +149,8 @@ export async function getGroupName(groupID: number) {
   return groupName;
 }
 
+// ! DISCORD EMBEDDING
+
 /**
  * Fix any weird image urls
  * @param imageURL the image URL to fix
@@ -119,7 +169,7 @@ function correctImage(imageURL: string) {
  */
 export function generateChatEmbed(msg: ChatMessage) {
   const parsed = parseMsgString(
-    msg.text,
+    msg.username ? msg.text : msg.text.replace(/_/g, "\\_"),
     msg.username ? "" : "_",
     msg.username ? "" : "_",
   );
