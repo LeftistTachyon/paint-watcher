@@ -61,11 +61,24 @@ export default async function init() {
   // console.log(pingResp.status, pingResp.headers.getSetCookie(), pingJSON);
 }
 
+/**
+ * Determines whether the cookie jar is valid for user-gated requests
+ * @returns whether the cookies in the jar are valid
+ */
 function cookiesValid() {
   const cookies = jar.getCookiesSync("https://3dspaint.com");
+
+  let hasSession = false,
+    hasToken = false;
   for (const cookie of cookies) {
-    console.log();
+    const expiry = cookie.expiryDate();
+    if (expiry && expiry < new Date()) return false;
+
+    if (cookie.key === "PHPSESSID") hasSession = true;
+    else if (cookie.key === "token") hasToken = true;
   }
+
+  return hasSession && hasToken;
 }
 
 // ! CHATROOM FUNCTIONS
@@ -89,11 +102,44 @@ export async function getChatroomMsgs(chatroom: string) {
   return (await resp.json()) as ChatMessage[];
 }
 
+/**
+ * Sends a message to a given chatroom with the given username color.
+ * @param chatroom the chatroom to send this message to
+ * @param message the message to send to the chatroom
+ * @param color the color of the username to display with the message (defaults to #ace)
+ */
 export async function sendChatroomMsg(
   chatroom: string,
-  msg: string,
+  message: string,
   color = "ace",
-) {}
+) {
+  if (!cookiesValid()) await init();
+
+  const resp = await fetch2(
+    `https://3dspaint.com/chatroom?ajax=${+new Date()}&id=${chatroom}&action=post&post=${encodeURI(message)}&color=${encodeURI(color)}`,
+    {
+      method: "GET",
+      credentials: "include",
+      dispatcher: agent,
+    },
+  );
+
+  const text = await resp.text();
+  if (text.length > 0) {
+    // sent back the "you must log in to post"
+    await init();
+
+    // only retry once
+    await fetch2(
+      `https://3dspaint.com/chatroom?ajax=${+new Date()}&id=${chatroom}&action=post&post=${encodeURI(message)}&color=${encodeURI(color)}`,
+      {
+        method: "GET",
+        credentials: "include",
+        dispatcher: agent,
+      },
+    );
+  }
+}
 
 // ! GROUP FUNCTIONS
 
@@ -147,6 +193,35 @@ export async function getGroupName(groupID: number) {
   });
 
   return groupName;
+}
+
+export async function sendShoutboxMsg(groupID: number, message: string) {
+  if (!cookiesValid()) await init();
+
+  const resp = await fetch2(
+    `https://3dspaint.com/group/shoutbox.php?ajax=${+new Date()}&id=${groupID}&action=post&post=${encodeURI(message)}`,
+    {
+      method: "GET",
+      credentials: "include",
+      dispatcher: agent,
+    },
+  );
+
+  const text = await resp.text();
+  if (text !== "[]") {
+    // sent back something besides the expected empty array
+    await init();
+
+    // only retry once
+    await fetch2(
+      `https://3dspaint.com/group/shoutbox.php?ajax=${+new Date()}&id=${groupID}&action=post&post=${encodeURI(message)}`,
+      {
+        method: "GET",
+        credentials: "include",
+        dispatcher: agent,
+      },
+    );
+  }
 }
 
 // ! DISCORD EMBEDDING

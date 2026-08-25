@@ -28,6 +28,7 @@ import { fetch as fetch2 } from "undici";
 
   // make the agent
   const jar = new CookieJar();
+  // console.log(jar.getCookiesSync("https://3dspaint.com"));
   for (const cookie of loginResp.headers.getSetCookie()) {
     jar.setCookieSync(cookie, "https://3dspaint.com");
   }
@@ -45,26 +46,30 @@ import { fetch as fetch2 } from "undici";
   const pingJSON = await pingResp.text();
   console.log(pingResp.status, pingResp.headers.getSetCookie(), pingJSON);
 
-  // rewrite cookies
-  jar.removeAllCookiesSync();
-  for (const cookie of (
-    await fetch("https://3dspaint.com/", {
-      method: "POST",
-      body: formdata,
-      redirect: "manual",
-      credentials: "include",
-    })
-  ).headers.getSetCookie()) {
-    jar.setCookieSync(cookie, "https://3dspaint.com");
+  for (const cookie of jar.getCookiesSync("https://3dspaint.com")) {
+    console.log(cookie.expiryDate());
   }
 
-  // and retry
-  await fetch2(
-    `https://3dspaint.com/chatroom?ajax=${+new Date()}&id=Debug&action=post&post=Discord bot says hi AGAIN&color=ace`,
-    {
-      method: "GET",
-      credentials: "include",
-      dispatcher: agent,
-    },
-  );
+  // // rewrite cookies
+  // jar.removeAllCookiesSync();
+  // for (const cookie of (
+  //   await fetch("https://3dspaint.com/", {
+  //     method: "POST",
+  //     body: formdata,
+  //     redirect: "manual",
+  //     credentials: "include",
+  //   })
+  // ).headers.getSetCookie()) {
+  //   jar.setCookieSync(cookie, "https://3dspaint.com");
+  // }
+
+  // // and retry
+  // await fetch2(
+  //   `https://3dspaint.com/chatroom?ajax=${+new Date()}&id=Debug&action=post&post=Discord bot says hi AGAIN&color=ace`,
+  //   {
+  //     method: "GET",
+  //     credentials: "include",
+  //     dispatcher: agent,
+  //   },
+  // );
 })();
