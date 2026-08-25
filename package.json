@@ -42,6 +42,9 @@
     "exponential-backoff": "^3.1.2",
     "he": "^1.2.0",
     "html5parser": "^2.0.2",
-    "node-cron": "^4.2.1"
+    "http-cookie-agent": "^8.0.0",
+    "node-cron": "^4.2.1",
+    "tough-cookie": "^6.0.2",
+    "undici": "^8.10.0"
   }
 }

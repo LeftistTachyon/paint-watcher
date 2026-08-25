@@ -1,11 +1,17 @@
+import { CookieAgent } from "http-cookie-agent/undici";
+import { CookieJar } from "tough-cookie";
+import { fetch as fetch2 } from "undici";
+
 (async () => {
   const username = process.env.PAINT_USERNAME || "GuiedGui";
 
+  // create the form data
   const formdata = new FormData();
   formdata.append("username", username);
   formdata.append("password", process.env.PAINT_PSWD || "");
   formdata.append("remember", "true");
 
+  // send the login request to steal the cookies
   const loginResp = await fetch("https://3dspaint.com/", {
     method: "POST",
     body: formdata,
@@ -16,6 +22,26 @@
   console.log(
     loginResp.status,
     loginResp.headers.getSetCookie(),
-    loginText.includes("GuiedGui"),
+    loginText.includes(username),
+    loginText.includes("Guest"),
   );
+
+  // make the agent
+  const jar = new CookieJar();
+  for (const cookie of loginResp.headers.getSetCookie()) {
+    jar.setCookie(cookie, "https://3dspaint.com");
+  }
+  const agent = new CookieAgent({ cookies: { jar } });
+
+  // verify login
+  const pingResp = await fetch2(
+    `https://3dspaint.com/chatroom?ajax=${+new Date()}&id=Debug&action=post&post=Discord bot says hi&color=ace`,
+    {
+      method: "GET",
+      credentials: "include",
+      dispatcher: agent,
+    },
+  );
+  const pingJSON = await pingResp.text();
+  console.log(pingResp.status, pingResp.headers.getSetCookie(), pingJSON);
 })();
