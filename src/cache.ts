@@ -25,7 +25,7 @@ export function addChatLog(chatroom: string, channelID: Snowflake) {
       (log) =>
         log.type === "chat" &&
         log.chatroom === chatroom &&
-        log.channelID === channelID
+        log.channelID === channelID,
     ) >= 0
   ) {
     return false;
@@ -46,7 +46,7 @@ export function removeChatLog(chatroom: string, channelID: Snowflake) {
     (log) =>
       log.type === "chat" &&
       log.chatroom === chatroom &&
-      log.channelID === channelID
+      log.channelID === channelID,
   );
 
   if (index >= 0) {
@@ -67,7 +67,7 @@ export function addShoutLog(groupID: number, channelID: Snowflake) {
       (log) =>
         log.type === "shout" &&
         log.groupID === groupID &&
-        log.channelID === channelID
+        log.channelID === channelID,
     ) >= 0
   ) {
     return false;
@@ -112,7 +112,7 @@ export function removeShoutLog(groupID: number, channelID: Snowflake) {
     (log) =>
       log.type === "shout" &&
       log.groupID === groupID &&
-      log.channelID === channelID
+      log.channelID === channelID,
   );
 
   if (index >= 0) {
@@ -122,11 +122,20 @@ export function removeShoutLog(groupID: number, channelID: Snowflake) {
 }
 
 /**
+ * Attempts to find the log object for the given channel
+ * @param channelID the channel to find any logs for
+ * @returns the log for the given channel, if it exists
+ */
+export function findFromChannel(channelID: Snowflake) {
+  return cache.find((log) => log.channelID === channelID);
+}
+
+/**
  * Saves the cache to disk
  * @param location the file location to save the cache to (optional)
  */
 export async function saveCache(
-  location: string = process.env.CACHE_FILE ?? "cache.json"
+  location: string = process.env.CACHE_FILE ?? "cache.json",
 ) {
   await writeFile(location, JSON.stringify(cache, null, 2), "utf8");
 }
@@ -138,7 +147,7 @@ export async function saveCache(
  * @param location the file location to read the cache from (optional)
  */
 export async function loadCache(
-  location: string = process.env.CACHE_FILE ?? "cache.json"
+  location: string = process.env.CACHE_FILE ?? "cache.json",
 ) {
   if (!existsSync(location)) return;
 

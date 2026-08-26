@@ -3,6 +3,7 @@ import type {
   CacheType,
   ChatInputCommandInteraction,
   SlashCommandBuilder,
+  SlashCommandOptionsOnlyBuilder,
   SlashCommandSubcommandsOnlyBuilder,
   Snowflake,
 } from "discord.js";
@@ -13,12 +14,15 @@ import type {
  * Something that represents a slash command
  */
 export type DiscordCommand = {
-  data: SlashCommandBuilder | SlashCommandSubcommandsOnlyBuilder;
+  data:
+    | SlashCommandBuilder
+    | SlashCommandSubcommandsOnlyBuilder
+    | SlashCommandOptionsOnlyBuilder;
   execute: (
-    interaction: ChatInputCommandInteraction<CacheType>
+    interaction: ChatInputCommandInteraction<CacheType>,
   ) => Promise<void>;
   autocomplete?: (
-    interaction: AutocompleteInteraction<CacheType>
+    interaction: AutocompleteInteraction<CacheType>,
   ) => Promise<void>;
 };
 
