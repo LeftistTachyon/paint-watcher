@@ -240,8 +240,8 @@ async function run() {
     }
   }
 
-  interval = setTimeout(logWithDelay, 30_000);
-  interval.unref();
+  // interval = setTimeout(logWithDelay, 30_000);
+  // interval.unref();
 }
 
 run().catch(process.stderr.write);
