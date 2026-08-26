@@ -136,7 +136,7 @@ async function run() {
   console.log("loading cache...");
   await loadCache();
   console.log("loading cookie data...");
-  await init();
+  // await init();
 
   // Interaction handling
   client.on(Events.InteractionCreate, async (interaction) => {
