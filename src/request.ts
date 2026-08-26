@@ -34,13 +34,13 @@ export default async function init() {
     redirect: "manual",
     credentials: "include",
   });
-  // const loginText = await loginResp.text();
-  // console.log(
-  //   loginResp.status,
-  //   loginResp.headers.getSetCookie(),
-  //   loginText.includes(username),
-  //   loginText.includes("Guest"),
-  // );
+  const loginText = await loginResp.text();
+  console.log(
+    loginResp.status,
+    loginResp.headers.getSetCookie(),
+    loginText.includes(username),
+    loginText.includes("Guest"),
+  );
 
   // set the cookies
   jar.removeAllCookiesSync();
@@ -49,7 +49,7 @@ export default async function init() {
   }
 
   // verify login
-  await fetch2(
+  const pingResp = await fetch2(
     `https://3dspaint.com/chatroom?ajax=${+new Date()}&id=Debug&action=post&post=It is currently ${new Date()}&color=ace`,
     {
       method: "GET",
@@ -57,8 +57,8 @@ export default async function init() {
       dispatcher: agent,
     },
   );
-  // const pingJSON = await pingResp.text();
-  // console.log(pingResp.status, pingResp.headers.getSetCookie(), pingJSON);
+  const pingJSON = await pingResp.text();
+  console.log(pingResp.status, pingResp.headers.getSetCookie(), pingJSON);
 }
 
 /**
