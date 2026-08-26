@@ -133,8 +133,10 @@ ${e?.stack}
 
 async function run() {
   // initialize session & cache
-  await init();
+  console.log("loading cache...");
   await loadCache();
+  console.log("loading cookie data...");
+  await init();
 
   // Interaction handling
   client.on(Events.InteractionCreate, async (interaction) => {
