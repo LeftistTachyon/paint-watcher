@@ -231,8 +231,13 @@ async function run() {
   client.login(process.env.DISCORD_TOKEN);
 
   async function logWithDelay() {
-    await log();
-    interval?.refresh();
+    try {
+      await log();
+      interval?.refresh();
+    } catch (e) {
+      console.error("AN ERROR OCCURRED");
+      console.error(e);
+    }
   }
 
   interval = setTimeout(logWithDelay, 10_000);
