@@ -240,7 +240,7 @@ async function run() {
     }
   }
 
-  interval = setTimeout(logWithDelay, 10_000);
+  interval = setTimeout(logWithDelay, 30_000);
   interval.unref();
 }
 
