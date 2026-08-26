@@ -42,6 +42,7 @@ const send: DiscordCommand = {
         log = interaction.channel
           ? findFromChannel(interaction.channel.id)
           : undefined;
+      console.log("send data:", message, groupID, chatroom, log);
 
       if (groupID) {
         // has group ID
